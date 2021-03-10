@@ -32,9 +32,17 @@ namespace FtpAzureLoadTest
             _logger.LogInformation($"Starting Ftp Azure Test with concurrency level of {_options.Value.concurrencyLevel}");
             while (!stoppingToken.IsCancellationRequested)
             {
-                _logger.LogInformation("Worker running at: {time}", DateTimeOffset.Now);
-                await FtpExplorationRunAsync(stoppingToken);
-                Parallel.For(0, _options.Value.concurrencyLevel, async i => await FtpExplorationRunAsync(stoppingToken));
+                try
+                {
+                    _logger.LogInformation("Worker running at: {time}", DateTimeOffset.Now);
+                    await FtpExplorationRunAsync(stoppingToken);
+                    Parallel.For(0, _options.Value.concurrencyLevel, async i => await FtpExplorationRunAsync(stoppingToken));
+                }
+                catch (Exception ex)
+                {
+                    _logger.LogError(ex.Message);
+                    throw;
+                }
 
                 await Task.Delay(1000, stoppingToken);
             }
@@ -126,7 +134,7 @@ namespace FtpAzureLoadTest
                 {
                     var ms = new MemoryStream(tb1.content);
 
-                    string ftpfile = $"/{testdir}/{tb1.filename}";
+                    string ftpfile = $"{testdir}/{tb1.filename}";
 
                     sw.Restart();
                     await ftp.PushDataAsync(ms, ftpfile, token);
@@ -137,6 +145,7 @@ namespace FtpAzureLoadTest
                     if (_options.Value.testDL)
                     {
                         sw.Restart();
+                        //var tb2 = await ftp.GetDataAsync(ftpfile, token);
                         var tb2 = await ftp.GetDataAsync(ftpfile, token);
 
                         if (tb1.content.Length != tb2.Length)

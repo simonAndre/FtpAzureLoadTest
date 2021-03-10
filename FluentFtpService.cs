@@ -2,6 +2,7 @@
 using System.IO;
 using System.Threading.Tasks;
 using System.Threading;
+using System.Net;
 using FluentFTP;
 using System.Collections.Generic;
 
@@ -21,14 +22,14 @@ namespace FtpAzureLoadTest
         private bool _connected = false;
         private bool disposedValue;
         private FtpClient _client;
-        private FtpDirect _ftpdirect;
+        private const string connectionGroupName = "FTPService";
+
         public FluentFtpService(string host, string login, string pass)
         {
             this._host = host;
             this._login = login;
             this._pass = pass;
             _client = new FtpClient(_host, _login, _pass);
-            _ftpdirect = new FtpDirect(_host, _login, _pass);
         }
 
         private void log(string message)
@@ -43,7 +44,7 @@ namespace FtpAzureLoadTest
             {
                 _client.UploadDataType = FtpDataType.Binary;
                 _client.DownloadDataType = FtpDataType.Binary;
-                _client.DataConnectionType = FtpDataConnectionType.PASV;
+                //_client.DataConnectionType = FtpDataConnectionType.PASV;
                 await _client.ConnectAsync(token);
                 _connected = true;
             }
@@ -109,43 +110,73 @@ namespace FtpAzureLoadTest
 
             return status.IsSuccess();
         }
+        //public async Task<byte[]> GetDataAsync(string remotefilepath, CancellationToken token)
+        //{
+        //    await this.ConnectAsync(token);
+
+        //    //var filesize = await _client.GetFileSizeAsync(remotefilepath, token);//ne marche pas en actif
+        //    //log($"filesize of {remotefilepath} is {filesize}");
+
+
+        //    using (var istream = await _client.OpenReadAsync(remotefilepath, FtpDataType.Binary, token))
+        //    {
+        //        try
+        //        {
+        //            var filesize = istream.Length;
+        //            var tb = new byte[filesize];
+        //            await istream.ReadAsync(tb, 0, (int)filesize, token);
+        //            log($"reading file {remotefilepath} (size:{filesize}) from FTP {_host} done");
+        //            return tb;
+        //        }
+        //        catch (Exception e)
+        //        {
+        //            throw new Exception($"Error reading file {remotefilepath} from FTP {_host}", e);
+        //        }
+        //        finally
+        //        {
+        //            istream.Close();
+        //        }
+        //    }
+        //}
+
         public async Task<byte[]> GetDataAsync(string remotefilepath, CancellationToken token)
         {
-            await this.ConnectAsync(token);
-
-            //var filesize = await _client.GetFileSizeAsync(remotefilepath, token);//ne marche pas en actif
-            //log($"filesize of {remotefilepath} is {filesize}");
+            //cannot use FluentFTP.OpenReadAsync as it is not reliable (frequent chekcsum errors)
 
 
-            using (var istream = await _client.OpenReadAsync(remotefilepath, FtpDataType.Binary, token))
+            string ftpserverprot = string.Format("ftp://{0}", this._host);
+
+            var request = (FtpWebRequest)WebRequest.Create(Combine(ftpserverprot, remotefilepath));
+            request.Method = WebRequestMethods.Ftp.DownloadFile;
+            request.ConnectionGroupName = connectionGroupName;
+            request.KeepAlive = false;
+            request.ServicePoint.ConnectionLimit = 20;
+            request.Credentials = new NetworkCredential(this._login, this._pass);
+            request.Timeout = 60 * 1000;
+            request.ReadWriteTimeout = 60 * 5 * 1000;
+            using (var response = (FtpWebResponse)await request.GetResponseAsync())
             {
-                try
+                using (var stream = response.GetResponseStream())
                 {
-                    var filesize = istream.Length;
-                    var tb = new byte[filesize];
-                    await istream.ReadAsync(tb, 0, (int)filesize, token);
-                    log($"reading file {remotefilepath} (size:{filesize}) from FTP {_host} done");
+                    var ms = new MemoryStream();
+                    await stream.CopyToAsync(ms);
+                    response.Close();
+                    ms.Position = 0;
+                    var tb = new byte[ms.Length];
+                    await ms.ReadAsync(tb, token);
                     return tb;
-                }
-                catch (Exception e)
-                {
-                    throw new Exception($"Error reading file {remotefilepath} from FTP {_host}", e);
-                }
-                finally
-                {
-                    istream.Close();
                 }
             }
         }
-        public async Task<byte[]> GetDataDirectAsync(string remotefilepath, CancellationToken token)
-        {
-            var str= await _ftpdirect.DownloadFileStreamAsync(remotefilepath, token);
-            var filesize = str.Length;
-            var tb = new byte[filesize];
-            await str.ReadAsync(tb, token);
-            return tb;
-        }
 
+
+
+        public static string Combine(string path1, string path2)
+        {
+            char[] filesep = @"/\".ToCharArray();
+            return path1.TrimEnd(filesep) + "/" + path2.TrimStart(filesep);
+        }
+       
         public async Task<List<FtpDirectoryContent>> GetListingAsync(string remotedirectory, CancellationToken token)
         {
             await this.ConnectAsync(token);
