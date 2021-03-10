@@ -1,0 +1,1026 @@
+﻿tpAzureLoadTest.Worker: Information: GetDataAsync done
+file //test_dir3/test_2783.csv has been deleted from FTP pubtest.azimut-monitoring.com
+Application Insights Telemetry: {"name":"AppMetrics","time":"2021-03-10T09:49:25.6795047Z","iKey":"79bf9551-c663-4c9e-867b-4becc1b51d65","tags":{"ai.application.ver":"1.0.0.0","ai.cloud.roleInstance":"d8378a42cb4b","ai.internal.sdkVersion":"dotnetc:2.17.0-146","ai.internal.nodeName":"d8378a42cb4b.localdomain"},"data":{"baseType":"MetricData","baseData":{"ver":2,"metrics":[{"name":"DeleteFileAsync","kind":"Aggregation","value":666,"count":1}],"properties":{"DeveloperMode":"true"}}}}
+[40m[32minfo[39m[22m[49m: FtpAzureLoadTest.Worker[0]
+      DeleteFileAsync done for file //test_dir3/test_2783.csv
+FtpAzureLoadTest.Worker: Information: DeleteFileAsync done for file //test_dir3/test_2783.csv
+Application Insights Telemetry: {"name":"AppEvents","time":"2021-03-10T09:49:25.7784966Z","iKey":"79bf9551-c663-4c9e-867b-4becc1b51d65","tags":{"ai.application.ver":"1.0.0.0","ai.cloud.roleInstance":"d8378a42cb4b","ai.internal.sdkVersion":"dotnetc:2.17.0-146","ai.internal.nodeName":"d8378a42cb4b.localdomain"},"data":{"baseType":"EventData","baseData":{"ver":2,"name":"FtpExplorationRun completed","properties":{"DeveloperMode":"true"}}}}
+End
+[40m[32minfo[39m[22m[49m: FtpAzureLoadTest.Worker[0]
+      Worker running at: 03/10/2021 09:49:26 +00:00
+FtpAzureLoadTest.Worker: Information: Worker running at: 03/10/2021 09:49:26 +00:00
+directory /test_dir3 already exists
+Application Insights Telemetry: {"name":"AppMetrics","time":"2021-03-10T09:49:27.5771608Z","iKey":"79bf9551-c663-4c9e-867b-4becc1b51d65","tags":{"ai.application.ver":"1.0.0.0","ai.cloud.roleInstance":"d8378a42cb4b","ai.internal.sdkVersion":"dotnetc:2.17.0-146","ai.internal.nodeName":"d8378a42cb4b.localdomain"},"data":{"baseType":"MetricData","baseData":{"ver":2,"metrics":[{"name":"createTestDirTime","kind":"Aggregation","value":783,"count":1}],"properties":{"DeveloperMode":"true"}}}}
+[40m[32minfo[39m[22m[49m: FtpAzureLoadTest.Worker[0]
+      CreateDirectoryIfNotExistsAsync done
+FtpAzureLoadTest.Worker: Information: CreateDirectoryIfNotExistsAsync done
+Application Insights Telemetry: {"name":"AppMetrics","time":"2021-03-10T09:49:28.2229334Z","iKey":"79bf9551-c663-4c9e-867b-4becc1b51d65","tags":{"ai.application.ver":"1.0.0.0","ai.cloud.roleInstance":"d8378a42cb4b","ai.internal.sdkVersion":"dotnetc:2.17.0-146","ai.internal.nodeName":"d8378a42cb4b.localdomain"},"data":{"baseType":"MetricData","baseData":{"ver":2,"metrics":[{"name":"rootListingTime","kind":"Aggregation","value":634,"count":1}],"properties":{"DeveloperMode":"true"}}}}
+Application Insights Telemetry: {"name":"AppMetrics","time":"2021-03-10T09:49:28.2344244Z","iKey":"79bf9551-c663-4c9e-867b-4becc1b51d65","tags":{"ai.application.ver":"1.0.0.0","ai.cloud.roleInstance":"d8378a42cb4b","ai.internal.sdkVersion":"dotnetc:2.17.0-146","ai.internal.nodeName":"d8378a42cb4b.localdomain"},"data":{"baseType":"MetricData","baseData":{"ver":2,"metrics":[{"name":"testdirSize","kind":"Aggregation","value":6,"count":1}],"properties":{"DeveloperMode":"true"}}}}
+[40m[32minfo[39m[22m[49m: FtpAzureLoadTest.Worker[0]
+      GetListingAsync done
+FtpAzureLoadTest.Worker: Information: GetListingAsync done
+pushed file //test_dir3/test_2782.csv to FTP pubtest.azimut-monitoring.com
+Application Insights Telemetry: {"name":"AppMetrics","time":"2021-03-10T09:49:28.6233168Z","iKey":"79bf9551-c663-4c9e-867b-4becc1b51d65","tags":{"ai.application.ver":"1.0.0.0","ai.cloud.roleInstance":"d8378a42cb4b","ai.internal.sdkVersion":"dotnetc:2.17.0-146","ai.internal.nodeName":"d8378a42cb4b.localdomain"},"data":{"baseType":"MetricData","baseData":{"ver":2,"metrics":[{"name":"PushDataTime","kind":"Aggregation","value":365,"count":1}],"properties":{"DeveloperMode":"true"}}}}
+[40m[32minfo[39m[22m[49m: FtpAzureLoadTest.Worker[0]
+      PushDataAsync done for file //test_dir3/test_2782.csv
+FtpAzureLoadTest.Worker: Information: PushDataAsync done for file //test_dir3/test_2782.csv
+reading file //test_dir3/test_2782.csv from FTP pubtest.azimut-monitoring.com done
+FtpAzureLoadTest.Worker: Error: file content error for file //test_dir3/test_2782.csv
+[41m[30mfail[39m[22m[49m: FtpAzureLoadTest.Worker[0]
+      file content error for file //test_dir3/test_2782.csv
+Application Insights Telemetry: {"name":"AppTraces","time":"2021-03-10T09:49:31.2460057Z","iKey":"79bf9551-c663-4c9e-867b-4becc1b51d65","tags":{"ai.application.ver":"1.0.0.0","ai.cloud.roleInstance":"d8378a42cb4b","ai.internal.sdkVersion":"il:2.17.0-146","ai.internal.nodeName":"d8378a42cb4b.localdomain"},"data":{"baseType":"MessageData","baseData":{"ver":2,"message":"file content error for file //test_dir3/test_2782.csv","severityLevel":"Error","properties":{"DeveloperMode":"true","OriginalFormat":"file content error for file //test_dir3/test_2782.csv","_MS.ProcessedByMetricExtractors":"(Name:'Traces', Ver:'1.1')","CategoryName":"FtpAzureLoadTest.Worker"}}}}
+Application Insights Telemetry: {"name":"AppMetrics","time":"2021-03-10T09:49:31.2575760Z","iKey":"79bf9551-c663-4c9e-867b-4becc1b51d65","tags":{"ai.application.ver":"1.0.0.0","ai.cloud.roleInstance":"d8378a42cb4b","ai.internal.sdkVersion":"dotnetc:2.17.0-146","ai.internal.nodeName":"d8378a42cb4b.localdomain"},"data":{"baseType":"MetricData","baseData":{"ver":2,"metrics":[{"name":"GetDataTime","kind":"Aggregation","value":2626,"count":1}],"properties":{"DeveloperMode":"true"}}}}
+FtpAzureLoadTest.Worker: Information: GetDataAsync done
+[40m[32minfo[39m[22m[49m: FtpAzureLoadTest.Worker[0]
+      GetDataAsync done
+Application Insights Telemetry: {"name":"AppEvents","time":"2021-03-10T09:49:31.2764629Z","iKey":"79bf9551-c663-4c9e-867b-4becc1b51d65","tags":{"ai.application.ver":"1.0.0.0","ai.cloud.roleInstance":"d8378a42cb4b","ai.internal.sdkVersion":"dotnetc:2.17.0-146","ai.internal.nodeName":"d8378a42cb4b.localdomain"},"data":{"baseType":"EventData","baseData":{"ver":2,"name":"FtpExplorationRun completed","properties":{"DeveloperMode":"true"}}}}
+End
+[40m[32minfo[39m[22m[49m: FtpAzureLoadTest.Worker[0]
+      Worker running at: 03/10/2021 09:49:32 +00:00
+FtpAzureLoadTest.Worker: Information: Worker running at: 03/10/2021 09:49:32 +00:00
+directory /test_dir3 already exists
+Application Insights Telemetry: {"name":"AppMetrics","time":"2021-03-10T09:49:33.6775542Z","iKey":"79bf9551-c663-4c9e-867b-4becc1b51d65","tags":{"ai.application.ver":"1.0.0.0","ai.cloud.roleInstance":"d8378a42cb4b","ai.internal.sdkVersion":"dotnetc:2.17.0-146","ai.internal.nodeName":"d8378a42cb4b.localdomain"},"data":{"baseType":"MetricData","baseData":{"ver":2,"metrics":[{"name":"createTestDirTime","kind":"Aggregation","value":1381,"count":1}],"properties":{"DeveloperMode":"true"}}}}
+[40m[32minfo[39m[22m[49m: FtpAzureLoadTest.Worker[0]
+      CreateDirectoryIfNotExistsAsync done
+FtpAzureLoadTest.Worker: Information: CreateDirectoryIfNotExistsAsync done
+Application Insights Telemetry: {"name":"AppMetrics","time":"2021-03-10T09:49:34.0699482Z","iKey":"79bf9551-c663-4c9e-867b-4becc1b51d65","tags":{"ai.application.ver":"1.0.0.0","ai.cloud.roleInstance":"d8378a42cb4b","ai.internal.sdkVersion":"dotnetc:2.17.0-146","ai.internal.nodeName":"d8378a42cb4b.localdomain"},"data":{"baseType":"MetricData","baseData":{"ver":2,"metrics":[{"name":"rootListingTime","kind":"Aggregation","value":365,"count":1}],"properties":{"DeveloperMode":"true"}}}}
+Application Insights Telemetry: {"name":"AppMetrics","time":"2021-03-10T09:49:34.0729893Z","iKey":"79bf9551-c663-4c9e-867b-4becc1b51d65","tags":{"ai.application.ver":"1.0.0.0","ai.cloud.roleInstance":"d8378a42cb4b","ai.internal.sdkVersion":"dotnetc:2.17.0-146","ai.internal.nodeName":"d8378a42cb4b.localdomain"},"data":{"baseType":"MetricData","baseData":{"ver":2,"metrics":[{"name":"testdirSize","kind":"Aggregation","value":7,"count":1}],"properties":{"DeveloperMode":"true"}}}}
+[40m[32minfo[39m[22m[49m: FtpAzureLoadTest.Worker[0]
+      GetListingAsync done
+FtpAzureLoadTest.Worker: Information: GetListingAsync done
+pushed file //test_dir3/test_1026.csv to FTP pubtest.azimut-monitoring.com
+Application Insights Telemetry: {"name":"AppMetrics","time":"2021-03-10T09:49:34.4844010Z","iKey":"79bf9551-c663-4c9e-867b-4becc1b51d65","tags":{"ai.application.ver":"1.0.0.0","ai.cloud.roleInstance":"d8378a42cb4b","ai.internal.sdkVersion":"dotnetc:2.17.0-146","ai.internal.nodeName":"d8378a42cb4b.localdomain"},"data":{"baseType":"MetricData","baseData":{"ver":2,"metrics":[{"name":"PushDataTime","kind":"Aggregation","value":365,"count":1}],"properties":{"DeveloperMode":"true"}}}}
+[40m[32minfo[39m[22m[49m: FtpAzureLoadTest.Worker[0]
+      PushDataAsync done for file //test_dir3/test_1026.csv
+FtpAzureLoadTest.Worker: Information: PushDataAsync done for file //test_dir3/test_1026.csv
+reading file //test_dir3/test_1026.csv from FTP pubtest.azimut-monitoring.com done
+FtpAzureLoadTest.Worker: Error: file content error for file //test_dir3/test_1026.csv
+[41m[30mfail[39m[22m[49m: FtpAzureLoadTest.Worker[0]
+      file content error for file //test_dir3/test_1026.csv
+Application Insights Telemetry: {"name":"AppTraces","time":"2021-03-10T09:49:37.4333325Z","iKey":"79bf9551-c663-4c9e-867b-4becc1b51d65","tags":{"ai.application.ver":"1.0.0.0","ai.cloud.roleInstance":"d8378a42cb4b","ai.internal.sdkVersion":"il:2.17.0-146","ai.internal.nodeName":"d8378a42cb4b.localdomain"},"data":{"baseType":"MessageData","baseData":{"ver":2,"message":"file content error for file //test_dir3/test_1026.csv","severityLevel":"Error","properties":{"DeveloperMode":"true","OriginalFormat":"file content error for file //test_dir3/test_1026.csv","_MS.ProcessedByMetricExtractors":"(Name:'Traces', Ver:'1.1')","CategoryName":"FtpAzureLoadTest.Worker"}}}}
+Application Insights Telemetry: {"name":"AppMetrics","time":"2021-03-10T09:49:37.4388025Z","iKey":"79bf9551-c663-4c9e-867b-4becc1b51d65","tags":{"ai.application.ver":"1.0.0.0","ai.cloud.roleInstance":"d8378a42cb4b","ai.internal.sdkVersion":"dotnetc:2.17.0-146","ai.internal.nodeName":"d8378a42cb4b.localdomain"},"data":{"baseType":"MetricData","baseData":{"ver":2,"metrics":[{"name":"GetDataTime","kind":"Aggregation","value":2925,"count":1}],"properties":{"DeveloperMode":"true"}}}}
+FtpAzureLoadTest.Worker: Information: GetDataAsync done
+[40m[32minfo[39m[22m[49m: FtpAzureLoadTest.Worker[0]
+      GetDataAsync done
+file //test_dir3/test_1026.csv has been deleted from FTP pubtest.azimut-monitoring.com
+Application Insights Telemetry: {"name":"AppMetrics","time":"2021-03-10T09:49:38.1396550Z","iKey":"79bf9551-c663-4c9e-867b-4becc1b51d65","tags":{"ai.application.ver":"1.0.0.0","ai.cloud.roleInstance":"d8378a42cb4b","ai.internal.sdkVersion":"dotnetc:2.17.0-146","ai.internal.nodeName":"d8378a42cb4b.localdomain"},"data":{"baseType":"MetricData","baseData":{"ver":2,"metrics":[{"name":"DeleteFileAsync","kind":"Aggregation","value":679,"count":1}],"properties":{"DeveloperMode":"true"}}}}
+[40m[32minfo[39m[22m[49m: FtpAzureLoadTest.Worker[0]
+      DeleteFileAsync done for file //test_dir3/test_1026.csv
+FtpAzureLoadTest.Worker: Information: DeleteFileAsync done for file //test_dir3/test_1026.csv
+Application Insights Telemetry: {"name":"AppEvents","time":"2021-03-10T09:49:38.1976786Z","iKey":"79bf9551-c663-4c9e-867b-4becc1b51d65","tags":{"ai.application.ver":"1.0.0.0","ai.cloud.roleInstance":"d8378a42cb4b","ai.internal.sdkVersion":"dotnetc:2.17.0-146","ai.internal.nodeName":"d8378a42cb4b.localdomain"},"data":{"baseType":"EventData","baseData":{"ver":2,"name":"FtpExplorationRun completed","properties":{"DeveloperMode":"true"}}}}
+End
+[40m[32minfo[39m[22m[49m: FtpAzureLoadTest.Worker[0]
+      Worker running at: 03/10/2021 09:49:39 +00:00
+FtpAzureLoadTest.Worker: Information: Worker running at: 03/10/2021 09:49:39 +00:00
+directory /test_dir3 already exists
+Application Insights Telemetry: {"name":"AppMetrics","time":"2021-03-10T09:49:40.0379550Z","iKey":"79bf9551-c663-4c9e-867b-4becc1b51d65","tags":{"ai.application.ver":"1.0.0.0","ai.cloud.roleInstance":"d8378a42cb4b","ai.internal.sdkVersion":"dotnetc:2.17.0-146","ai.internal.nodeName":"d8378a42cb4b.localdomain"},"data":{"baseType":"MetricData","baseData":{"ver":2,"metrics":[{"name":"createTestDirTime","kind":"Aggregation","value":814,"count":1}],"properties":{"DeveloperMode":"true"}}}}
+[40m[32minfo[39m[22m[49m: FtpAzureLoadTest.Worker[0]
+      CreateDirectoryIfNotExistsAsync done
+FtpAzureLoadTest.Worker: Information: CreateDirectoryIfNotExistsAsync done
+Application Insights Telemetry: {"name":"AppMetrics","time":"2021-03-10T09:49:40.4089312Z","iKey":"79bf9551-c663-4c9e-867b-4becc1b51d65","tags":{"ai.application.ver":"1.0.0.0","ai.cloud.roleInstance":"d8378a42cb4b","ai.internal.sdkVersion":"dotnetc:2.17.0-146","ai.internal.nodeName":"d8378a42cb4b.localdomain"},"data":{"baseType":"MetricData","baseData":{"ver":2,"metrics":[{"name":"rootListingTime","kind":"Aggregation","value":354,"count":1}],"properties":{"DeveloperMode":"true"}}}}
+Application Insights Telemetry: {"name":"AppMetrics","time":"2021-03-10T09:49:40.4121374Z","iKey":"79bf9551-c663-4c9e-867b-4becc1b51d65","tags":{"ai.application.ver":"1.0.0.0","ai.cloud.roleInstance":"d8378a42cb4b","ai.internal.sdkVersion":"dotnetc:2.17.0-146","ai.internal.nodeName":"d8378a42cb4b.localdomain"},"data":{"baseType":"MetricData","baseData":{"ver":2,"metrics":[{"name":"testdirSize","kind":"Aggregation","value":7,"count":1}],"properties":{"DeveloperMode":"true"}}}}
+[40m[32minfo[39m[22m[49m: FtpAzureLoadTest.Worker[0]
+      GetListingAsync done
+FtpAzureLoadTest.Worker: Information: GetListingAsync done
+pushed file //test_dir3/test_4770.csv to FTP pubtest.azimut-monitoring.com
+Application Insights Telemetry: {"name":"AppMetrics","time":"2021-03-10T09:49:40.7863396Z","iKey":"79bf9551-c663-4c9e-867b-4becc1b51d65","tags":{"ai.application.ver":"1.0.0.0","ai.cloud.roleInstance":"d8378a42cb4b","ai.internal.sdkVersion":"dotnetc:2.17.0-146","ai.internal.nodeName":"d8378a42cb4b.localdomain"},"data":{"baseType":"MetricData","baseData":{"ver":2,"metrics":[{"name":"PushDataTime","kind":"Aggregation","value":360,"count":1}],"properties":{"DeveloperMode":"true"}}}}
+FtpAzureLoadTest.Worker: Information: PushDataAsync done for file //test_dir3/test_4770.csv
+[40m[32minfo[39m[22m[49m: FtpAzureLoadTest.Worker[0]
+      PushDataAsync done for file //test_dir3/test_4770.csv
+reading file //test_dir3/test_4770.csv from FTP pubtest.azimut-monitoring.com done
+[41m[30mfail[39m[22m[49m: FtpAzureLoadTest.Worker[0]
+      file content error for file //test_dir3/test_4770.csv
+FtpAzureLoadTest.Worker: Error: file content error for file //test_dir3/test_4770.csv
+Application Insights Telemetry: {"name":"AppTraces","time":"2021-03-10T09:49:44.8859622Z","iKey":"79bf9551-c663-4c9e-867b-4becc1b51d65","tags":{"ai.application.ver":"1.0.0.0","ai.cloud.roleInstance":"d8378a42cb4b","ai.internal.sdkVersion":"il:2.17.0-146","ai.internal.nodeName":"d8378a42cb4b.localdomain"},"data":{"baseType":"MessageData","baseData":{"ver":2,"message":"file content error for file //test_dir3/test_4770.csv","severityLevel":"Error","properties":{"DeveloperMode":"true","OriginalFormat":"file content error for file //test_dir3/test_4770.csv","_MS.ProcessedByMetricExtractors":"(Name:'Traces', Ver:'1.1')","CategoryName":"FtpAzureLoadTest.Worker"}}}}
+Application Insights Telemetry: {"name":"AppMetrics","time":"2021-03-10T09:49:44.9145617Z","iKey":"79bf9551-c663-4c9e-867b-4becc1b51d65","tags":{"ai.application.ver":"1.0.0.0","ai.cloud.roleInstance":"d8378a42cb4b","ai.internal.sdkVersion":"dotnetc:2.17.0-146","ai.internal.nodeName":"d8378a42cb4b.localdomain"},"data":{"baseType":"MetricData","baseData":{"ver":2,"metrics":[{"name":"GetDataTime","kind":"Aggregation","value":4122,"count":1}],"properties":{"DeveloperMode":"true"}}}}
+FtpAzureLoadTest.Worker: Information: GetDataAsync done
+[40m[32minfo[39m[22m[49m: FtpAzureLoadTest.Worker[0]
+      GetDataAsync done
+Application Insights Telemetry: {"name":"AppEvents","time":"2021-03-10T09:49:44.9495791Z","iKey":"79bf9551-c663-4c9e-867b-4becc1b51d65","tags":{"ai.application.ver":"1.0.0.0","ai.cloud.roleInstance":"d8378a42cb4b","ai.internal.sdkVersion":"dotnetc:2.17.0-146","ai.internal.nodeName":"d8378a42cb4b.localdomain"},"data":{"baseType":"EventData","baseData":{"ver":2,"name":"FtpExplorationRun completed","properties":{"DeveloperMode":"true"}}}}
+End
+[40m[32minfo[39m[22m[49m: FtpAzureLoadTest.Worker[0]
+      Worker running at: 03/10/2021 09:49:45 +00:00
+FtpAzureLoadTest.Worker: Information: Worker running at: 03/10/2021 09:49:45 +00:00
+directory /test_dir3 already exists
+Application Insights Telemetry: {"name":"AppMetrics","time":"2021-03-10T09:49:46.8160670Z","iKey":"79bf9551-c663-4c9e-867b-4becc1b51d65","tags":{"ai.application.ver":"1.0.0.0","ai.cloud.roleInstance":"d8378a42cb4b","ai.internal.sdkVersion":"dotnetc:2.17.0-146","ai.internal.nodeName":"d8378a42cb4b.localdomain"},"data":{"baseType":"MetricData","baseData":{"ver":2,"metrics":[{"name":"createTestDirTime","kind":"Aggregation","value":839,"count":1}],"properties":{"DeveloperMode":"true"}}}}
+[40m[32minfo[39m[22m[49m: FtpAzureLoadTest.Worker[0]
+      CreateDirectoryIfNotExistsAsync done
+FtpAzureLoadTest.Worker: Information: CreateDirectoryIfNotExistsAsync done
+Application Insights Telemetry: {"name":"AppMetrics","time":"2021-03-10T09:49:47.3021538Z","iKey":"79bf9551-c663-4c9e-867b-4becc1b51d65","tags":{"ai.application.ver":"1.0.0.0","ai.cloud.roleInstance":"d8378a42cb4b","ai.internal.sdkVersion":"dotnetc:2.17.0-146","ai.internal.nodeName":"d8378a42cb4b.localdomain"},"data":{"baseType":"MetricData","baseData":{"ver":2,"metrics":[{"name":"rootListingTime","kind":"Aggregation","value":446,"count":1}],"properties":{"DeveloperMode":"true"}}}}
+Application Insights Telemetry: {"name":"AppMetrics","time":"2021-03-10T09:49:47.3052882Z","iKey":"79bf9551-c663-4c9e-867b-4becc1b51d65","tags":{"ai.application.ver":"1.0.0.0","ai.cloud.roleInstance":"d8378a42cb4b","ai.internal.sdkVersion":"dotnetc:2.17.0-146","ai.internal.nodeName":"d8378a42cb4b.localdomain"},"data":{"baseType":"MetricData","baseData":{"ver":2,"metrics":[{"name":"testdirSize","kind":"Aggregation","value":8,"count":1}],"properties":{"DeveloperMode":"true"}}}}
+[40m[32minfo[39m[22m[49m: FtpAzureLoadTest.Worker[0]
+      GetListingAsync done
+FtpAzureLoadTest.Worker: Information: GetListingAsync done
+pushed file //test_dir3/test_2005.csv to FTP pubtest.azimut-monitoring.com
+Application Insights Telemetry: {"name":"AppMetrics","time":"2021-03-10T09:49:47.8614739Z","iKey":"79bf9551-c663-4c9e-867b-4becc1b51d65","tags":{"ai.application.ver":"1.0.0.0","ai.cloud.roleInstance":"d8378a42cb4b","ai.internal.sdkVersion":"dotnetc:2.17.0-146","ai.internal.nodeName":"d8378a42cb4b.localdomain"},"data":{"baseType":"MetricData","baseData":{"ver":2,"metrics":[{"name":"PushDataTime","kind":"Aggregation","value":546,"count":1}],"properties":{"DeveloperMode":"true"}}}}
+[40m[32minfo[39m[22m[49m: FtpAzureLoadTest.Worker[0]
+      PushDataAsync done for file //test_dir3/test_2005.csv
+FtpAzureLoadTest.Worker: Information: PushDataAsync done for file //test_dir3/test_2005.csv
+reading file //test_dir3/test_2005.csv from FTP pubtest.azimut-monitoring.com done
+FtpAzureLoadTest.Worker: Error: file content error for file //test_dir3/test_2005.csv
+[41m[30mfail[39m[22m[49m: FtpAzureLoadTest.Worker[0]
+      file content error for file //test_dir3/test_2005.csv
+Application Insights Telemetry: {"name":"AppTraces","time":"2021-03-10T09:49:50.3013657Z","iKey":"79bf9551-c663-4c9e-867b-4becc1b51d65","tags":{"ai.application.ver":"1.0.0.0","ai.cloud.roleInstance":"d8378a42cb4b","ai.internal.sdkVersion":"il:2.17.0-146","ai.internal.nodeName":"d8378a42cb4b.localdomain"},"data":{"baseType":"MessageData","baseData":{"ver":2,"message":"file content error for file //test_dir3/test_2005.csv","severityLevel":"Error","properties":{"DeveloperMode":"true","OriginalFormat":"file content error for file //test_dir3/test_2005.csv","_MS.ProcessedByMetricExtractors":"(Name:'Traces', Ver:'1.1')","CategoryName":"FtpAzureLoadTest.Worker"}}}}
+Application Insights Telemetry: {"name":"AppMetrics","time":"2021-03-10T09:49:50.3053260Z","iKey":"79bf9551-c663-4c9e-867b-4becc1b51d65","tags":{"ai.application.ver":"1.0.0.0","ai.cloud.roleInstance":"d8378a42cb4b","ai.internal.sdkVersion":"dotnetc:2.17.0-146","ai.internal.nodeName":"d8378a42cb4b.localdomain"},"data":{"baseType":"MetricData","baseData":{"ver":2,"metrics":[{"name":"GetDataTime","kind":"Aggregation","value":2435,"count":1}],"properties":{"DeveloperMode":"true"}}}}
+[40m[32minfo[39m[22m[49m: FtpAzureLoadTest.Worker[0]
+      GetDataAsync done
+FtpAzureLoadTest.Worker: Information: GetDataAsync done
+Application Insights Telemetry: {"name":"AppEvents","time":"2021-03-10T09:49:50.3710887Z","iKey":"79bf9551-c663-4c9e-867b-4becc1b51d65","tags":{"ai.application.ver":"1.0.0.0","ai.cloud.roleInstance":"d8378a42cb4b","ai.internal.sdkVersion":"dotnetc:2.17.0-146","ai.internal.nodeName":"d8378a42cb4b.localdomain"},"data":{"baseType":"EventData","baseData":{"ver":2,"name":"FtpExplorationRun completed","properties":{"DeveloperMode":"true"}}}}
+End
+Le thread 0x26c s'est arrêté avec le code 0 (0x0).
+[40m[32minfo[39m[22m[49m: FtpAzureLoadTest.Worker[0]
+      Worker running at: 03/10/2021 09:49:51 +00:00
+FtpAzureLoadTest.Worker: Information: Worker running at: 03/10/2021 09:49:51 +00:00
+directory /test_dir3 already exists
+Application Insights Telemetry: {"name":"AppMetrics","time":"2021-03-10T09:49:52.1412389Z","iKey":"79bf9551-c663-4c9e-867b-4becc1b51d65","tags":{"ai.application.ver":"1.0.0.0","ai.cloud.roleInstance":"d8378a42cb4b","ai.internal.sdkVersion":"dotnetc:2.17.0-146","ai.internal.nodeName":"d8378a42cb4b.localdomain"},"data":{"baseType":"MetricData","baseData":{"ver":2,"metrics":[{"name":"createTestDirTime","kind":"Aggregation","value":767,"count":1}],"properties":{"DeveloperMode":"true"}}}}
+[40m[32minfo[39m[22m[49m: FtpAzureLoadTest.Worker[0]
+      CreateDirectoryIfNotExistsAsync done
+FtpAzureLoadTest.Worker: Information: CreateDirectoryIfNotExistsAsync done
+Application Insights Telemetry: {"name":"AppMetrics","time":"2021-03-10T09:49:53.0761491Z","iKey":"79bf9551-c663-4c9e-867b-4becc1b51d65","tags":{"ai.application.ver":"1.0.0.0","ai.cloud.roleInstance":"d8378a42cb4b","ai.internal.sdkVersion":"dotnetc:2.17.0-146","ai.internal.nodeName":"d8378a42cb4b.localdomain"},"data":{"baseType":"MetricData","baseData":{"ver":2,"metrics":[{"name":"rootListingTime","kind":"Aggregation","value":906,"count":1}],"properties":{"DeveloperMode":"true"}}}}
+Application Insights Telemetry: {"name":"AppMetrics","time":"2021-03-10T09:49:53.0791653Z","iKey":"79bf9551-c663-4c9e-867b-4becc1b51d65","tags":{"ai.application.ver":"1.0.0.0","ai.cloud.roleInstance":"d8378a42cb4b","ai.internal.sdkVersion":"dotnetc:2.17.0-146","ai.internal.nodeName":"d8378a42cb4b.localdomain"},"data":{"baseType":"MetricData","baseData":{"ver":2,"metrics":[{"name":"testdirSize","kind":"Aggregation","value":9,"count":1}],"properties":{"DeveloperMode":"true"}}}}
+[40m[32minfo[39m[22m[49m: FtpAzureLoadTest.Worker[0]
+      GetListingAsync done
+FtpAzureLoadTest.Worker: Information: GetListingAsync done
+'/usr/share/dotnet/shared/Microsoft.NETCore.App/3.1.13/System.Net.Requests.dll' chargé. Chargement des symboles ignoré. Le module est optimisé et l'option du débogueur 'Uniquement mon code' est activée.
+pushed file //test_dir3/test_2469.csv to FTP pubtest.azimut-monitoring.com
+Application Insights Telemetry: {"name":"AppMetrics","time":"2021-03-10T09:49:53.7100914Z","iKey":"79bf9551-c663-4c9e-867b-4becc1b51d65","tags":{"ai.application.ver":"1.0.0.0","ai.cloud.roleInstance":"d8378a42cb4b","ai.internal.sdkVersion":"dotnetc:2.17.0-146","ai.internal.nodeName":"d8378a42cb4b.localdomain"},"data":{"baseType":"MetricData","baseData":{"ver":2,"metrics":[{"name":"PushDataTime","kind":"Aggregation","value":594,"count":1}],"properties":{"DeveloperMode":"true"}}}}
+[40m[32minfo[39m[22m[49m: FtpAzureLoadTest.Worker[0]
+      PushDataAsync done for file //test_dir3/test_2469.csv
+FtpAzureLoadTest.Worker: Information: PushDataAsync done for file //test_dir3/test_2469.csv
+reading file //test_dir3/test_2469.csv from FTP pubtest.azimut-monitoring.com done
+FtpAzureLoadTest.Worker: Error: file content error for file //test_dir3/test_2469.csv
+[41m[30mfail[39m[22m[49m: FtpAzureLoadTest.Worker[0]
+      file content error for file //test_dir3/test_2469.csv
+Application Insights Telemetry: {"name":"AppTraces","time":"2021-03-10T09:49:56.3298775Z","iKey":"79bf9551-c663-4c9e-867b-4becc1b51d65","tags":{"ai.application.ver":"1.0.0.0","ai.cloud.roleInstance":"d8378a42cb4b","ai.internal.sdkVersion":"il:2.17.0-146","ai.internal.nodeName":"d8378a42cb4b.localdomain"},"data":{"baseType":"MessageData","baseData":{"ver":2,"message":"file content error for file //test_dir3/test_2469.csv","severityLevel":"Error","properties":{"DeveloperMode":"true","OriginalFormat":"file content error for file //test_dir3/test_2469.csv","_MS.ProcessedByMetricExtractors":"(Name:'Traces', Ver:'1.1')","CategoryName":"FtpAzureLoadTest.Worker"}}}}
+Application Insights Telemetry: {"name":"AppMetrics","time":"2021-03-10T09:49:56.3356054Z","iKey":"79bf9551-c663-4c9e-867b-4becc1b51d65","tags":{"ai.application.ver":"1.0.0.0","ai.cloud.roleInstance":"d8378a42cb4b","ai.internal.sdkVersion":"dotnetc:2.17.0-146","ai.internal.nodeName":"d8378a42cb4b.localdomain"},"data":{"baseType":"MetricData","baseData":{"ver":2,"metrics":[{"name":"GetDataTime","kind":"Aggregation","value":2619,"count":1}],"properties":{"DeveloperMode":"true"}}}}
+FtpAzureLoadTest.Worker: Information: GetDataAsync done
+[40m[32minfo[39m[22m[49m: FtpAzureLoadTest.Worker[0]
+      GetDataAsync done
+file //test_dir3/test_2469.csv has been deleted from FTP pubtest.azimut-monitoring.com
+Application Insights Telemetry: {"name":"AppMetrics","time":"2021-03-10T09:49:56.9617136Z","iKey":"79bf9551-c663-4c9e-867b-4becc1b51d65","tags":{"ai.application.ver":"1.0.0.0","ai.cloud.roleInstance":"d8378a42cb4b","ai.internal.sdkVersion":"dotnetc:2.17.0-146","ai.internal.nodeName":"d8378a42cb4b.localdomain"},"data":{"baseType":"MetricData","baseData":{"ver":2,"metrics":[{"name":"DeleteFileAsync","kind":"Aggregation","value":617,"count":1}],"properties":{"DeveloperMode":"true"}}}}
+[40m[32minfo[39m[22m[49m: FtpAzureLoadTest.Worker[0]
+      DeleteFileAsync done for file //test_dir3/test_2469.csv
+FtpAzureLoadTest.Worker: Information: DeleteFileAsync done for file //test_dir3/test_2469.csv
+Application Insights Telemetry: {"name":"AppEvents","time":"2021-03-10T09:49:57.0404964Z","iKey":"79bf9551-c663-4c9e-867b-4becc1b51d65","tags":{"ai.application.ver":"1.0.0.0","ai.cloud.roleInstance":"d8378a42cb4b","ai.internal.sdkVersion":"dotnetc:2.17.0-146","ai.internal.nodeName":"d8378a42cb4b.localdomain"},"data":{"baseType":"EventData","baseData":{"ver":2,"name":"FtpExplorationRun completed","properties":{"DeveloperMode":"true"}}}}
+End
+[40m[32minfo[39m[22m[49m: FtpAzureLoadTest.Worker[0]
+      Worker running at: 03/10/2021 09:49:58 +00:00
+FtpAzureLoadTest.Worker: Information: Worker running at: 03/10/2021 09:49:58 +00:00
+directory /test_dir3 already exists
+Application Insights Telemetry: {"name":"AppMetrics","time":"2021-03-10T09:49:59.2717787Z","iKey":"79bf9551-c663-4c9e-867b-4becc1b51d65","tags":{"ai.application.ver":"1.0.0.0","ai.cloud.roleInstance":"d8378a42cb4b","ai.internal.sdkVersion":"dotnetc:2.17.0-146","ai.internal.nodeName":"d8378a42cb4b.localdomain"},"data":{"baseType":"MetricData","baseData":{"ver":2,"metrics":[{"name":"createTestDirTime","kind":"Aggregation","value":1230,"count":1}],"properties":{"DeveloperMode":"true"}}}}
+[40m[32minfo[39m[22m[49m: FtpAzureLoadTest.Worker[0]
+      CreateDirectoryIfNotExistsAsync done
+FtpAzureLoadTest.Worker: Information: CreateDirectoryIfNotExistsAsync done
+Application Insights Telemetry: {"name":"AppMetrics","time":"2021-03-10T09:49:59.8329790Z","iKey":"79bf9551-c663-4c9e-867b-4becc1b51d65","tags":{"ai.application.ver":"1.0.0.0","ai.cloud.roleInstance":"d8378a42cb4b","ai.internal.sdkVersion":"dotnetc:2.17.0-146","ai.internal.nodeName":"d8378a42cb4b.localdomain"},"data":{"baseType":"MetricData","baseData":{"ver":2,"metrics":[{"name":"rootListingTime","kind":"Aggregation","value":533,"count":1}],"properties":{"DeveloperMode":"true"}}}}
+Application Insights Telemetry: {"name":"AppMetrics","time":"2021-03-10T09:49:59.8388795Z","iKey":"79bf9551-c663-4c9e-867b-4becc1b51d65","tags":{"ai.application.ver":"1.0.0.0","ai.cloud.roleInstance":"d8378a42cb4b","ai.internal.sdkVersion":"dotnetc:2.17.0-146","ai.internal.nodeName":"d8378a42cb4b.localdomain"},"data":{"baseType":"MetricData","baseData":{"ver":2,"metrics":[{"name":"testdirSize","kind":"Aggregation","value":9,"count":1}],"properties":{"DeveloperMode":"true"}}}}
+FtpAzureLoadTest.Worker: Information: GetListingAsync done
+[40m[32minfo[39m[22m[49m: FtpAzureLoadTest.Worker[0]
+      GetListingAsync done
+pushed file //test_dir3/test_1491.csv to FTP pubtest.azimut-monitoring.com
+Application Insights Telemetry: {"name":"AppMetrics","time":"2021-03-10T09:50:00.2718236Z","iKey":"79bf9551-c663-4c9e-867b-4becc1b51d65","tags":{"ai.application.ver":"1.0.0.0","ai.cloud.roleInstance":"d8378a42cb4b","ai.internal.sdkVersion":"dotnetc:2.17.0-146","ai.internal.nodeName":"d8378a42cb4b.localdomain"},"data":{"baseType":"MetricData","baseData":{"ver":2,"metrics":[{"name":"PushDataTime","kind":"Aggregation","value":381,"count":1}],"properties":{"DeveloperMode":"true"}}}}
+FtpAzureLoadTest.Worker: Information: PushDataAsync done for file //test_dir3/test_1491.csv
+[40m[32minfo[39m[22m[49m: FtpAzureLoadTest.Worker[0]
+      PushDataAsync done for file //test_dir3/test_1491.csv
+Application Insights Telemetry: {"name":"AppMetrics","time":"2021-03-10T09:49:14.0000000Z","iKey":"79bf9551-c663-4c9e-867b-4becc1b51d65","tags":{"ai.application.ver":"1.0.0.0","ai.cloud.roleInstance":"d8378a42cb4b","ai.internal.sdkVersion":"m-agg2c:2.17.0-146","ai.internal.nodeName":"d8378a42cb4b.localdomain"},"data":{"baseType":"MetricData","baseData":{"ver":2,"metrics":[{"name":"Traces","kind":"Aggregation","value":7,"count":7,"min":1,"max":1,"stdDev":0}],"properties":{"operation/synthetic":"False","trace/severityLevel":"3","DeveloperMode":"true","cloud/roleName":"Unknown","_MS.IsAutocollected":"True","_MS.AggregationIntervalMs":"47000","_MS.MetricId":"traces/count","cloud/roleInstance":"d8378a42cb4b"}}}}
+reading file //test_dir3/test_1491.csv from FTP pubtest.azimut-monitoring.com done
+FtpAzureLoadTest.Worker: Error: file content error for file //test_dir3/test_1491.csv
+[41m[30mfail[39m[22m[49m: FtpAzureLoadTest.Worker[0]
+      file content error for file //test_dir3/test_1491.csv
+Application Insights Telemetry: {"name":"AppTraces","time":"2021-03-10T09:50:03.0387957Z","iKey":"79bf9551-c663-4c9e-867b-4becc1b51d65","tags":{"ai.application.ver":"1.0.0.0","ai.cloud.roleInstance":"d8378a42cb4b","ai.internal.sdkVersion":"il:2.17.0-146","ai.internal.nodeName":"d8378a42cb4b.localdomain"},"data":{"baseType":"MessageData","baseData":{"ver":2,"message":"file content error for file //test_dir3/test_1491.csv","severityLevel":"Error","properties":{"DeveloperMode":"true","OriginalFormat":"file content error for file //test_dir3/test_1491.csv","_MS.ProcessedByMetricExtractors":"(Name:'Traces', Ver:'1.1')","CategoryName":"FtpAzureLoadTest.Worker"}}}}
+Application Insights Telemetry: {"name":"AppMetrics","time":"2021-03-10T09:50:03.0429022Z","iKey":"79bf9551-c663-4c9e-867b-4becc1b51d65","tags":{"ai.application.ver":"1.0.0.0","ai.cloud.roleInstance":"d8378a42cb4b","ai.internal.sdkVersion":"dotnetc:2.17.0-146","ai.internal.nodeName":"d8378a42cb4b.localdomain"},"data":{"baseType":"MetricData","baseData":{"ver":2,"metrics":[{"name":"GetDataTime","kind":"Aggregation","value":2765,"count":1}],"properties":{"DeveloperMode":"true"}}}}
+[40m[32minfo[39m[22m[49m: FtpAzureLoadTest.Worker[0]
+      GetDataAsync done
+FtpAzureLoadTest.Worker: Information: GetDataAsync done
+Application Insights Telemetry: {"name":"AppEvents","time":"2021-03-10T09:50:03.0746815Z","iKey":"79bf9551-c663-4c9e-867b-4becc1b51d65","tags":{"ai.application.ver":"1.0.0.0","ai.cloud.roleInstance":"d8378a42cb4b","ai.internal.sdkVersion":"dotnetc:2.17.0-146","ai.internal.nodeName":"d8378a42cb4b.localdomain"},"data":{"baseType":"EventData","baseData":{"ver":2,"name":"FtpExplorationRun completed","properties":{"DeveloperMode":"true"}}}}
+End
+[40m[32minfo[39m[22m[49m: FtpAzureLoadTest.Worker[0]
+      Worker running at: 03/10/2021 09:50:04 +00:00
+FtpAzureLoadTest.Worker: Information: Worker running at: 03/10/2021 09:50:04 +00:00
+directory /test_dir3 already exists
+Application Insights Telemetry: {"name":"AppMetrics","time":"2021-03-10T09:50:05.0108877Z","iKey":"79bf9551-c663-4c9e-867b-4becc1b51d65","tags":{"ai.application.ver":"1.0.0.0","ai.cloud.roleInstance":"d8378a42cb4b","ai.internal.sdkVersion":"dotnetc:2.17.0-146","ai.internal.nodeName":"d8378a42cb4b.localdomain"},"data":{"baseType":"MetricData","baseData":{"ver":2,"metrics":[{"name":"createTestDirTime","kind":"Aggregation","value":926,"count":1}],"properties":{"DeveloperMode":"true"}}}}
+[40m[32minfo[39m[22m[49m: FtpAzureLoadTest.Worker[0]
+      CreateDirectoryIfNotExistsAsync done
+FtpAzureLoadTest.Worker: Information: CreateDirectoryIfNotExistsAsync done
+Application Insights Telemetry: {"name":"AppMetrics","time":"2021-03-10T09:50:05.4276949Z","iKey":"79bf9551-c663-4c9e-867b-4becc1b51d65","tags":{"ai.application.ver":"1.0.0.0","ai.cloud.roleInstance":"d8378a42cb4b","ai.internal.sdkVersion":"dotnetc:2.17.0-146","ai.internal.nodeName":"d8378a42cb4b.localdomain"},"data":{"baseType":"MetricData","baseData":{"ver":2,"metrics":[{"name":"rootListingTime","kind":"Aggregation","value":391,"count":1}],"properties":{"DeveloperMode":"true"}}}}
+Application Insights Telemetry: {"name":"AppMetrics","time":"2021-03-10T09:50:05.4465872Z","iKey":"79bf9551-c663-4c9e-867b-4becc1b51d65","tags":{"ai.application.ver":"1.0.0.0","ai.cloud.roleInstance":"d8378a42cb4b","ai.internal.sdkVersion":"dotnetc:2.17.0-146","ai.internal.nodeName":"d8378a42cb4b.localdomain"},"data":{"baseType":"MetricData","baseData":{"ver":2,"metrics":[{"name":"testdirSize","kind":"Aggregation","value":10,"count":1}],"properties":{"DeveloperMode":"true"}}}}
+FtpAzureLoadTest.Worker: Information: GetListingAsync done
+[40m[32minfo[39m[22m[49m: FtpAzureLoadTest.Worker[0]
+      GetListingAsync done
+pushed file //test_dir3/test_2004.csv to FTP pubtest.azimut-monitoring.com
+Application Insights Telemetry: {"name":"AppMetrics","time":"2021-03-10T09:50:06.0206545Z","iKey":"79bf9551-c663-4c9e-867b-4becc1b51d65","tags":{"ai.application.ver":"1.0.0.0","ai.cloud.roleInstance":"d8378a42cb4b","ai.internal.sdkVersion":"dotnetc:2.17.0-146","ai.internal.nodeName":"d8378a42cb4b.localdomain"},"data":{"baseType":"MetricData","baseData":{"ver":2,"metrics":[{"name":"PushDataTime","kind":"Aggregation","value":538,"count":1}],"properties":{"DeveloperMode":"true"}}}}
+[40m[32minfo[39m[22m[49m: FtpAzureLoadTest.Worker[0]
+      PushDataAsync done for file //test_dir3/test_2004.csv
+FtpAzureLoadTest.Worker: Information: PushDataAsync done for file //test_dir3/test_2004.csv
+reading file //test_dir3/test_2004.csv from FTP pubtest.azimut-monitoring.com done
+[41m[30mfail[39m[22m[49m: FtpAzureLoadTest.Worker[0]
+      file content error for file //test_dir3/test_2004.csv
+FtpAzureLoadTest.Worker: Error: file content error for file //test_dir3/test_2004.csv
+Application Insights Telemetry: {"name":"AppTraces","time":"2021-03-10T09:50:08.1271481Z","iKey":"79bf9551-c663-4c9e-867b-4becc1b51d65","tags":{"ai.application.ver":"1.0.0.0","ai.cloud.roleInstance":"d8378a42cb4b","ai.internal.sdkVersion":"il:2.17.0-146","ai.internal.nodeName":"d8378a42cb4b.localdomain"},"data":{"baseType":"MessageData","baseData":{"ver":2,"message":"file content error for file //test_dir3/test_2004.csv","severityLevel":"Error","properties":{"DeveloperMode":"true","OriginalFormat":"file content error for file //test_dir3/test_2004.csv","_MS.ProcessedByMetricExtractors":"(Name:'Traces', Ver:'1.1')","CategoryName":"FtpAzureLoadTest.Worker"}}}}
+Application Insights Telemetry: {"name":"AppMetrics","time":"2021-03-10T09:50:08.1324102Z","iKey":"79bf9551-c663-4c9e-867b-4becc1b51d65","tags":{"ai.application.ver":"1.0.0.0","ai.cloud.roleInstance":"d8378a42cb4b","ai.internal.sdkVersion":"dotnetc:2.17.0-146","ai.internal.nodeName":"d8378a42cb4b.localdomain"},"data":{"baseType":"MetricData","baseData":{"ver":2,"metrics":[{"name":"GetDataTime","kind":"Aggregation","value":2104,"count":1}],"properties":{"DeveloperMode":"true"}}}}
+FtpAzureLoadTest.Worker: Information: GetDataAsync done
+[40m[32minfo[39m[22m[49m: FtpAzureLoadTest.Worker[0]
+      GetDataAsync done
+Application Insights Telemetry: {"name":"AppEvents","time":"2021-03-10T09:50:08.1395948Z","iKey":"79bf9551-c663-4c9e-867b-4becc1b51d65","tags":{"ai.application.ver":"1.0.0.0","ai.cloud.roleInstance":"d8378a42cb4b","ai.internal.sdkVersion":"dotnetc:2.17.0-146","ai.internal.nodeName":"d8378a42cb4b.localdomain"},"data":{"baseType":"EventData","baseData":{"ver":2,"name":"FtpExplorationRun completed","properties":{"DeveloperMode":"true"}}}}
+End
+[40m[32minfo[39m[22m[49m: FtpAzureLoadTest.Worker[0]
+      Worker running at: 03/10/2021 09:50:09 +00:00
+FtpAzureLoadTest.Worker: Information: Worker running at: 03/10/2021 09:50:09 +00:00
+directory /test_dir3 already exists
+Application Insights Telemetry: {"name":"AppMetrics","time":"2021-03-10T09:50:09.9728582Z","iKey":"79bf9551-c663-4c9e-867b-4becc1b51d65","tags":{"ai.application.ver":"1.0.0.0","ai.cloud.roleInstance":"d8378a42cb4b","ai.internal.sdkVersion":"dotnetc:2.17.0-146","ai.internal.nodeName":"d8378a42cb4b.localdomain"},"data":{"baseType":"MetricData","baseData":{"ver":2,"metrics":[{"name":"createTestDirTime","kind":"Aggregation","value":806,"count":1}],"properties":{"DeveloperMode":"true"}}}}
+[40m[32minfo[39m[22m[49m: FtpAzureLoadTest.Worker[0]
+      CreateDirectoryIfNotExistsAsync done
+FtpAzureLoadTest.Worker: Information: CreateDirectoryIfNotExistsAsync done
+Application Insights Telemetry: {"name":"AppMetrics","time":"2021-03-10T09:50:10.3563154Z","iKey":"79bf9551-c663-4c9e-867b-4becc1b51d65","tags":{"ai.application.ver":"1.0.0.0","ai.cloud.roleInstance":"d8378a42cb4b","ai.internal.sdkVersion":"dotnetc:2.17.0-146","ai.internal.nodeName":"d8378a42cb4b.localdomain"},"data":{"baseType":"MetricData","baseData":{"ver":2,"metrics":[{"name":"rootListingTime","kind":"Aggregation","value":356,"count":1}],"properties":{"DeveloperMode":"true"}}}}
+Application Insights Telemetry: {"name":"AppMetrics","time":"2021-03-10T09:50:10.3593382Z","iKey":"79bf9551-c663-4c9e-867b-4becc1b51d65","tags":{"ai.application.ver":"1.0.0.0","ai.cloud.roleInstance":"d8378a42cb4b","ai.internal.sdkVersion":"dotnetc:2.17.0-146","ai.internal.nodeName":"d8378a42cb4b.localdomain"},"data":{"baseType":"MetricData","baseData":{"ver":2,"metrics":[{"name":"testdirSize","kind":"Aggregation","value":11,"count":1}],"properties":{"DeveloperMode":"true"}}}}
+[40m[32minfo[39m[22m[49m: FtpAzureLoadTest.Worker[0]
+      GetListingAsync done
+FtpAzureLoadTest.Worker: Information: GetListingAsync done
+pushed file //test_dir3/test_4030.csv to FTP pubtest.azimut-monitoring.com
+Application Insights Telemetry: {"name":"AppMetrics","time":"2021-03-10T09:50:10.7141618Z","iKey":"79bf9551-c663-4c9e-867b-4becc1b51d65","tags":{"ai.application.ver":"1.0.0.0","ai.cloud.roleInstance":"d8378a42cb4b","ai.internal.sdkVersion":"dotnetc:2.17.0-146","ai.internal.nodeName":"d8378a42cb4b.localdomain"},"data":{"baseType":"MetricData","baseData":{"ver":2,"metrics":[{"name":"PushDataTime","kind":"Aggregation","value":346,"count":1}],"properties":{"DeveloperMode":"true"}}}}
+[40m[32minfo[39m[22m[49m: FtpAzureLoadTest.Worker[0]
+      PushDataAsync done for file //test_dir3/test_4030.csv
+FtpAzureLoadTest.Worker: Information: PushDataAsync done for file //test_dir3/test_4030.csv
+reading file //test_dir3/test_4030.csv from FTP pubtest.azimut-monitoring.com done
+[41m[30mfail[39m[22m[49m: FtpAzureLoadTest.Worker[0]
+      file content error for file //test_dir3/test_4030.csv
+FtpAzureLoadTest.Worker: Error: file content error for file //test_dir3/test_4030.csv
+Application Insights Telemetry: {"name":"AppTraces","time":"2021-03-10T09:50:13.1988472Z","iKey":"79bf9551-c663-4c9e-867b-4becc1b51d65","tags":{"ai.application.ver":"1.0.0.0","ai.cloud.roleInstance":"d8378a42cb4b","ai.internal.sdkVersion":"il:2.17.0-146","ai.internal.nodeName":"d8378a42cb4b.localdomain"},"data":{"baseType":"MessageData","baseData":{"ver":2,"message":"file content error for file //test_dir3/test_4030.csv","severityLevel":"Error","properties":{"DeveloperMode":"true","OriginalFormat":"file content error for file //test_dir3/test_4030.csv","_MS.ProcessedByMetricExtractors":"(Name:'Traces', Ver:'1.1')","CategoryName":"FtpAzureLoadTest.Worker"}}}}
+Application Insights Telemetry: {"name":"AppMetrics","time":"2021-03-10T09:50:13.2024490Z","iKey":"79bf9551-c663-4c9e-867b-4becc1b51d65","tags":{"ai.application.ver":"1.0.0.0","ai.cloud.roleInstance":"d8378a42cb4b","ai.internal.sdkVersion":"dotnetc:2.17.0-146","ai.internal.nodeName":"d8378a42cb4b.localdomain"},"data":{"baseType":"MetricData","baseData":{"ver":2,"metrics":[{"name":"GetDataTime","kind":"Aggregation","value":2468,"count":1}],"properties":{"DeveloperMode":"true"}}}}
+[40m[32minfo[39m[22m[49m: FtpAzureLoadTest.Worker[0]
+      GetDataAsync done
+FtpAzureLoadTest.Worker: Information: GetDataAsync done
+Application Insights Telemetry: {"name":"AppEvents","time":"2021-03-10T09:50:13.2149472Z","iKey":"79bf9551-c663-4c9e-867b-4becc1b51d65","tags":{"ai.application.ver":"1.0.0.0","ai.cloud.roleInstance":"d8378a42cb4b","ai.internal.sdkVersion":"dotnetc:2.17.0-146","ai.internal.nodeName":"d8378a42cb4b.localdomain"},"data":{"baseType":"EventData","baseData":{"ver":2,"name":"FtpExplorationRun completed","properties":{"DeveloperMode":"true"}}}}
+End
+[40m[32minfo[39m[22m[49m: FtpAzureLoadTest.Worker[0]
+      Worker running at: 03/10/2021 09:50:14 +00:00
+FtpAzureLoadTest.Worker: Information: Worker running at: 03/10/2021 09:50:14 +00:00
+directory /test_dir3 already exists
+Application Insights Telemetry: {"name":"AppMetrics","time":"2021-03-10T09:50:15.1364437Z","iKey":"79bf9551-c663-4c9e-867b-4becc1b51d65","tags":{"ai.application.ver":"1.0.0.0","ai.cloud.roleInstance":"d8378a42cb4b","ai.internal.sdkVersion":"dotnetc:2.17.0-146","ai.internal.nodeName":"d8378a42cb4b.localdomain"},"data":{"baseType":"MetricData","baseData":{"ver":2,"metrics":[{"name":"createTestDirTime","kind":"Aggregation","value":898,"count":1}],"properties":{"DeveloperMode":"true"}}}}
+[40m[32minfo[39m[22m[49m: FtpAzureLoadTest.Worker[0]
+      CreateDirectoryIfNotExistsAsync done
+FtpAzureLoadTest.Worker: Information: CreateDirectoryIfNotExistsAsync done
+Application Insights Telemetry: {"name":"AppMetrics","time":"2021-03-10T09:50:15.4495996Z","iKey":"79bf9551-c663-4c9e-867b-4becc1b51d65","tags":{"ai.application.ver":"1.0.0.0","ai.cloud.roleInstance":"d8378a42cb4b","ai.internal.sdkVersion":"pccore:2.17.0-146","ai.internal.nodeName":"d8378a42cb4b.localdomain"},"data":{"baseType":"MetricData","baseData":{"ver":2,"metrics":[{"name":"\\Process(??APP_WIN32_PROC??)\\% Processor Time","kind":"Aggregation","value":6.988339257115577,"count":1,"min":6.988339257115577,"max":6.988339257115577,"stdDev":0}],"properties":{"DeveloperMode":"true","CustomPerfCounter":"true","CounterInstanceName":"??APP_WIN32_PROC??"}}}}
+Application Insights Telemetry: {"name":"AppMetrics","time":"2021-03-10T09:50:15.4534347Z","iKey":"79bf9551-c663-4c9e-867b-4becc1b51d65","tags":{"ai.application.ver":"1.0.0.0","ai.cloud.roleInstance":"d8378a42cb4b","ai.internal.sdkVersion":"pccore:2.17.0-146","ai.internal.nodeName":"d8378a42cb4b.localdomain"},"data":{"baseType":"MetricData","baseData":{"ver":2,"metrics":[{"name":"\\Process(??APP_WIN32_PROC??)\\% Processor Time Normalized","kind":"Aggregation","value":1.7475061339961742,"count":1,"min":1.7475061339961742,"max":1.7475061339961742,"stdDev":0}],"properties":{"DeveloperMode":"true","CustomPerfCounter":"true","CounterInstanceName":"??APP_WIN32_PROC??"}}}}
+Application Insights Telemetry: {"name":"AppMetrics","time":"2021-03-10T09:50:15.4592374Z","iKey":"79bf9551-c663-4c9e-867b-4becc1b51d65","tags":{"ai.application.ver":"1.0.0.0","ai.cloud.roleInstance":"d8378a42cb4b","ai.internal.sdkVersion":"pccore:2.17.0-146","ai.internal.nodeName":"d8378a42cb4b.localdomain"},"data":{"baseType":"MetricData","baseData":{"ver":2,"metrics":[{"name":"\\Process(??APP_WIN32_PROC??)\\Private Bytes","kind":"Aggregation","value":218988544,"count":1,"min":218988544,"max":218988544,"stdDev":0}],"properties":{"DeveloperMode":"true","CustomPerfCounter":"true","CounterInstanceName":"??APP_WIN32_PROC??"}}}}
+Exception levée : 'System.Net.Internals.SocketExceptionFactory.ExtendedSocketException' dans System.Private.CoreLib.dll
+Exception levée : 'System.Net.Internals.SocketExceptionFactory.ExtendedSocketException' dans System.Private.CoreLib.dll
+Exception levée : 'System.Net.Internals.SocketExceptionFactory.ExtendedSocketException' dans System.Private.CoreLib.dll
+Le thread 0x21b s'est arrêté avec le code 0 (0x0).
+Le thread 0x22f s'est arrêté avec le code 0 (0x0).ile //test_dir3/test_2783.csv
+FtpAzureLoadTest.Worker: Information: DeleteFileAsync done for file //test_dir3/test_2783.csv
+Application Insights Telemetry: {"name":"AppEvents","time":"2021-03-10T09:49:25.7784966Z","iKey":"79bf9551-c663-4c9e-867b-4becc1b51d65","tags":{"ai.application.ver":"1.0.0.0","ai.cloud.roleInstance":"d8378a42cb4b","ai.internal.sdkVersion":"dotnetc:2.17.0-146","ai.internal.nodeName":"d8378a42cb4b.localdomain"},"data":{"baseType":"EventData","baseData":{"ver":2,"name":"FtpExplorationRun completed","properties":{"DeveloperMode":"true"}}}}
+End
+[40m[32minfo[39m[22m[49m: FtpAzureLoadTest.Worker[0]
+      Worker running at: 03/10/2021 09:49:26 +00:00
+FtpAzureLoadTest.Worker: Information: Worker running at: 03/10/2021 09:49:26 +00:00
+directory /test_dir3 already exists
+Application Insights Telemetry: {"name":"AppMetrics","time":"2021-03-10T09:49:27.5771608Z","iKey":"79bf9551-c663-4c9e-867b-4becc1b51d65","tags":{"ai.application.ver":"1.0.0.0","ai.cloud.roleInstance":"d8378a42cb4b","ai.internal.sdkVersion":"dotnetc:2.17.0-146","ai.internal.nodeName":"d8378a42cb4b.localdomain"},"data":{"baseType":"MetricData","baseData":{"ver":2,"metrics":[{"name":"createTestDirTime","kind":"Aggregation","value":783,"count":1}],"properties":{"DeveloperMode":"true"}}}}
+[40m[32minfo[39m[22m[49m: FtpAzureLoadTest.Worker[0]
+      CreateDirectoryIfNotExistsAsync done
+FtpAzureLoadTest.Worker: Information: CreateDirectoryIfNotExistsAsync done
+Application Insights Telemetry: {"name":"AppMetrics","time":"2021-03-10T09:49:28.2229334Z","iKey":"79bf9551-c663-4c9e-867b-4becc1b51d65","tags":{"ai.application.ver":"1.0.0.0","ai.cloud.roleInstance":"d8378a42cb4b","ai.internal.sdkVersion":"dotnetc:2.17.0-146","ai.internal.nodeName":"d8378a42cb4b.localdomain"},"data":{"baseType":"MetricData","baseData":{"ver":2,"metrics":[{"name":"rootListingTime","kind":"Aggregation","value":634,"count":1}],"properties":{"DeveloperMode":"true"}}}}
+Application Insights Telemetry: {"name":"AppMetrics","time":"2021-03-10T09:49:28.2344244Z","iKey":"79bf9551-c663-4c9e-867b-4becc1b51d65","tags":{"ai.application.ver":"1.0.0.0","ai.cloud.roleInstance":"d8378a42cb4b","ai.internal.sdkVersion":"dotnetc:2.17.0-146","ai.internal.nodeName":"d8378a42cb4b.localdomain"},"data":{"baseType":"MetricData","baseData":{"ver":2,"metrics":[{"name":"testdirSize","kind":"Aggregation","value":6,"count":1}],"properties":{"DeveloperMode":"true"}}}}
+[40m[32minfo[39m[22m[49m: FtpAzureLoadTest.Worker[0]
+      GetListingAsync done
+FtpAzureLoadTest.Worker: Information: GetListingAsync done
+pushed file //test_dir3/test_2782.csv to FTP pubtest.azimut-monitoring.com
+Application Insights Telemetry: {"name":"AppMetrics","time":"2021-03-10T09:49:28.6233168Z","iKey":"79bf9551-c663-4c9e-867b-4becc1b51d65","tags":{"ai.application.ver":"1.0.0.0","ai.cloud.roleInstance":"d8378a42cb4b","ai.internal.sdkVersion":"dotnetc:2.17.0-146","ai.internal.nodeName":"d8378a42cb4b.localdomain"},"data":{"baseType":"MetricData","baseData":{"ver":2,"metrics":[{"name":"PushDataTime","kind":"Aggregation","value":365,"count":1}],"properties":{"DeveloperMode":"true"}}}}
+[40m[32minfo[39m[22m[49m: FtpAzureLoadTest.Worker[0]
+      PushDataAsync done for file //test_dir3/test_2782.csv
+FtpAzureLoadTest.Worker: Information: PushDataAsync done for file //test_dir3/test_2782.csv
+reading file //test_dir3/test_2782.csv from FTP pubtest.azimut-monitoring.com done
+FtpAzureLoadTest.Worker: Error: file content error for file //test_dir3/test_2782.csv
+[41m[30mfail[39m[22m[49m: FtpAzureLoadTest.Worker[0]
+      file content error for file //test_dir3/test_2782.csv
+Application Insights Telemetry: {"name":"AppTraces","time":"2021-03-10T09:49:31.2460057Z","iKey":"79bf9551-c663-4c9e-867b-4becc1b51d65","tags":{"ai.application.ver":"1.0.0.0","ai.cloud.roleInstance":"d8378a42cb4b","ai.internal.sdkVersion":"il:2.17.0-146","ai.internal.nodeName":"d8378a42cb4b.localdomain"},"data":{"baseType":"MessageData","baseData":{"ver":2,"message":"file content error for file //test_dir3/test_2782.csv","severityLevel":"Error","properties":{"DeveloperMode":"true","OriginalFormat":"file content error for file //test_dir3/test_2782.csv","_MS.ProcessedByMetricExtractors":"(Name:'Traces', Ver:'1.1')","CategoryName":"FtpAzureLoadTest.Worker"}}}}
+Application Insights Telemetry: {"name":"AppMetrics","time":"2021-03-10T09:49:31.2575760Z","iKey":"79bf9551-c663-4c9e-867b-4becc1b51d65","tags":{"ai.application.ver":"1.0.0.0","ai.cloud.roleInstance":"d8378a42cb4b","ai.internal.sdkVersion":"dotnetc:2.17.0-146","ai.internal.nodeName":"d8378a42cb4b.localdomain"},"data":{"baseType":"MetricData","baseData":{"ver":2,"metrics":[{"name":"GetDataTime","kind":"Aggregation","value":2626,"count":1}],"properties":{"DeveloperMode":"true"}}}}
+FtpAzureLoadTest.Worker: Information: GetDataAsync done
+[40m[32minfo[39m[22m[49m: FtpAzureLoadTest.Worker[0]
+      GetDataAsync done
+Application Insights Telemetry: {"name":"AppEvents","time":"2021-03-10T09:49:31.2764629Z","iKey":"79bf9551-c663-4c9e-867b-4becc1b51d65","tags":{"ai.application.ver":"1.0.0.0","ai.cloud.roleInstance":"d8378a42cb4b","ai.internal.sdkVersion":"dotnetc:2.17.0-146","ai.internal.nodeName":"d8378a42cb4b.localdomain"},"data":{"baseType":"EventData","baseData":{"ver":2,"name":"FtpExplorationRun completed","properties":{"DeveloperMode":"true"}}}}
+End
+[40m[32minfo[39m[22m[49m: FtpAzureLoadTest.Worker[0]
+      Worker running at: 03/10/2021 09:49:32 +00:00
+FtpAzureLoadTest.Worker: Information: Worker running at: 03/10/2021 09:49:32 +00:00
+directory /test_dir3 already exists
+Application Insights Telemetry: {"name":"AppMetrics","time":"2021-03-10T09:49:33.6775542Z","iKey":"79bf9551-c663-4c9e-867b-4becc1b51d65","tags":{"ai.application.ver":"1.0.0.0","ai.cloud.roleInstance":"d8378a42cb4b","ai.internal.sdkVersion":"dotnetc:2.17.0-146","ai.internal.nodeName":"d8378a42cb4b.localdomain"},"data":{"baseType":"MetricData","baseData":{"ver":2,"metrics":[{"name":"createTestDirTime","kind":"Aggregation","value":1381,"count":1}],"properties":{"DeveloperMode":"true"}}}}
+[40m[32minfo[39m[22m[49m: FtpAzureLoadTest.Worker[0]
+      CreateDirectoryIfNotExistsAsync done
+FtpAzureLoadTest.Worker: Information: CreateDirectoryIfNotExistsAsync done
+Application Insights Telemetry: {"name":"AppMetrics","time":"2021-03-10T09:49:34.0699482Z","iKey":"79bf9551-c663-4c9e-867b-4becc1b51d65","tags":{"ai.application.ver":"1.0.0.0","ai.cloud.roleInstance":"d8378a42cb4b","ai.internal.sdkVersion":"dotnetc:2.17.0-146","ai.internal.nodeName":"d8378a42cb4b.localdomain"},"data":{"baseType":"MetricData","baseData":{"ver":2,"metrics":[{"name":"rootListingTime","kind":"Aggregation","value":365,"count":1}],"properties":{"DeveloperMode":"true"}}}}
+Application Insights Telemetry: {"name":"AppMetrics","time":"2021-03-10T09:49:34.0729893Z","iKey":"79bf9551-c663-4c9e-867b-4becc1b51d65","tags":{"ai.application.ver":"1.0.0.0","ai.cloud.roleInstance":"d8378a42cb4b","ai.internal.sdkVersion":"dotnetc:2.17.0-146","ai.internal.nodeName":"d8378a42cb4b.localdomain"},"data":{"baseType":"MetricData","baseData":{"ver":2,"metrics":[{"name":"testdirSize","kind":"Aggregation","value":7,"count":1}],"properties":{"DeveloperMode":"true"}}}}
+[40m[32minfo[39m[22m[49m: FtpAzureLoadTest.Worker[0]
+      GetListingAsync done
+FtpAzureLoadTest.Worker: Information: GetListingAsync done
+pushed file //test_dir3/test_1026.csv to FTP pubtest.azimut-monitoring.com
+Application Insights Telemetry: {"name":"AppMetrics","time":"2021-03-10T09:49:34.4844010Z","iKey":"79bf9551-c663-4c9e-867b-4becc1b51d65","tags":{"ai.application.ver":"1.0.0.0","ai.cloud.roleInstance":"d8378a42cb4b","ai.internal.sdkVersion":"dotnetc:2.17.0-146","ai.internal.nodeName":"d8378a42cb4b.localdomain"},"data":{"baseType":"MetricData","baseData":{"ver":2,"metrics":[{"name":"PushDataTime","kind":"Aggregation","value":365,"count":1}],"properties":{"DeveloperMode":"true"}}}}
+[40m[32minfo[39m[22m[49m: FtpAzureLoadTest.Worker[0]
+      PushDataAsync done for file //test_dir3/test_1026.csv
+FtpAzureLoadTest.Worker: Information: PushDataAsync done for file //test_dir3/test_1026.csv
+reading file //test_dir3/test_1026.csv from FTP pubtest.azimut-monitoring.com done
+FtpAzureLoadTest.Worker: Error: file content error for file //test_dir3/test_1026.csv
+[41m[30mfail[39m[22m[49m: FtpAzureLoadTest.Worker[0]
+      file content error for file //test_dir3/test_1026.csv
+Application Insights Telemetry: {"name":"AppTraces","time":"2021-03-10T09:49:37.4333325Z","iKey":"79bf9551-c663-4c9e-867b-4becc1b51d65","tags":{"ai.application.ver":"1.0.0.0","ai.cloud.roleInstance":"d8378a42cb4b","ai.internal.sdkVersion":"il:2.17.0-146","ai.internal.nodeName":"d8378a42cb4b.localdomain"},"data":{"baseType":"MessageData","baseData":{"ver":2,"message":"file content error for file //test_dir3/test_1026.csv","severityLevel":"Error","properties":{"DeveloperMode":"true","OriginalFormat":"file content error for file //test_dir3/test_1026.csv","_MS.ProcessedByMetricExtractors":"(Name:'Traces', Ver:'1.1')","CategoryName":"FtpAzureLoadTest.Worker"}}}}
+Application Insights Telemetry: {"name":"AppMetrics","time":"2021-03-10T09:49:37.4388025Z","iKey":"79bf9551-c663-4c9e-867b-4becc1b51d65","tags":{"ai.application.ver":"1.0.0.0","ai.cloud.roleInstance":"d8378a42cb4b","ai.internal.sdkVersion":"dotnetc:2.17.0-146","ai.internal.nodeName":"d8378a42cb4b.localdomain"},"data":{"baseType":"MetricData","baseData":{"ver":2,"metrics":[{"name":"GetDataTime","kind":"Aggregation","value":2925,"count":1}],"properties":{"DeveloperMode":"true"}}}}
+FtpAzureLoadTest.Worker: Information: GetDataAsync done
+[40m[32minfo[39m[22m[49m: FtpAzureLoadTest.Worker[0]
+      GetDataAsync done
+file //test_dir3/test_1026.csv has been deleted from FTP pubtest.azimut-monitoring.com
+Application Insights Telemetry: {"name":"AppMetrics","time":"2021-03-10T09:49:38.1396550Z","iKey":"79bf9551-c663-4c9e-867b-4becc1b51d65","tags":{"ai.application.ver":"1.0.0.0","ai.cloud.roleInstance":"d8378a42cb4b","ai.internal.sdkVersion":"dotnetc:2.17.0-146","ai.internal.nodeName":"d8378a42cb4b.localdomain"},"data":{"baseType":"MetricData","baseData":{"ver":2,"metrics":[{"name":"DeleteFileAsync","kind":"Aggregation","value":679,"count":1}],"properties":{"DeveloperMode":"true"}}}}
+[40m[32minfo[39m[22m[49m: FtpAzureLoadTest.Worker[0]
+      DeleteFileAsync done for file //test_dir3/test_1026.csv
+FtpAzureLoadTest.Worker: Information: DeleteFileAsync done for file //test_dir3/test_1026.csv
+Application Insights Telemetry: {"name":"AppEvents","time":"2021-03-10T09:49:38.1976786Z","iKey":"79bf9551-c663-4c9e-867b-4becc1b51d65","tags":{"ai.application.ver":"1.0.0.0","ai.cloud.roleInstance":"d8378a42cb4b","ai.internal.sdkVersion":"dotnetc:2.17.0-146","ai.internal.nodeName":"d8378a42cb4b.localdomain"},"data":{"baseType":"EventData","baseData":{"ver":2,"name":"FtpExplorationRun completed","properties":{"DeveloperMode":"true"}}}}
+End
+[40m[32minfo[39m[22m[49m: FtpAzureLoadTest.Worker[0]
+      Worker running at: 03/10/2021 09:49:39 +00:00
+FtpAzureLoadTest.Worker: Information: Worker running at: 03/10/2021 09:49:39 +00:00
+directory /test_dir3 already exists
+Application Insights Telemetry: {"name":"AppMetrics","time":"2021-03-10T09:49:40.0379550Z","iKey":"79bf9551-c663-4c9e-867b-4becc1b51d65","tags":{"ai.application.ver":"1.0.0.0","ai.cloud.roleInstance":"d8378a42cb4b","ai.internal.sdkVersion":"dotnetc:2.17.0-146","ai.internal.nodeName":"d8378a42cb4b.localdomain"},"data":{"baseType":"MetricData","baseData":{"ver":2,"metrics":[{"name":"createTestDirTime","kind":"Aggregation","value":814,"count":1}],"properties":{"DeveloperMode":"true"}}}}
+[40m[32minfo[39m[22m[49m: FtpAzureLoadTest.Worker[0]
+      CreateDirectoryIfNotExistsAsync done
+FtpAzureLoadTest.Worker: Information: CreateDirectoryIfNotExistsAsync done
+Application Insights Telemetry: {"name":"AppMetrics","time":"2021-03-10T09:49:40.4089312Z","iKey":"79bf9551-c663-4c9e-867b-4becc1b51d65","tags":{"ai.application.ver":"1.0.0.0","ai.cloud.roleInstance":"d8378a42cb4b","ai.internal.sdkVersion":"dotnetc:2.17.0-146","ai.internal.nodeName":"d8378a42cb4b.localdomain"},"data":{"baseType":"MetricData","baseData":{"ver":2,"metrics":[{"name":"rootListingTime","kind":"Aggregation","value":354,"count":1}],"properties":{"DeveloperMode":"true"}}}}
+Application Insights Telemetry: {"name":"AppMetrics","time":"2021-03-10T09:49:40.4121374Z","iKey":"79bf9551-c663-4c9e-867b-4becc1b51d65","tags":{"ai.application.ver":"1.0.0.0","ai.cloud.roleInstance":"d8378a42cb4b","ai.internal.sdkVersion":"dotnetc:2.17.0-146","ai.internal.nodeName":"d8378a42cb4b.localdomain"},"data":{"baseType":"MetricData","baseData":{"ver":2,"metrics":[{"name":"testdirSize","kind":"Aggregation","value":7,"count":1}],"properties":{"DeveloperMode":"true"}}}}
+[40m[32minfo[39m[22m[49m: FtpAzureLoadTest.Worker[0]
+      GetListingAsync done
+FtpAzureLoadTest.Worker: Information: GetListingAsync done
+pushed file //test_dir3/test_4770.csv to FTP pubtest.azimut-monitoring.com
+Application Insights Telemetry: {"name":"AppMetrics","time":"2021-03-10T09:49:40.7863396Z","iKey":"79bf9551-c663-4c9e-867b-4becc1b51d65","tags":{"ai.application.ver":"1.0.0.0","ai.cloud.roleInstance":"d8378a42cb4b","ai.internal.sdkVersion":"dotnetc:2.17.0-146","ai.internal.nodeName":"d8378a42cb4b.localdomain"},"data":{"baseType":"MetricData","baseData":{"ver":2,"metrics":[{"name":"PushDataTime","kind":"Aggregation","value":360,"count":1}],"properties":{"DeveloperMode":"true"}}}}
+FtpAzureLoadTest.Worker: Information: PushDataAsync done for file //test_dir3/test_4770.csv
+[40m[32minfo[39m[22m[49m: FtpAzureLoadTest.Worker[0]
+      PushDataAsync done for file //test_dir3/test_4770.csv
+reading file //test_dir3/test_4770.csv from FTP pubtest.azimut-monitoring.com done
+[41m[30mfail[39m[22m[49m: FtpAzureLoadTest.Worker[0]
+      file content error for file //test_dir3/test_4770.csv
+FtpAzureLoadTest.Worker: Error: file content error for file //test_dir3/test_4770.csv
+Application Insights Telemetry: {"name":"AppTraces","time":"2021-03-10T09:49:44.8859622Z","iKey":"79bf9551-c663-4c9e-867b-4becc1b51d65","tags":{"ai.application.ver":"1.0.0.0","ai.cloud.roleInstance":"d8378a42cb4b","ai.internal.sdkVersion":"il:2.17.0-146","ai.internal.nodeName":"d8378a42cb4b.localdomain"},"data":{"baseType":"MessageData","baseData":{"ver":2,"message":"file content error for file //test_dir3/test_4770.csv","severityLevel":"Error","properties":{"DeveloperMode":"true","OriginalFormat":"file content error for file //test_dir3/test_4770.csv","_MS.ProcessedByMetricExtractors":"(Name:'Traces', Ver:'1.1')","CategoryName":"FtpAzureLoadTest.Worker"}}}}
+Application Insights Telemetry: {"name":"AppMetrics","time":"2021-03-10T09:49:44.9145617Z","iKey":"79bf9551-c663-4c9e-867b-4becc1b51d65","tags":{"ai.application.ver":"1.0.0.0","ai.cloud.roleInstance":"d8378a42cb4b","ai.internal.sdkVersion":"dotnetc:2.17.0-146","ai.internal.nodeName":"d8378a42cb4b.localdomain"},"data":{"baseType":"MetricData","baseData":{"ver":2,"metrics":[{"name":"GetDataTime","kind":"Aggregation","value":4122,"count":1}],"properties":{"DeveloperMode":"true"}}}}
+FtpAzureLoadTest.Worker: Information: GetDataAsync done
+[40m[32minfo[39m[22m[49m: FtpAzureLoadTest.Worker[0]
+      GetDataAsync done
+Application Insights Telemetry: {"name":"AppEvents","time":"2021-03-10T09:49:44.9495791Z","iKey":"79bf9551-c663-4c9e-867b-4becc1b51d65","tags":{"ai.application.ver":"1.0.0.0","ai.cloud.roleInstance":"d8378a42cb4b","ai.internal.sdkVersion":"dotnetc:2.17.0-146","ai.internal.nodeName":"d8378a42cb4b.localdomain"},"data":{"baseType":"EventData","baseData":{"ver":2,"name":"FtpExplorationRun completed","properties":{"DeveloperMode":"true"}}}}
+End
+[40m[32minfo[39m[22m[49m: FtpAzureLoadTest.Worker[0]
+      Worker running at: 03/10/2021 09:49:45 +00:00
+FtpAzureLoadTest.Worker: Information: Worker running at: 03/10/2021 09:49:45 +00:00
+directory /test_dir3 already exists
+Application Insights Telemetry: {"name":"AppMetrics","time":"2021-03-10T09:49:46.8160670Z","iKey":"79bf9551-c663-4c9e-867b-4becc1b51d65","tags":{"ai.application.ver":"1.0.0.0","ai.cloud.roleInstance":"d8378a42cb4b","ai.internal.sdkVersion":"dotnetc:2.17.0-146","ai.internal.nodeName":"d8378a42cb4b.localdomain"},"data":{"baseType":"MetricData","baseData":{"ver":2,"metrics":[{"name":"createTestDirTime","kind":"Aggregation","value":839,"count":1}],"properties":{"DeveloperMode":"true"}}}}
+[40m[32minfo[39m[22m[49m: FtpAzureLoadTest.Worker[0]
+      CreateDirectoryIfNotExistsAsync done
+FtpAzureLoadTest.Worker: Information: CreateDirectoryIfNotExistsAsync done
+Application Insights Telemetry: {"name":"AppMetrics","time":"2021-03-10T09:49:47.3021538Z","iKey":"79bf9551-c663-4c9e-867b-4becc1b51d65","tags":{"ai.application.ver":"1.0.0.0","ai.cloud.roleInstance":"d8378a42cb4b","ai.internal.sdkVersion":"dotnetc:2.17.0-146","ai.internal.nodeName":"d8378a42cb4b.localdomain"},"data":{"baseType":"MetricData","baseData":{"ver":2,"metrics":[{"name":"rootListingTime","kind":"Aggregation","value":446,"count":1}],"properties":{"DeveloperMode":"true"}}}}
+Application Insights Telemetry: {"name":"AppMetrics","time":"2021-03-10T09:49:47.3052882Z","iKey":"79bf9551-c663-4c9e-867b-4becc1b51d65","tags":{"ai.application.ver":"1.0.0.0","ai.cloud.roleInstance":"d8378a42cb4b","ai.internal.sdkVersion":"dotnetc:2.17.0-146","ai.internal.nodeName":"d8378a42cb4b.localdomain"},"data":{"baseType":"MetricData","baseData":{"ver":2,"metrics":[{"name":"testdirSize","kind":"Aggregation","value":8,"count":1}],"properties":{"DeveloperMode":"true"}}}}
+[40m[32minfo[39m[22m[49m: FtpAzureLoadTest.Worker[0]
+      GetListingAsync done
+FtpAzureLoadTest.Worker: Information: GetListingAsync done
+pushed file //test_dir3/test_2005.csv to FTP pubtest.azimut-monitoring.com
+Application Insights Telemetry: {"name":"AppMetrics","time":"2021-03-10T09:49:47.8614739Z","iKey":"79bf9551-c663-4c9e-867b-4becc1b51d65","tags":{"ai.application.ver":"1.0.0.0","ai.cloud.roleInstance":"d8378a42cb4b","ai.internal.sdkVersion":"dotnetc:2.17.0-146","ai.internal.nodeName":"d8378a42cb4b.localdomain"},"data":{"baseType":"MetricData","baseData":{"ver":2,"metrics":[{"name":"PushDataTime","kind":"Aggregation","value":546,"count":1}],"properties":{"DeveloperMode":"true"}}}}
+[40m[32minfo[39m[22m[49m: FtpAzureLoadTest.Worker[0]
+      PushDataAsync done for file //test_dir3/test_2005.csv
+FtpAzureLoadTest.Worker: Information: PushDataAsync done for file //test_dir3/test_2005.csv
+reading file //test_dir3/test_2005.csv from FTP pubtest.azimut-monitoring.com done
+FtpAzureLoadTest.Worker: Error: file content error for file //test_dir3/test_2005.csv
+[41m[30mfail[39m[22m[49m: FtpAzureLoadTest.Worker[0]
+      file content error for file //test_dir3/test_2005.csv
+Application Insights Telemetry: {"name":"AppTraces","time":"2021-03-10T09:49:50.3013657Z","iKey":"79bf9551-c663-4c9e-867b-4becc1b51d65","tags":{"ai.application.ver":"1.0.0.0","ai.cloud.roleInstance":"d8378a42cb4b","ai.internal.sdkVersion":"il:2.17.0-146","ai.internal.nodeName":"d8378a42cb4b.localdomain"},"data":{"baseType":"MessageData","baseData":{"ver":2,"message":"file content error for file //test_dir3/test_2005.csv","severityLevel":"Error","properties":{"DeveloperMode":"true","OriginalFormat":"file content error for file //test_dir3/test_2005.csv","_MS.ProcessedByMetricExtractors":"(Name:'Traces', Ver:'1.1')","CategoryName":"FtpAzureLoadTest.Worker"}}}}
+Application Insights Telemetry: {"name":"AppMetrics","time":"2021-03-10T09:49:50.3053260Z","iKey":"79bf9551-c663-4c9e-867b-4becc1b51d65","tags":{"ai.application.ver":"1.0.0.0","ai.cloud.roleInstance":"d8378a42cb4b","ai.internal.sdkVersion":"dotnetc:2.17.0-146","ai.internal.nodeName":"d8378a42cb4b.localdomain"},"data":{"baseType":"MetricData","baseData":{"ver":2,"metrics":[{"name":"GetDataTime","kind":"Aggregation","value":2435,"count":1}],"properties":{"DeveloperMode":"true"}}}}
+[40m[32minfo[39m[22m[49m: FtpAzureLoadTest.Worker[0]
+      GetDataAsync done
+FtpAzureLoadTest.Worker: Information: GetDataAsync done
+Application Insights Telemetry: {"name":"AppEvents","time":"2021-03-10T09:49:50.3710887Z","iKey":"79bf9551-c663-4c9e-867b-4becc1b51d65","tags":{"ai.application.ver":"1.0.0.0","ai.cloud.roleInstance":"d8378a42cb4b","ai.internal.sdkVersion":"dotnetc:2.17.0-146","ai.internal.nodeName":"d8378a42cb4b.localdomain"},"data":{"baseType":"EventData","baseData":{"ver":2,"name":"FtpExplorationRun completed","properties":{"DeveloperMode":"true"}}}}
+End
+Le thread 0x26c s'est arrêté avec le code 0 (0x0).
+[40m[32minfo[39m[22m[49m: FtpAzureLoadTest.Worker[0]
+      Worker running at: 03/10/2021 09:49:51 +00:00
+FtpAzureLoadTest.Worker: Information: Worker running at: 03/10/2021 09:49:51 +00:00
+directory /test_dir3 already exists
+Application Insights Telemetry: {"name":"AppMetrics","time":"2021-03-10T09:49:52.1412389Z","iKey":"79bf9551-c663-4c9e-867b-4becc1b51d65","tags":{"ai.application.ver":"1.0.0.0","ai.cloud.roleInstance":"d8378a42cb4b","ai.internal.sdkVersion":"dotnetc:2.17.0-146","ai.internal.nodeName":"d8378a42cb4b.localdomain"},"data":{"baseType":"MetricData","baseData":{"ver":2,"metrics":[{"name":"createTestDirTime","kind":"Aggregation","value":767,"count":1}],"properties":{"DeveloperMode":"true"}}}}
+[40m[32minfo[39m[22m[49m: FtpAzureLoadTest.Worker[0]
+      CreateDirectoryIfNotExistsAsync done
+FtpAzureLoadTest.Worker: Information: CreateDirectoryIfNotExistsAsync done
+Application Insights Telemetry: {"name":"AppMetrics","time":"2021-03-10T09:49:53.0761491Z","iKey":"79bf9551-c663-4c9e-867b-4becc1b51d65","tags":{"ai.application.ver":"1.0.0.0","ai.cloud.roleInstance":"d8378a42cb4b","ai.internal.sdkVersion":"dotnetc:2.17.0-146","ai.internal.nodeName":"d8378a42cb4b.localdomain"},"data":{"baseType":"MetricData","baseData":{"ver":2,"metrics":[{"name":"rootListingTime","kind":"Aggregation","value":906,"count":1}],"properties":{"DeveloperMode":"true"}}}}
+Application Insights Telemetry: {"name":"AppMetrics","time":"2021-03-10T09:49:53.0791653Z","iKey":"79bf9551-c663-4c9e-867b-4becc1b51d65","tags":{"ai.application.ver":"1.0.0.0","ai.cloud.roleInstance":"d8378a42cb4b","ai.internal.sdkVersion":"dotnetc:2.17.0-146","ai.internal.nodeName":"d8378a42cb4b.localdomain"},"data":{"baseType":"MetricData","baseData":{"ver":2,"metrics":[{"name":"testdirSize","kind":"Aggregation","value":9,"count":1}],"properties":{"DeveloperMode":"true"}}}}
+[40m[32minfo[39m[22m[49m: FtpAzureLoadTest.Worker[0]
+      GetListingAsync done
+FtpAzureLoadTest.Worker: Information: GetListingAsync done
+'/usr/share/dotnet/shared/Microsoft.NETCore.App/3.1.13/System.Net.Requests.dll' chargé. Chargement des symboles ignoré. Le module est optimisé et l'option du débogueur 'Uniquement mon code' est activée.
+pushed file //test_dir3/test_2469.csv to FTP pubtest.azimut-monitoring.com
+Application Insights Telemetry: {"name":"AppMetrics","time":"2021-03-10T09:49:53.7100914Z","iKey":"79bf9551-c663-4c9e-867b-4becc1b51d65","tags":{"ai.application.ver":"1.0.0.0","ai.cloud.roleInstance":"d8378a42cb4b","ai.internal.sdkVersion":"dotnetc:2.17.0-146","ai.internal.nodeName":"d8378a42cb4b.localdomain"},"data":{"baseType":"MetricData","baseData":{"ver":2,"metrics":[{"name":"PushDataTime","kind":"Aggregation","value":594,"count":1}],"properties":{"DeveloperMode":"true"}}}}
+[40m[32minfo[39m[22m[49m: FtpAzureLoadTest.Worker[0]
+      PushDataAsync done for file //test_dir3/test_2469.csv
+FtpAzureLoadTest.Worker: Information: PushDataAsync done for file //test_dir3/test_2469.csv
+reading file //test_dir3/test_2469.csv from FTP pubtest.azimut-monitoring.com done
+FtpAzureLoadTest.Worker: Error: file content error for file //test_dir3/test_2469.csv
+[41m[30mfail[39m[22m[49m: FtpAzureLoadTest.Worker[0]
+      file content error for file //test_dir3/test_2469.csv
+Application Insights Telemetry: {"name":"AppTraces","time":"2021-03-10T09:49:56.3298775Z","iKey":"79bf9551-c663-4c9e-867b-4becc1b51d65","tags":{"ai.application.ver":"1.0.0.0","ai.cloud.roleInstance":"d8378a42cb4b","ai.internal.sdkVersion":"il:2.17.0-146","ai.internal.nodeName":"d8378a42cb4b.localdomain"},"data":{"baseType":"MessageData","baseData":{"ver":2,"message":"file content error for file //test_dir3/test_2469.csv","severityLevel":"Error","properties":{"DeveloperMode":"true","OriginalFormat":"file content error for file //test_dir3/test_2469.csv","_MS.ProcessedByMetricExtractors":"(Name:'Traces', Ver:'1.1')","CategoryName":"FtpAzureLoadTest.Worker"}}}}
+Application Insights Telemetry: {"name":"AppMetrics","time":"2021-03-10T09:49:56.3356054Z","iKey":"79bf9551-c663-4c9e-867b-4becc1b51d65","tags":{"ai.application.ver":"1.0.0.0","ai.cloud.roleInstance":"d8378a42cb4b","ai.internal.sdkVersion":"dotnetc:2.17.0-146","ai.internal.nodeName":"d8378a42cb4b.localdomain"},"data":{"baseType":"MetricData","baseData":{"ver":2,"metrics":[{"name":"GetDataTime","kind":"Aggregation","value":2619,"count":1}],"properties":{"DeveloperMode":"true"}}}}
+FtpAzureLoadTest.Worker: Information: GetDataAsync done
+[40m[32minfo[39m[22m[49m: FtpAzureLoadTest.Worker[0]
+      GetDataAsync done
+file //test_dir3/test_2469.csv has been deleted from FTP pubtest.azimut-monitoring.com
+Application Insights Telemetry: {"name":"AppMetrics","time":"2021-03-10T09:49:56.9617136Z","iKey":"79bf9551-c663-4c9e-867b-4becc1b51d65","tags":{"ai.application.ver":"1.0.0.0","ai.cloud.roleInstance":"d8378a42cb4b","ai.internal.sdkVersion":"dotnetc:2.17.0-146","ai.internal.nodeName":"d8378a42cb4b.localdomain"},"data":{"baseType":"MetricData","baseData":{"ver":2,"metrics":[{"name":"DeleteFileAsync","kind":"Aggregation","value":617,"count":1}],"properties":{"DeveloperMode":"true"}}}}
+[40m[32minfo[39m[22m[49m: FtpAzureLoadTest.Worker[0]
+      DeleteFileAsync done for file //test_dir3/test_2469.csv
+FtpAzureLoadTest.Worker: Information: DeleteFileAsync done for file //test_dir3/test_2469.csv
+Application Insights Telemetry: {"name":"AppEvents","time":"2021-03-10T09:49:57.0404964Z","iKey":"79bf9551-c663-4c9e-867b-4becc1b51d65","tags":{"ai.application.ver":"1.0.0.0","ai.cloud.roleInstance":"d8378a42cb4b","ai.internal.sdkVersion":"dotnetc:2.17.0-146","ai.internal.nodeName":"d8378a42cb4b.localdomain"},"data":{"baseType":"EventData","baseData":{"ver":2,"name":"FtpExplorationRun completed","properties":{"DeveloperMode":"true"}}}}
+End
+[40m[32minfo[39m[22m[49m: FtpAzureLoadTest.Worker[0]
+      Worker running at: 03/10/2021 09:49:58 +00:00
+FtpAzureLoadTest.Worker: Information: Worker running at: 03/10/2021 09:49:58 +00:00
+directory /test_dir3 already exists
+Application Insights Telemetry: {"name":"AppMetrics","time":"2021-03-10T09:49:59.2717787Z","iKey":"79bf9551-c663-4c9e-867b-4becc1b51d65","tags":{"ai.application.ver":"1.0.0.0","ai.cloud.roleInstance":"d8378a42cb4b","ai.internal.sdkVersion":"dotnetc:2.17.0-146","ai.internal.nodeName":"d8378a42cb4b.localdomain"},"data":{"baseType":"MetricData","baseData":{"ver":2,"metrics":[{"name":"createTestDirTime","kind":"Aggregation","value":1230,"count":1}],"properties":{"DeveloperMode":"true"}}}}
+[40m[32minfo[39m[22m[49m: FtpAzureLoadTest.Worker[0]
+      CreateDirectoryIfNotExistsAsync done
+FtpAzureLoadTest.Worker: Information: CreateDirectoryIfNotExistsAsync done
+Application Insights Telemetry: {"name":"AppMetrics","time":"2021-03-10T09:49:59.8329790Z","iKey":"79bf9551-c663-4c9e-867b-4becc1b51d65","tags":{"ai.application.ver":"1.0.0.0","ai.cloud.roleInstance":"d8378a42cb4b","ai.internal.sdkVersion":"dotnetc:2.17.0-146","ai.internal.nodeName":"d8378a42cb4b.localdomain"},"data":{"baseType":"MetricData","baseData":{"ver":2,"metrics":[{"name":"rootListingTime","kind":"Aggregation","value":533,"count":1}],"properties":{"DeveloperMode":"true"}}}}
+Application Insights Telemetry: {"name":"AppMetrics","time":"2021-03-10T09:49:59.8388795Z","iKey":"79bf9551-c663-4c9e-867b-4becc1b51d65","tags":{"ai.application.ver":"1.0.0.0","ai.cloud.roleInstance":"d8378a42cb4b","ai.internal.sdkVersion":"dotnetc:2.17.0-146","ai.internal.nodeName":"d8378a42cb4b.localdomain"},"data":{"baseType":"MetricData","baseData":{"ver":2,"metrics":[{"name":"testdirSize","kind":"Aggregation","value":9,"count":1}],"properties":{"DeveloperMode":"true"}}}}
+FtpAzureLoadTest.Worker: Information: GetListingAsync done
+[40m[32minfo[39m[22m[49m: FtpAzureLoadTest.Worker[0]
+      GetListingAsync done
+pushed file //test_dir3/test_1491.csv to FTP pubtest.azimut-monitoring.com
+Application Insights Telemetry: {"name":"AppMetrics","time":"2021-03-10T09:50:00.2718236Z","iKey":"79bf9551-c663-4c9e-867b-4becc1b51d65","tags":{"ai.application.ver":"1.0.0.0","ai.cloud.roleInstance":"d8378a42cb4b","ai.internal.sdkVersion":"dotnetc:2.17.0-146","ai.internal.nodeName":"d8378a42cb4b.localdomain"},"data":{"baseType":"MetricData","baseData":{"ver":2,"metrics":[{"name":"PushDataTime","kind":"Aggregation","value":381,"count":1}],"properties":{"DeveloperMode":"true"}}}}
+FtpAzureLoadTest.Worker: Information: PushDataAsync done for file //test_dir3/test_1491.csv
+[40m[32minfo[39m[22m[49m: FtpAzureLoadTest.Worker[0]
+      PushDataAsync done for file //test_dir3/test_1491.csv
+Application Insights Telemetry: {"name":"AppMetrics","time":"2021-03-10T09:49:14.0000000Z","iKey":"79bf9551-c663-4c9e-867b-4becc1b51d65","tags":{"ai.application.ver":"1.0.0.0","ai.cloud.roleInstance":"d8378a42cb4b","ai.internal.sdkVersion":"m-agg2c:2.17.0-146","ai.internal.nodeName":"d8378a42cb4b.localdomain"},"data":{"baseType":"MetricData","baseData":{"ver":2,"metrics":[{"name":"Traces","kind":"Aggregation","value":7,"count":7,"min":1,"max":1,"stdDev":0}],"properties":{"operation/synthetic":"False","trace/severityLevel":"3","DeveloperMode":"true","cloud/roleName":"Unknown","_MS.IsAutocollected":"True","_MS.AggregationIntervalMs":"47000","_MS.MetricId":"traces/count","cloud/roleInstance":"d8378a42cb4b"}}}}
+reading file //test_dir3/test_1491.csv from FTP pubtest.azimut-monitoring.com done
+FtpAzureLoadTest.Worker: Error: file content error for file //test_dir3/test_1491.csv
+[41m[30mfail[39m[22m[49m: FtpAzureLoadTest.Worker[0]
+      file content error for file //test_dir3/test_1491.csv
+Application Insights Telemetry: {"name":"AppTraces","time":"2021-03-10T09:50:03.0387957Z","iKey":"79bf9551-c663-4c9e-867b-4becc1b51d65","tags":{"ai.application.ver":"1.0.0.0","ai.cloud.roleInstance":"d8378a42cb4b","ai.internal.sdkVersion":"il:2.17.0-146","ai.internal.nodeName":"d8378a42cb4b.localdomain"},"data":{"baseType":"MessageData","baseData":{"ver":2,"message":"file content error for file //test_dir3/test_1491.csv","severityLevel":"Error","properties":{"DeveloperMode":"true","OriginalFormat":"file content error for file //test_dir3/test_1491.csv","_MS.ProcessedByMetricExtractors":"(Name:'Traces', Ver:'1.1')","CategoryName":"FtpAzureLoadTest.Worker"}}}}
+Application Insights Telemetry: {"name":"AppMetrics","time":"2021-03-10T09:50:03.0429022Z","iKey":"79bf9551-c663-4c9e-867b-4becc1b51d65","tags":{"ai.application.ver":"1.0.0.0","ai.cloud.roleInstance":"d8378a42cb4b","ai.internal.sdkVersion":"dotnetc:2.17.0-146","ai.internal.nodeName":"d8378a42cb4b.localdomain"},"data":{"baseType":"MetricData","baseData":{"ver":2,"metrics":[{"name":"GetDataTime","kind":"Aggregation","value":2765,"count":1}],"properties":{"DeveloperMode":"true"}}}}
+[40m[32minfo[39m[22m[49m: FtpAzureLoadTest.Worker[0]
+      GetDataAsync done
+FtpAzureLoadTest.Worker: Information: GetDataAsync done
+Application Insights Telemetry: {"name":"AppEvents","time":"2021-03-10T09:50:03.0746815Z","iKey":"79bf9551-c663-4c9e-867b-4becc1b51d65","tags":{"ai.application.ver":"1.0.0.0","ai.cloud.roleInstance":"d8378a42cb4b","ai.internal.sdkVersion":"dotnetc:2.17.0-146","ai.internal.nodeName":"d8378a42cb4b.localdomain"},"data":{"baseType":"EventData","baseData":{"ver":2,"name":"FtpExplorationRun completed","properties":{"DeveloperMode":"true"}}}}
+End
+[40m[32minfo[39m[22m[49m: FtpAzureLoadTest.Worker[0]
+      Worker running at: 03/10/2021 09:50:04 +00:00
+FtpAzureLoadTest.Worker: Information: Worker running at: 03/10/2021 09:50:04 +00:00
+directory /test_dir3 already exists
+Application Insights Telemetry: {"name":"AppMetrics","time":"2021-03-10T09:50:05.0108877Z","iKey":"79bf9551-c663-4c9e-867b-4becc1b51d65","tags":{"ai.application.ver":"1.0.0.0","ai.cloud.roleInstance":"d8378a42cb4b","ai.internal.sdkVersion":"dotnetc:2.17.0-146","ai.internal.nodeName":"d8378a42cb4b.localdomain"},"data":{"baseType":"MetricData","baseData":{"ver":2,"metrics":[{"name":"createTestDirTime","kind":"Aggregation","value":926,"count":1}],"properties":{"DeveloperMode":"true"}}}}
+[40m[32minfo[39m[22m[49m: FtpAzureLoadTest.Worker[0]
+      CreateDirectoryIfNotExistsAsync done
+FtpAzureLoadTest.Worker: Information: CreateDirectoryIfNotExistsAsync done
+Application Insights Telemetry: {"name":"AppMetrics","time":"2021-03-10T09:50:05.4276949Z","iKey":"79bf9551-c663-4c9e-867b-4becc1b51d65","tags":{"ai.application.ver":"1.0.0.0","ai.cloud.roleInstance":"d8378a42cb4b","ai.internal.sdkVersion":"dotnetc:2.17.0-146","ai.internal.nodeName":"d8378a42cb4b.localdomain"},"data":{"baseType":"MetricData","baseData":{"ver":2,"metrics":[{"name":"rootListingTime","kind":"Aggregation","value":391,"count":1}],"properties":{"DeveloperMode":"true"}}}}
+Application Insights Telemetry: {"name":"AppMetrics","time":"2021-03-10T09:50:05.4465872Z","iKey":"79bf9551-c663-4c9e-867b-4becc1b51d65","tags":{"ai.application.ver":"1.0.0.0","ai.cloud.roleInstance":"d8378a42cb4b","ai.internal.sdkVersion":"dotnetc:2.17.0-146","ai.internal.nodeName":"d8378a42cb4b.localdomain"},"data":{"baseType":"MetricData","baseData":{"ver":2,"metrics":[{"name":"testdirSize","kind":"Aggregation","value":10,"count":1}],"properties":{"DeveloperMode":"true"}}}}
+FtpAzureLoadTest.Worker: Information: GetListingAsync done
+[40m[32minfo[39m[22m[49m: FtpAzureLoadTest.Worker[0]
+      GetListingAsync done
+pushed file //test_dir3/test_2004.csv to FTP pubtest.azimut-monitoring.com
+Application Insights Telemetry: {"name":"AppMetrics","time":"2021-03-10T09:50:06.0206545Z","iKey":"79bf9551-c663-4c9e-867b-4becc1b51d65","tags":{"ai.application.ver":"1.0.0.0","ai.cloud.roleInstance":"d8378a42cb4b","ai.internal.sdkVersion":"dotnetc:2.17.0-146","ai.internal.nodeName":"d8378a42cb4b.localdomain"},"data":{"baseType":"MetricData","baseData":{"ver":2,"metrics":[{"name":"PushDataTime","kind":"Aggregation","value":538,"count":1}],"properties":{"DeveloperMode":"true"}}}}
+[40m[32minfo[39m[22m[49m: FtpAzureLoadTest.Worker[0]
+      PushDataAsync done for file //test_dir3/test_2004.csv
+FtpAzureLoadTest.Worker: Information: PushDataAsync done for file //test_dir3/test_2004.csv
+reading file //test_dir3/test_2004.csv from FTP pubtest.azimut-monitoring.com done
+[41m[30mfail[39m[22m[49m: FtpAzureLoadTest.Worker[0]
+      file content error for file //test_dir3/test_2004.csv
+FtpAzureLoadTest.Worker: Error: file content error for file //test_dir3/test_2004.csv
+Application Insights Telemetry: {"name":"AppTraces","time":"2021-03-10T09:50:08.1271481Z","iKey":"79bf9551-c663-4c9e-867b-4becc1b51d65","tags":{"ai.application.ver":"1.0.0.0","ai.cloud.roleInstance":"d8378a42cb4b","ai.internal.sdkVersion":"il:2.17.0-146","ai.internal.nodeName":"d8378a42cb4b.localdomain"},"data":{"baseType":"MessageData","baseData":{"ver":2,"message":"file content error for file //test_dir3/test_2004.csv","severityLevel":"Error","properties":{"DeveloperMode":"true","OriginalFormat":"file content error for file //test_dir3/test_2004.csv","_MS.ProcessedByMetricExtractors":"(Name:'Traces', Ver:'1.1')","CategoryName":"FtpAzureLoadTest.Worker"}}}}
+Application Insights Telemetry: {"name":"AppMetrics","time":"2021-03-10T09:50:08.1324102Z","iKey":"79bf9551-c663-4c9e-867b-4becc1b51d65","tags":{"ai.application.ver":"1.0.0.0","ai.cloud.roleInstance":"d8378a42cb4b","ai.internal.sdkVersion":"dotnetc:2.17.0-146","ai.internal.nodeName":"d8378a42cb4b.localdomain"},"data":{"baseType":"MetricData","baseData":{"ver":2,"metrics":[{"name":"GetDataTime","kind":"Aggregation","value":2104,"count":1}],"properties":{"DeveloperMode":"true"}}}}
+FtpAzureLoadTest.Worker: Information: GetDataAsync done
+[40m[32minfo[39m[22m[49m: FtpAzureLoadTest.Worker[0]
+      GetDataAsync done
+Application Insights Telemetry: {"name":"AppEvents","time":"2021-03-10T09:50:08.1395948Z","iKey":"79bf9551-c663-4c9e-867b-4becc1b51d65","tags":{"ai.application.ver":"1.0.0.0","ai.cloud.roleInstance":"d8378a42cb4b","ai.internal.sdkVersion":"dotnetc:2.17.0-146","ai.internal.nodeName":"d8378a42cb4b.localdomain"},"data":{"baseType":"EventData","baseData":{"ver":2,"name":"FtpExplorationRun completed","properties":{"DeveloperMode":"true"}}}}
+End
+[40m[32minfo[39m[22m[49m: FtpAzureLoadTest.Worker[0]
+      Worker running at: 03/10/2021 09:50:09 +00:00
+FtpAzureLoadTest.Worker: Information: Worker running at: 03/10/2021 09:50:09 +00:00
+directory /test_dir3 already exists
+Application Insights Telemetry: {"name":"AppMetrics","time":"2021-03-10T09:50:09.9728582Z","iKey":"79bf9551-c663-4c9e-867b-4becc1b51d65","tags":{"ai.application.ver":"1.0.0.0","ai.cloud.roleInstance":"d8378a42cb4b","ai.internal.sdkVersion":"dotnetc:2.17.0-146","ai.internal.nodeName":"d8378a42cb4b.localdomain"},"data":{"baseType":"MetricData","baseData":{"ver":2,"metrics":[{"name":"createTestDirTime","kind":"Aggregation","value":806,"count":1}],"properties":{"DeveloperMode":"true"}}}}
+[40m[32minfo[39m[22m[49m: FtpAzureLoadTest.Worker[0]
+      CreateDirectoryIfNotExistsAsync done
+FtpAzureLoadTest.Worker: Information: CreateDirectoryIfNotExistsAsync done
+Application Insights Telemetry: {"name":"AppMetrics","time":"2021-03-10T09:50:10.3563154Z","iKey":"79bf9551-c663-4c9e-867b-4becc1b51d65","tags":{"ai.application.ver":"1.0.0.0","ai.cloud.roleInstance":"d8378a42cb4b","ai.internal.sdkVersion":"dotnetc:2.17.0-146","ai.internal.nodeName":"d8378a42cb4b.localdomain"},"data":{"baseType":"MetricData","baseData":{"ver":2,"metrics":[{"name":"rootListingTime","kind":"Aggregation","value":356,"count":1}],"properties":{"DeveloperMode":"true"}}}}
+Application Insights Telemetry: {"name":"AppMetrics","time":"2021-03-10T09:50:10.3593382Z","iKey":"79bf9551-c663-4c9e-867b-4becc1b51d65","tags":{"ai.application.ver":"1.0.0.0","ai.cloud.roleInstance":"d8378a42cb4b","ai.internal.sdkVersion":"dotnetc:2.17.0-146","ai.internal.nodeName":"d8378a42cb4b.localdomain"},"data":{"baseType":"MetricData","baseData":{"ver":2,"metrics":[{"name":"testdirSize","kind":"Aggregation","value":11,"count":1}],"properties":{"DeveloperMode":"true"}}}}
+[40m[32minfo[39m[22m[49m: FtpAzureLoadTest.Worker[0]
+      GetListingAsync done
+FtpAzureLoadTest.Worker: Information: GetListingAsync done
+pushed file //test_dir3/test_4030.csv to FTP pubtest.azimut-monitoring.com
+Application Insights Telemetry: {"name":"AppMetrics","time":"2021-03-10T09:50:10.7141618Z","iKey":"79bf9551-c663-4c9e-867b-4becc1b51d65","tags":{"ai.application.ver":"1.0.0.0","ai.cloud.roleInstance":"d8378a42cb4b","ai.internal.sdkVersion":"dotnetc:2.17.0-146","ai.internal.nodeName":"d8378a42cb4b.localdomain"},"data":{"baseType":"MetricData","baseData":{"ver":2,"metrics":[{"name":"PushDataTime","kind":"Aggregation","value":346,"count":1}],"properties":{"DeveloperMode":"true"}}}}
+[40m[32minfo[39m[22m[49m: FtpAzureLoadTest.Worker[0]
+      PushDataAsync done for file //test_dir3/test_4030.csv
+FtpAzureLoadTest.Worker: Information: PushDataAsync done for file //test_dir3/test_4030.csv
+reading file //test_dir3/test_4030.csv from FTP pubtest.azimut-monitoring.com done
+[41m[30mfail[39m[22m[49m: FtpAzureLoadTest.Worker[0]
+      file content error for file //test_dir3/test_4030.csv
+FtpAzureLoadTest.Worker: Error: file content error for file //test_dir3/test_4030.csv
+Application Insights Telemetry: {"name":"AppTraces","time":"2021-03-10T09:50:13.1988472Z","iKey":"79bf9551-c663-4c9e-867b-4becc1b51d65","tags":{"ai.application.ver":"1.0.0.0","ai.cloud.roleInstance":"d8378a42cb4b","ai.internal.sdkVersion":"il:2.17.0-146","ai.internal.nodeName":"d8378a42cb4b.localdomain"},"data":{"baseType":"MessageData","baseData":{"ver":2,"message":"file content error for file //test_dir3/test_4030.csv","severityLevel":"Error","properties":{"DeveloperMode":"true","OriginalFormat":"file content error for file //test_dir3/test_4030.csv","_MS.ProcessedByMetricExtractors":"(Name:'Traces', Ver:'1.1')","CategoryName":"FtpAzureLoadTest.Worker"}}}}
+Application Insights Telemetry: {"name":"AppMetrics","time":"2021-03-10T09:50:13.2024490Z","iKey":"79bf9551-c663-4c9e-867b-4becc1b51d65","tags":{"ai.application.ver":"1.0.0.0","ai.cloud.roleInstance":"d8378a42cb4b","ai.internal.sdkVersion":"dotnetc:2.17.0-146","ai.internal.nodeName":"d8378a42cb4b.localdomain"},"data":{"baseType":"MetricData","baseData":{"ver":2,"metrics":[{"name":"GetDataTime","kind":"Aggregation","value":2468,"count":1}],"properties":{"DeveloperMode":"true"}}}}
+[40m[32minfo[39m[22m[49m: FtpAzureLoadTest.Worker[0]
+      GetDataAsync done
+FtpAzureLoadTest.Worker: Information: GetDataAsync done
+Application Insights Telemetry: {"name":"AppEvents","time":"2021-03-10T09:50:13.2149472Z","iKey":"79bf9551-c663-4c9e-867b-4becc1b51d65","tags":{"ai.application.ver":"1.0.0.0","ai.cloud.roleInstance":"d8378a42cb4b","ai.internal.sdkVersion":"dotnetc:2.17.0-146","ai.internal.nodeName":"d8378a42cb4b.localdomain"},"data":{"baseType":"EventData","baseData":{"ver":2,"name":"FtpExplorationRun completed","properties":{"DeveloperMode":"true"}}}}
+End
+[40m[32minfo[39m[22m[49m: FtpAzureLoadTest.Worker[0]
+      Worker running at: 03/10/2021 09:50:14 +00:00
+FtpAzureLoadTest.Worker: Information: Worker running at: 03/10/2021 09:50:14 +00:00
+directory /test_dir3 already existsile //test_dir3/test_2783.csv
+FtpAzureLoadTest.Worker: Information: DeleteFileAsync done for file //test_dir3/test_2783.csv
+Application Insights Telemetry: {"name":"AppEvents","time":"2021-03-10T09:49:25.7784966Z","iKey":"79bf9551-c663-4c9e-867b-4becc1b51d65","tags":{"ai.application.ver":"1.0.0.0","ai.cloud.roleInstance":"d8378a42cb4b","ai.internal.sdkVersion":"dotnetc:2.17.0-146","ai.internal.nodeName":"d8378a42cb4b.localdomain"},"data":{"baseType":"EventData","baseData":{"ver":2,"name":"FtpExplorationRun completed","properties":{"DeveloperMode":"true"}}}}
+End
+[40m[32minfo[39m[22m[49m: FtpAzureLoadTest.Worker[0]
+      Worker running at: 03/10/2021 09:49:26 +00:00
+FtpAzureLoadTest.Worker: Information: Worker running at: 03/10/2021 09:49:26 +00:00
+directory /test_dir3 already exists
+Application Insights Telemetry: {"name":"AppMetrics","time":"2021-03-10T09:49:27.5771608Z","iKey":"79bf9551-c663-4c9e-867b-4becc1b51d65","tags":{"ai.application.ver":"1.0.0.0","ai.cloud.roleInstance":"d8378a42cb4b","ai.internal.sdkVersion":"dotnetc:2.17.0-146","ai.internal.nodeName":"d8378a42cb4b.localdomain"},"data":{"baseType":"MetricData","baseData":{"ver":2,"metrics":[{"name":"createTestDirTime","kind":"Aggregation","value":783,"count":1}],"properties":{"DeveloperMode":"true"}}}}
+[40m[32minfo[39m[22m[49m: FtpAzureLoadTest.Worker[0]
+      CreateDirectoryIfNotExistsAsync done
+FtpAzureLoadTest.Worker: Information: CreateDirectoryIfNotExistsAsync done
+Application Insights Telemetry: {"name":"AppMetrics","time":"2021-03-10T09:49:28.2229334Z","iKey":"79bf9551-c663-4c9e-867b-4becc1b51d65","tags":{"ai.application.ver":"1.0.0.0","ai.cloud.roleInstance":"d8378a42cb4b","ai.internal.sdkVersion":"dotnetc:2.17.0-146","ai.internal.nodeName":"d8378a42cb4b.localdomain"},"data":{"baseType":"MetricData","baseData":{"ver":2,"metrics":[{"name":"rootListingTime","kind":"Aggregation","value":634,"count":1}],"properties":{"DeveloperMode":"true"}}}}
+Application Insights Telemetry: {"name":"AppMetrics","time":"2021-03-10T09:49:28.2344244Z","iKey":"79bf9551-c663-4c9e-867b-4becc1b51d65","tags":{"ai.application.ver":"1.0.0.0","ai.cloud.roleInstance":"d8378a42cb4b","ai.internal.sdkVersion":"dotnetc:2.17.0-146","ai.internal.nodeName":"d8378a42cb4b.localdomain"},"data":{"baseType":"MetricData","baseData":{"ver":2,"metrics":[{"name":"testdirSize","kind":"Aggregation","value":6,"count":1}],"properties":{"DeveloperMode":"true"}}}}
+[40m[32minfo[39m[22m[49m: FtpAzureLoadTest.Worker[0]
+      GetListingAsync done
+FtpAzureLoadTest.Worker: Information: GetListingAsync done
+pushed file //test_dir3/test_2782.csv to FTP pubtest.azimut-monitoring.com
+Application Insights Telemetry: {"name":"AppMetrics","time":"2021-03-10T09:49:28.6233168Z","iKey":"79bf9551-c663-4c9e-867b-4becc1b51d65","tags":{"ai.application.ver":"1.0.0.0","ai.cloud.roleInstance":"d8378a42cb4b","ai.internal.sdkVersion":"dotnetc:2.17.0-146","ai.internal.nodeName":"d8378a42cb4b.localdomain"},"data":{"baseType":"MetricData","baseData":{"ver":2,"metrics":[{"name":"PushDataTime","kind":"Aggregation","value":365,"count":1}],"properties":{"DeveloperMode":"true"}}}}
+[40m[32minfo[39m[22m[49m: FtpAzureLoadTest.Worker[0]
+      PushDataAsync done for file //test_dir3/test_2782.csv
+FtpAzureLoadTest.Worker: Information: PushDataAsync done for file //test_dir3/test_2782.csv
+reading file //test_dir3/test_2782.csv from FTP pubtest.azimut-monitoring.com done
+FtpAzureLoadTest.Worker: Error: file content error for file //test_dir3/test_2782.csv
+[41m[30mfail[39m[22m[49m: FtpAzureLoadTest.Worker[0]
+      file content error for file //test_dir3/test_2782.csv
+Application Insights Telemetry: {"name":"AppTraces","time":"2021-03-10T09:49:31.2460057Z","iKey":"79bf9551-c663-4c9e-867b-4becc1b51d65","tags":{"ai.application.ver":"1.0.0.0","ai.cloud.roleInstance":"d8378a42cb4b","ai.internal.sdkVersion":"il:2.17.0-146","ai.internal.nodeName":"d8378a42cb4b.localdomain"},"data":{"baseType":"MessageData","baseData":{"ver":2,"message":"file content error for file //test_dir3/test_2782.csv","severityLevel":"Error","properties":{"DeveloperMode":"true","OriginalFormat":"file content error for file //test_dir3/test_2782.csv","_MS.ProcessedByMetricExtractors":"(Name:'Traces', Ver:'1.1')","CategoryName":"FtpAzureLoadTest.Worker"}}}}
+Application Insights Telemetry: {"name":"AppMetrics","time":"2021-03-10T09:49:31.2575760Z","iKey":"79bf9551-c663-4c9e-867b-4becc1b51d65","tags":{"ai.application.ver":"1.0.0.0","ai.cloud.roleInstance":"d8378a42cb4b","ai.internal.sdkVersion":"dotnetc:2.17.0-146","ai.internal.nodeName":"d8378a42cb4b.localdomain"},"data":{"baseType":"MetricData","baseData":{"ver":2,"metrics":[{"name":"GetDataTime","kind":"Aggregation","value":2626,"count":1}],"properties":{"DeveloperMode":"true"}}}}
+FtpAzureLoadTest.Worker: Information: GetDataAsync done
+[40m[32minfo[39m[22m[49m: FtpAzureLoadTest.Worker[0]
+      GetDataAsync done
+Application Insights Telemetry: {"name":"AppEvents","time":"2021-03-10T09:49:31.2764629Z","iKey":"79bf9551-c663-4c9e-867b-4becc1b51d65","tags":{"ai.application.ver":"1.0.0.0","ai.cloud.roleInstance":"d8378a42cb4b","ai.internal.sdkVersion":"dotnetc:2.17.0-146","ai.internal.nodeName":"d8378a42cb4b.localdomain"},"data":{"baseType":"EventData","baseData":{"ver":2,"name":"FtpExplorationRun completed","properties":{"DeveloperMode":"true"}}}}
+End
+[40m[32minfo[39m[22m[49m: FtpAzureLoadTest.Worker[0]
+      Worker running at: 03/10/2021 09:49:32 +00:00
+FtpAzureLoadTest.Worker: Information: Worker running at: 03/10/2021 09:49:32 +00:00
+directory /test_dir3 already exists
+Application Insights Telemetry: {"name":"AppMetrics","time":"2021-03-10T09:49:33.6775542Z","iKey":"79bf9551-c663-4c9e-867b-4becc1b51d65","tags":{"ai.application.ver":"1.0.0.0","ai.cloud.roleInstance":"d8378a42cb4b","ai.internal.sdkVersion":"dotnetc:2.17.0-146","ai.internal.nodeName":"d8378a42cb4b.localdomain"},"data":{"baseType":"MetricData","baseData":{"ver":2,"metrics":[{"name":"createTestDirTime","kind":"Aggregation","value":1381,"count":1}],"properties":{"DeveloperMode":"true"}}}}
+[40m[32minfo[39m[22m[49m: FtpAzureLoadTest.Worker[0]
+      CreateDirectoryIfNotExistsAsync done
+FtpAzureLoadTest.Worker: Information: CreateDirectoryIfNotExistsAsync done
+Application Insights Telemetry: {"name":"AppMetrics","time":"2021-03-10T09:49:34.0699482Z","iKey":"79bf9551-c663-4c9e-867b-4becc1b51d65","tags":{"ai.application.ver":"1.0.0.0","ai.cloud.roleInstance":"d8378a42cb4b","ai.internal.sdkVersion":"dotnetc:2.17.0-146","ai.internal.nodeName":"d8378a42cb4b.localdomain"},"data":{"baseType":"MetricData","baseData":{"ver":2,"metrics":[{"name":"rootListingTime","kind":"Aggregation","value":365,"count":1}],"properties":{"DeveloperMode":"true"}}}}
+Application Insights Telemetry: {"name":"AppMetrics","time":"2021-03-10T09:49:34.0729893Z","iKey":"79bf9551-c663-4c9e-867b-4becc1b51d65","tags":{"ai.application.ver":"1.0.0.0","ai.cloud.roleInstance":"d8378a42cb4b","ai.internal.sdkVersion":"dotnetc:2.17.0-146","ai.internal.nodeName":"d8378a42cb4b.localdomain"},"data":{"baseType":"MetricData","baseData":{"ver":2,"metrics":[{"name":"testdirSize","kind":"Aggregation","value":7,"count":1}],"properties":{"DeveloperMode":"true"}}}}
+[40m[32minfo[39m[22m[49m: FtpAzureLoadTest.Worker[0]
+      GetListingAsync done
+FtpAzureLoadTest.Worker: Information: GetListingAsync done
+pushed file //test_dir3/test_1026.csv to FTP pubtest.azimut-monitoring.com
+Application Insights Telemetry: {"name":"AppMetrics","time":"2021-03-10T09:49:34.4844010Z","iKey":"79bf9551-c663-4c9e-867b-4becc1b51d65","tags":{"ai.application.ver":"1.0.0.0","ai.cloud.roleInstance":"d8378a42cb4b","ai.internal.sdkVersion":"dotnetc:2.17.0-146","ai.internal.nodeName":"d8378a42cb4b.localdomain"},"data":{"baseType":"MetricData","baseData":{"ver":2,"metrics":[{"name":"PushDataTime","kind":"Aggregation","value":365,"count":1}],"properties":{"DeveloperMode":"true"}}}}
+[40m[32minfo[39m[22m[49m: FtpAzureLoadTest.Worker[0]
+      PushDataAsync done for file //test_dir3/test_1026.csv
+FtpAzureLoadTest.Worker: Information: PushDataAsync done for file //test_dir3/test_1026.csv
+reading file //test_dir3/test_1026.csv from FTP pubtest.azimut-monitoring.com done
+FtpAzureLoadTest.Worker: Error: file content error for file //test_dir3/test_1026.csv
+[41m[30mfail[39m[22m[49m: FtpAzureLoadTest.Worker[0]
+      file content error for file //test_dir3/test_1026.csv
+Application Insights Telemetry: {"name":"AppTraces","time":"2021-03-10T09:49:37.4333325Z","iKey":"79bf9551-c663-4c9e-867b-4becc1b51d65","tags":{"ai.application.ver":"1.0.0.0","ai.cloud.roleInstance":"d8378a42cb4b","ai.internal.sdkVersion":"il:2.17.0-146","ai.internal.nodeName":"d8378a42cb4b.localdomain"},"data":{"baseType":"MessageData","baseData":{"ver":2,"message":"file content error for file //test_dir3/test_1026.csv","severityLevel":"Error","properties":{"DeveloperMode":"true","OriginalFormat":"file content error for file //test_dir3/test_1026.csv","_MS.ProcessedByMetricExtractors":"(Name:'Traces', Ver:'1.1')","CategoryName":"FtpAzureLoadTest.Worker"}}}}
+Application Insights Telemetry: {"name":"AppMetrics","time":"2021-03-10T09:49:37.4388025Z","iKey":"79bf9551-c663-4c9e-867b-4becc1b51d65","tags":{"ai.application.ver":"1.0.0.0","ai.cloud.roleInstance":"d8378a42cb4b","ai.internal.sdkVersion":"dotnetc:2.17.0-146","ai.internal.nodeName":"d8378a42cb4b.localdomain"},"data":{"baseType":"MetricData","baseData":{"ver":2,"metrics":[{"name":"GetDataTime","kind":"Aggregation","value":2925,"count":1}],"properties":{"DeveloperMode":"true"}}}}
+FtpAzureLoadTest.Worker: Information: GetDataAsync done
+[40m[32minfo[39m[22m[49m: FtpAzureLoadTest.Worker[0]
+      GetDataAsync done
+file //test_dir3/test_1026.csv has been deleted from FTP pubtest.azimut-monitoring.com
+Application Insights Telemetry: {"name":"AppMetrics","time":"2021-03-10T09:49:38.1396550Z","iKey":"79bf9551-c663-4c9e-867b-4becc1b51d65","tags":{"ai.application.ver":"1.0.0.0","ai.cloud.roleInstance":"d8378a42cb4b","ai.internal.sdkVersion":"dotnetc:2.17.0-146","ai.internal.nodeName":"d8378a42cb4b.localdomain"},"data":{"baseType":"MetricData","baseData":{"ver":2,"metrics":[{"name":"DeleteFileAsync","kind":"Aggregation","value":679,"count":1}],"properties":{"DeveloperMode":"true"}}}}
+[40m[32minfo[39m[22m[49m: FtpAzureLoadTest.Worker[0]
+      DeleteFileAsync done for file //test_dir3/test_1026.csv
+FtpAzureLoadTest.Worker: Information: DeleteFileAsync done for file //test_dir3/test_1026.csv
+Application Insights Telemetry: {"name":"AppEvents","time":"2021-03-10T09:49:38.1976786Z","iKey":"79bf9551-c663-4c9e-867b-4becc1b51d65","tags":{"ai.application.ver":"1.0.0.0","ai.cloud.roleInstance":"d8378a42cb4b","ai.internal.sdkVersion":"dotnetc:2.17.0-146","ai.internal.nodeName":"d8378a42cb4b.localdomain"},"data":{"baseType":"EventData","baseData":{"ver":2,"name":"FtpExplorationRun completed","properties":{"DeveloperMode":"true"}}}}
+End
+[40m[32minfo[39m[22m[49m: FtpAzureLoadTest.Worker[0]
+      Worker running at: 03/10/2021 09:49:39 +00:00
+FtpAzureLoadTest.Worker: Information: Worker running at: 03/10/2021 09:49:39 +00:00
+directory /test_dir3 already exists
+Application Insights Telemetry: {"name":"AppMetrics","time":"2021-03-10T09:49:40.0379550Z","iKey":"79bf9551-c663-4c9e-867b-4becc1b51d65","tags":{"ai.application.ver":"1.0.0.0","ai.cloud.roleInstance":"d8378a42cb4b","ai.internal.sdkVersion":"dotnetc:2.17.0-146","ai.internal.nodeName":"d8378a42cb4b.localdomain"},"data":{"baseType":"MetricData","baseData":{"ver":2,"metrics":[{"name":"createTestDirTime","kind":"Aggregation","value":814,"count":1}],"properties":{"DeveloperMode":"true"}}}}
+[40m[32minfo[39m[22m[49m: FtpAzureLoadTest.Worker[0]
+      CreateDirectoryIfNotExistsAsync done
+FtpAzureLoadTest.Worker: Information: CreateDirectoryIfNotExistsAsync done
+Application Insights Telemetry: {"name":"AppMetrics","time":"2021-03-10T09:49:40.4089312Z","iKey":"79bf9551-c663-4c9e-867b-4becc1b51d65","tags":{"ai.application.ver":"1.0.0.0","ai.cloud.roleInstance":"d8378a42cb4b","ai.internal.sdkVersion":"dotnetc:2.17.0-146","ai.internal.nodeName":"d8378a42cb4b.localdomain"},"data":{"baseType":"MetricData","baseData":{"ver":2,"metrics":[{"name":"rootListingTime","kind":"Aggregation","value":354,"count":1}],"properties":{"DeveloperMode":"true"}}}}
+Application Insights Telemetry: {"name":"AppMetrics","time":"2021-03-10T09:49:40.4121374Z","iKey":"79bf9551-c663-4c9e-867b-4becc1b51d65","tags":{"ai.application.ver":"1.0.0.0","ai.cloud.roleInstance":"d8378a42cb4b","ai.internal.sdkVersion":"dotnetc:2.17.0-146","ai.internal.nodeName":"d8378a42cb4b.localdomain"},"data":{"baseType":"MetricData","baseData":{"ver":2,"metrics":[{"name":"testdirSize","kind":"Aggregation","value":7,"count":1}],"properties":{"DeveloperMode":"true"}}}}
+[40m[32minfo[39m[22m[49m: FtpAzureLoadTest.Worker[0]
+      GetListingAsync done
+FtpAzureLoadTest.Worker: Information: GetListingAsync done
+pushed file //test_dir3/test_4770.csv to FTP pubtest.azimut-monitoring.com
+Application Insights Telemetry: {"name":"AppMetrics","time":"2021-03-10T09:49:40.7863396Z","iKey":"79bf9551-c663-4c9e-867b-4becc1b51d65","tags":{"ai.application.ver":"1.0.0.0","ai.cloud.roleInstance":"d8378a42cb4b","ai.internal.sdkVersion":"dotnetc:2.17.0-146","ai.internal.nodeName":"d8378a42cb4b.localdomain"},"data":{"baseType":"MetricData","baseData":{"ver":2,"metrics":[{"name":"PushDataTime","kind":"Aggregation","value":360,"count":1}],"properties":{"DeveloperMode":"true"}}}}
+FtpAzureLoadTest.Worker: Information: PushDataAsync done for file //test_dir3/test_4770.csv
+[40m[32minfo[39m[22m[49m: FtpAzureLoadTest.Worker[0]
+      PushDataAsync done for file //test_dir3/test_4770.csv
+reading file //test_dir3/test_4770.csv from FTP pubtest.azimut-monitoring.com done
+[41m[30mfail[39m[22m[49m: FtpAzureLoadTest.Worker[0]
+      file content error for file //test_dir3/test_4770.csv
+FtpAzureLoadTest.Worker: Error: file content error for file //test_dir3/test_4770.csv
+Application Insights Telemetry: {"name":"AppTraces","time":"2021-03-10T09:49:44.8859622Z","iKey":"79bf9551-c663-4c9e-867b-4becc1b51d65","tags":{"ai.application.ver":"1.0.0.0","ai.cloud.roleInstance":"d8378a42cb4b","ai.internal.sdkVersion":"il:2.17.0-146","ai.internal.nodeName":"d8378a42cb4b.localdomain"},"data":{"baseType":"MessageData","baseData":{"ver":2,"message":"file content error for file //test_dir3/test_4770.csv","severityLevel":"Error","properties":{"DeveloperMode":"true","OriginalFormat":"file content error for file //test_dir3/test_4770.csv","_MS.ProcessedByMetricExtractors":"(Name:'Traces', Ver:'1.1')","CategoryName":"FtpAzureLoadTest.Worker"}}}}
+Application Insights Telemetry: {"name":"AppMetrics","time":"2021-03-10T09:49:44.9145617Z","iKey":"79bf9551-c663-4c9e-867b-4becc1b51d65","tags":{"ai.application.ver":"1.0.0.0","ai.cloud.roleInstance":"d8378a42cb4b","ai.internal.sdkVersion":"dotnetc:2.17.0-146","ai.internal.nodeName":"d8378a42cb4b.localdomain"},"data":{"baseType":"MetricData","baseData":{"ver":2,"metrics":[{"name":"GetDataTime","kind":"Aggregation","value":4122,"count":1}],"properties":{"DeveloperMode":"true"}}}}
+FtpAzureLoadTest.Worker: Information: GetDataAsync done
+[40m[32minfo[39m[22m[49m: FtpAzureLoadTest.Worker[0]
+      GetDataAsync done
+Application Insights Telemetry: {"name":"AppEvents","time":"2021-03-10T09:49:44.9495791Z","iKey":"79bf9551-c663-4c9e-867b-4becc1b51d65","tags":{"ai.application.ver":"1.0.0.0","ai.cloud.roleInstance":"d8378a42cb4b","ai.internal.sdkVersion":"dotnetc:2.17.0-146","ai.internal.nodeName":"d8378a42cb4b.localdomain"},"data":{"baseType":"EventData","baseData":{"ver":2,"name":"FtpExplorationRun completed","properties":{"DeveloperMode":"true"}}}}
+End
+[40m[32minfo[39m[22m[49m: FtpAzureLoadTest.Worker[0]
+      Worker running at: 03/10/2021 09:49:45 +00:00
+FtpAzureLoadTest.Worker: Information: Worker running at: 03/10/2021 09:49:45 +00:00
+directory /test_dir3 already exists
+Application Insights Telemetry: {"name":"AppMetrics","time":"2021-03-10T09:49:46.8160670Z","iKey":"79bf9551-c663-4c9e-867b-4becc1b51d65","tags":{"ai.application.ver":"1.0.0.0","ai.cloud.roleInstance":"d8378a42cb4b","ai.internal.sdkVersion":"dotnetc:2.17.0-146","ai.internal.nodeName":"d8378a42cb4b.localdomain"},"data":{"baseType":"MetricData","baseData":{"ver":2,"metrics":[{"name":"createTestDirTime","kind":"Aggregation","value":839,"count":1}],"properties":{"DeveloperMode":"true"}}}}
+[40m[32minfo[39m[22m[49m: FtpAzureLoadTest.Worker[0]
+      CreateDirectoryIfNotExistsAsync done
+FtpAzureLoadTest.Worker: Information: CreateDirectoryIfNotExistsAsync done
+Application Insights Telemetry: {"name":"AppMetrics","time":"2021-03-10T09:49:47.3021538Z","iKey":"79bf9551-c663-4c9e-867b-4becc1b51d65","tags":{"ai.application.ver":"1.0.0.0","ai.cloud.roleInstance":"d8378a42cb4b","ai.internal.sdkVersion":"dotnetc:2.17.0-146","ai.internal.nodeName":"d8378a42cb4b.localdomain"},"data":{"baseType":"MetricData","baseData":{"ver":2,"metrics":[{"name":"rootListingTime","kind":"Aggregation","value":446,"count":1}],"properties":{"DeveloperMode":"true"}}}}
+Application Insights Telemetry: {"name":"AppMetrics","time":"2021-03-10T09:49:47.3052882Z","iKey":"79bf9551-c663-4c9e-867b-4becc1b51d65","tags":{"ai.application.ver":"1.0.0.0","ai.cloud.roleInstance":"d8378a42cb4b","ai.internal.sdkVersion":"dotnetc:2.17.0-146","ai.internal.nodeName":"d8378a42cb4b.localdomain"},"data":{"baseType":"MetricData","baseData":{"ver":2,"metrics":[{"name":"testdirSize","kind":"Aggregation","value":8,"count":1}],"properties":{"DeveloperMode":"true"}}}}
+[40m[32minfo[39m[22m[49m: FtpAzureLoadTest.Worker[0]
+      GetListingAsync done
+FtpAzureLoadTest.Worker: Information: GetListingAsync done
+pushed file //test_dir3/test_2005.csv to FTP pubtest.azimut-monitoring.com
+Application Insights Telemetry: {"name":"AppMetrics","time":"2021-03-10T09:49:47.8614739Z","iKey":"79bf9551-c663-4c9e-867b-4becc1b51d65","tags":{"ai.application.ver":"1.0.0.0","ai.cloud.roleInstance":"d8378a42cb4b","ai.internal.sdkVersion":"dotnetc:2.17.0-146","ai.internal.nodeName":"d8378a42cb4b.localdomain"},"data":{"baseType":"MetricData","baseData":{"ver":2,"metrics":[{"name":"PushDataTime","kind":"Aggregation","value":546,"count":1}],"properties":{"DeveloperMode":"true"}}}}
+[40m[32minfo[39m[22m[49m: FtpAzureLoadTest.Worker[0]
+      PushDataAsync done for file //test_dir3/test_2005.csv
+FtpAzureLoadTest.Worker: Information: PushDataAsync done for file //test_dir3/test_2005.csv
+reading file //test_dir3/test_2005.csv from FTP pubtest.azimut-monitoring.com done
+FtpAzureLoadTest.Worker: Error: file content error for file //test_dir3/test_2005.csv
+[41m[30mfail[39m[22m[49m: FtpAzureLoadTest.Worker[0]
+      file content error for file //test_dir3/test_2005.csv
+Application Insights Telemetry: {"name":"AppTraces","time":"2021-03-10T09:49:50.3013657Z","iKey":"79bf9551-c663-4c9e-867b-4becc1b51d65","tags":{"ai.application.ver":"1.0.0.0","ai.cloud.roleInstance":"d8378a42cb4b","ai.internal.sdkVersion":"il:2.17.0-146","ai.internal.nodeName":"d8378a42cb4b.localdomain"},"data":{"baseType":"MessageData","baseData":{"ver":2,"message":"file content error for file //test_dir3/test_2005.csv","severityLevel":"Error","properties":{"DeveloperMode":"true","OriginalFormat":"file content error for file //test_dir3/test_2005.csv","_MS.ProcessedByMetricExtractors":"(Name:'Traces', Ver:'1.1')","CategoryName":"FtpAzureLoadTest.Worker"}}}}
+Application Insights Telemetry: {"name":"AppMetrics","time":"2021-03-10T09:49:50.3053260Z","iKey":"79bf9551-c663-4c9e-867b-4becc1b51d65","tags":{"ai.application.ver":"1.0.0.0","ai.cloud.roleInstance":"d8378a42cb4b","ai.internal.sdkVersion":"dotnetc:2.17.0-146","ai.internal.nodeName":"d8378a42cb4b.localdomain"},"data":{"baseType":"MetricData","baseData":{"ver":2,"metrics":[{"name":"GetDataTime","kind":"Aggregation","value":2435,"count":1}],"properties":{"DeveloperMode":"true"}}}}
+[40m[32minfo[39m[22m[49m: FtpAzureLoadTest.Worker[0]
+      GetDataAsync done
+FtpAzureLoadTest.Worker: Information: GetDataAsync done
+Application Insights Telemetry: {"name":"AppEvents","time":"2021-03-10T09:49:50.3710887Z","iKey":"79bf9551-c663-4c9e-867b-4becc1b51d65","tags":{"ai.application.ver":"1.0.0.0","ai.cloud.roleInstance":"d8378a42cb4b","ai.internal.sdkVersion":"dotnetc:2.17.0-146","ai.internal.nodeName":"d8378a42cb4b.localdomain"},"data":{"baseType":"EventData","baseData":{"ver":2,"name":"FtpExplorationRun completed","properties":{"DeveloperMode":"true"}}}}
+End
+Le thread 0x26c s'est arrêté avec le code 0 (0x0).
+[40m[32minfo[39m[22m[49m: FtpAzureLoadTest.Worker[0]
+      Worker running at: 03/10/2021 09:49:51 +00:00
+FtpAzureLoadTest.Worker: Information: Worker running at: 03/10/2021 09:49:51 +00:00
+directory /test_dir3 already exists
+Application Insights Telemetry: {"name":"AppMetrics","time":"2021-03-10T09:49:52.1412389Z","iKey":"79bf9551-c663-4c9e-867b-4becc1b51d65","tags":{"ai.application.ver":"1.0.0.0","ai.cloud.roleInstance":"d8378a42cb4b","ai.internal.sdkVersion":"dotnetc:2.17.0-146","ai.internal.nodeName":"d8378a42cb4b.localdomain"},"data":{"baseType":"MetricData","baseData":{"ver":2,"metrics":[{"name":"createTestDirTime","kind":"Aggregation","value":767,"count":1}],"properties":{"DeveloperMode":"true"}}}}
+[40m[32minfo[39m[22m[49m: FtpAzureLoadTest.Worker[0]
+      CreateDirectoryIfNotExistsAsync done
+FtpAzureLoadTest.Worker: Information: CreateDirectoryIfNotExistsAsync done
+Application Insights Telemetry: {"name":"AppMetrics","time":"2021-03-10T09:49:53.0761491Z","iKey":"79bf9551-c663-4c9e-867b-4becc1b51d65","tags":{"ai.application.ver":"1.0.0.0","ai.cloud.roleInstance":"d8378a42cb4b","ai.internal.sdkVersion":"dotnetc:2.17.0-146","ai.internal.nodeName":"d8378a42cb4b.localdomain"},"data":{"baseType":"MetricData","baseData":{"ver":2,"metrics":[{"name":"rootListingTime","kind":"Aggregation","value":906,"count":1}],"properties":{"DeveloperMode":"true"}}}}
+Application Insights Telemetry: {"name":"AppMetrics","time":"2021-03-10T09:49:53.0791653Z","iKey":"79bf9551-c663-4c9e-867b-4becc1b51d65","tags":{"ai.application.ver":"1.0.0.0","ai.cloud.roleInstance":"d8378a42cb4b","ai.internal.sdkVersion":"dotnetc:2.17.0-146","ai.internal.nodeName":"d8378a42cb4b.localdomain"},"data":{"baseType":"MetricData","baseData":{"ver":2,"metrics":[{"name":"testdirSize","kind":"Aggregation","value":9,"count":1}],"properties":{"DeveloperMode":"true"}}}}
+[40m[32minfo[39m[22m[49m: FtpAzureLoadTest.Worker[0]
+      GetListingAsync done
+FtpAzureLoadTest.Worker: Information: GetListingAsync done
+'/usr/share/dotnet/shared/Microsoft.NETCore.App/3.1.13/System.Net.Requests.dll' chargé. Chargement des symboles ignoré. Le module est optimisé et l'option du débogueur 'Uniquement mon code' est activée.
+pushed file //test_dir3/test_2469.csv to FTP pubtest.azimut-monitoring.com
+Application Insights Telemetry: {"name":"AppMetrics","time":"2021-03-10T09:49:53.7100914Z","iKey":"79bf9551-c663-4c9e-867b-4becc1b51d65","tags":{"ai.application.ver":"1.0.0.0","ai.cloud.roleInstance":"d8378a42cb4b","ai.internal.sdkVersion":"dotnetc:2.17.0-146","ai.internal.nodeName":"d8378a42cb4b.localdomain"},"data":{"baseType":"MetricData","baseData":{"ver":2,"metrics":[{"name":"PushDataTime","kind":"Aggregation","value":594,"count":1}],"properties":{"DeveloperMode":"true"}}}}
+[40m[32minfo[39m[22m[49m: FtpAzureLoadTest.Worker[0]
+      PushDataAsync done for file //test_dir3/test_2469.csv
+FtpAzureLoadTest.Worker: Information: PushDataAsync done for file //test_dir3/test_2469.csv
+reading file //test_dir3/test_2469.csv from FTP pubtest.azimut-monitoring.com done
+FtpAzureLoadTest.Worker: Error: file content error for file //test_dir3/test_2469.csv
+[41m[30mfail[39m[22m[49m: FtpAzureLoadTest.Worker[0]
+      file content error for file //test_dir3/test_2469.csv
+Application Insights Telemetry: {"name":"AppTraces","time":"2021-03-10T09:49:56.3298775Z","iKey":"79bf9551-c663-4c9e-867b-4becc1b51d65","tags":{"ai.application.ver":"1.0.0.0","ai.cloud.roleInstance":"d8378a42cb4b","ai.internal.sdkVersion":"il:2.17.0-146","ai.internal.nodeName":"d8378a42cb4b.localdomain"},"data":{"baseType":"MessageData","baseData":{"ver":2,"message":"file content error for file //test_dir3/test_2469.csv","severityLevel":"Error","properties":{"DeveloperMode":"true","OriginalFormat":"file content error for file //test_dir3/test_2469.csv","_MS.ProcessedByMetricExtractors":"(Name:'Traces', Ver:'1.1')","CategoryName":"FtpAzureLoadTest.Worker"}}}}
+Application Insights Telemetry: {"name":"AppMetrics","time":"2021-03-10T09:49:56.3356054Z","iKey":"79bf9551-c663-4c9e-867b-4becc1b51d65","tags":{"ai.application.ver":"1.0.0.0","ai.cloud.roleInstance":"d8378a42cb4b","ai.internal.sdkVersion":"dotnetc:2.17.0-146","ai.internal.nodeName":"d8378a42cb4b.localdomain"},"data":{"baseType":"MetricData","baseData":{"ver":2,"metrics":[{"name":"GetDataTime","kind":"Aggregation","value":2619,"count":1}],"properties":{"DeveloperMode":"true"}}}}
+FtpAzureLoadTest.Worker: Information: GetDataAsync done
+[40m[32minfo[39m[22m[49m: FtpAzureLoadTest.Worker[0]
+      GetDataAsync done
+file //test_dir3/test_2469.csv has been deleted from FTP pubtest.azimut-monitoring.com
+Application Insights Telemetry: {"name":"AppMetrics","time":"2021-03-10T09:49:56.9617136Z","iKey":"79bf9551-c663-4c9e-867b-4becc1b51d65","tags":{"ai.application.ver":"1.0.0.0","ai.cloud.roleInstance":"d8378a42cb4b","ai.internal.sdkVersion":"dotnetc:2.17.0-146","ai.internal.nodeName":"d8378a42cb4b.localdomain"},"data":{"baseType":"MetricData","baseData":{"ver":2,"metrics":[{"name":"DeleteFileAsync","kind":"Aggregation","value":617,"count":1}],"properties":{"DeveloperMode":"true"}}}}
+[40m[32minfo[39m[22m[49m: FtpAzureLoadTest.Worker[0]
+      DeleteFileAsync done for file //test_dir3/test_2469.csv
+FtpAzureLoadTest.Worker: Information: DeleteFileAsync done for file //test_dir3/test_2469.csv
+Application Insights Telemetry: {"name":"AppEvents","time":"2021-03-10T09:49:57.0404964Z","iKey":"79bf9551-c663-4c9e-867b-4becc1b51d65","tags":{"ai.application.ver":"1.0.0.0","ai.cloud.roleInstance":"d8378a42cb4b","ai.internal.sdkVersion":"dotnetc:2.17.0-146","ai.internal.nodeName":"d8378a42cb4b.localdomain"},"data":{"baseType":"EventData","baseData":{"ver":2,"name":"FtpExplorationRun completed","properties":{"DeveloperMode":"true"}}}}
+End
+[40m[32minfo[39m[22m[49m: FtpAzureLoadTest.Worker[0]
+      Worker running at: 03/10/2021 09:49:58 +00:00
+FtpAzureLoadTest.Worker: Information: Worker running at: 03/10/2021 09:49:58 +00:00
+directory /test_dir3 already exists
+Application Insights Telemetry: {"name":"AppMetrics","time":"2021-03-10T09:49:59.2717787Z","iKey":"79bf9551-c663-4c9e-867b-4becc1b51d65","tags":{"ai.application.ver":"1.0.0.0","ai.cloud.roleInstance":"d8378a42cb4b","ai.internal.sdkVersion":"dotnetc:2.17.0-146","ai.internal.nodeName":"d8378a42cb4b.localdomain"},"data":{"baseType":"MetricData","baseData":{"ver":2,"metrics":[{"name":"createTestDirTime","kind":"Aggregation","value":1230,"count":1}],"properties":{"DeveloperMode":"true"}}}}
+[40m[32minfo[39m[22m[49m: FtpAzureLoadTest.Worker[0]
+      CreateDirectoryIfNotExistsAsync done
+FtpAzureLoadTest.Worker: Information: CreateDirectoryIfNotExistsAsync done
+Application Insights Telemetry: {"name":"AppMetrics","time":"2021-03-10T09:49:59.8329790Z","iKey":"79bf9551-c663-4c9e-867b-4becc1b51d65","tags":{"ai.application.ver":"1.0.0.0","ai.cloud.roleInstance":"d8378a42cb4b","ai.internal.sdkVersion":"dotnetc:2.17.0-146","ai.internal.nodeName":"d8378a42cb4b.localdomain"},"data":{"baseType":"MetricData","baseData":{"ver":2,"metrics":[{"name":"rootListingTime","kind":"Aggregation","value":533,"count":1}],"properties":{"DeveloperMode":"true"}}}}
+Application Insights Telemetry: {"name":"AppMetrics","time":"2021-03-10T09:49:59.8388795Z","iKey":"79bf9551-c663-4c9e-867b-4becc1b51d65","tags":{"ai.application.ver":"1.0.0.0","ai.cloud.roleInstance":"d8378a42cb4b","ai.internal.sdkVersion":"dotnetc:2.17.0-146","ai.internal.nodeName":"d8378a42cb4b.localdomain"},"data":{"baseType":"MetricData","baseData":{"ver":2,"metrics":[{"name":"testdirSize","kind":"Aggregation","value":9,"count":1}],"properties":{"DeveloperMode":"true"}}}}
+FtpAzureLoadTest.Worker: Information: GetListingAsync done
+[40m[32minfo[39m[22m[49m: FtpAzureLoadTest.Worker[0]
+      GetListingAsync done
+pushed file //test_dir3/test_1491.csv to FTP pubtest.azimut-monitoring.com
+Application Insights Telemetry: {"name":"AppMetrics","time":"2021-03-10T09:50:00.2718236Z","iKey":"79bf9551-c663-4c9e-867b-4becc1b51d65","tags":{"ai.application.ver":"1.0.0.0","ai.cloud.roleInstance":"d8378a42cb4b","ai.internal.sdkVersion":"dotnetc:2.17.0-146","ai.internal.nodeName":"d8378a42cb4b.localdomain"},"data":{"baseType":"MetricData","baseData":{"ver":2,"metrics":[{"name":"PushDataTime","kind":"Aggregation","value":381,"count":1}],"properties":{"DeveloperMode":"true"}}}}
+FtpAzureLoadTest.Worker: Information: PushDataAsync done for file //test_dir3/test_1491.csv
+[40m[32minfo[39m[22m[49m: FtpAzureLoadTest.Worker[0]
+      PushDataAsync done for file //test_dir3/test_1491.csv
+Application Insights Telemetry: {"name":"AppMetrics","time":"2021-03-10T09:49:14.0000000Z","iKey":"79bf9551-c663-4c9e-867b-4becc1b51d65","tags":{"ai.application.ver":"1.0.0.0","ai.cloud.roleInstance":"d8378a42cb4b","ai.internal.sdkVersion":"m-agg2c:2.17.0-146","ai.internal.nodeName":"d8378a42cb4b.localdomain"},"data":{"baseType":"MetricData","baseData":{"ver":2,"metrics":[{"name":"Traces","kind":"Aggregation","value":7,"count":7,"min":1,"max":1,"stdDev":0}],"properties":{"operation/synthetic":"False","trace/severityLevel":"3","DeveloperMode":"true","cloud/roleName":"Unknown","_MS.IsAutocollected":"True","_MS.AggregationIntervalMs":"47000","_MS.MetricId":"traces/count","cloud/roleInstance":"d8378a42cb4b"}}}}
+reading file //test_dir3/test_1491.csv from FTP pubtest.azimut-monitoring.com done
+FtpAzureLoadTest.Worker: Error: file content error for file //test_dir3/test_1491.csv
+[41m[30mfail[39m[22m[49m: FtpAzureLoadTest.Worker[0]
+      file content error for file //test_dir3/test_1491.csv
+Application Insights Telemetry: {"name":"AppTraces","time":"2021-03-10T09:50:03.0387957Z","iKey":"79bf9551-c663-4c9e-867b-4becc1b51d65","tags":{"ai.application.ver":"1.0.0.0","ai.cloud.roleInstance":"d8378a42cb4b","ai.internal.sdkVersion":"il:2.17.0-146","ai.internal.nodeName":"d8378a42cb4b.localdomain"},"data":{"baseType":"MessageData","baseData":{"ver":2,"message":"file content error for file //test_dir3/test_1491.csv","severityLevel":"Error","properties":{"DeveloperMode":"true","OriginalFormat":"file content error for file //test_dir3/test_1491.csv","_MS.ProcessedByMetricExtractors":"(Name:'Traces', Ver:'1.1')","CategoryName":"FtpAzureLoadTest.Worker"}}}}
+Application Insights Telemetry: {"name":"AppMetrics","time":"2021-03-10T09:50:03.0429022Z","iKey":"79bf9551-c663-4c9e-867b-4becc1b51d65","tags":{"ai.application.ver":"1.0.0.0","ai.cloud.roleInstance":"d8378a42cb4b","ai.internal.sdkVersion":"dotnetc:2.17.0-146","ai.internal.nodeName":"d8378a42cb4b.localdomain"},"data":{"baseType":"MetricData","baseData":{"ver":2,"metrics":[{"name":"GetDataTime","kind":"Aggregation","value":2765,"count":1}],"properties":{"DeveloperMode":"true"}}}}
+[40m[32minfo[39m[22m[49m: FtpAzureLoadTest.Worker[0]
+      GetDataAsync done
+FtpAzureLoadTest.Worker: Information: GetDataAsync done
+Application Insights Telemetry: {"name":"AppEvents","time":"2021-03-10T09:50:03.0746815Z","iKey":"79bf9551-c663-4c9e-867b-4becc1b51d65","tags":{"ai.application.ver":"1.0.0.0","ai.cloud.roleInstance":"d8378a42cb4b","ai.internal.sdkVersion":"dotnetc:2.17.0-146","ai.internal.nodeName":"d8378a42cb4b.localdomain"},"data":{"baseType":"EventData","baseData":{"ver":2,"name":"FtpExplorationRun completed","properties":{"DeveloperMode":"true"}}}}
+End
+[40m[32minfo[39m[22m[49m: FtpAzureLoadTest.Worker[0]
+      Worker running at: 03/10/2021 09:50:04 +00:00
+FtpAzureLoadTest.Worker: Information: Worker running at: 03/10/2021 09:50:04 +00:00
+directory /test_dir3 already exists
+Application Insights Telemetry: {"name":"AppMetrics","time":"2021-03-10T09:50:05.0108877Z","iKey":"79bf9551-c663-4c9e-867b-4becc1b51d65","tags":{"ai.application.ver":"1.0.0.0","ai.cloud.roleInstance":"d8378a42cb4b","ai.internal.sdkVersion":"dotnetc:2.17.0-146","ai.internal.nodeName":"d8378a42cb4b.localdomain"},"data":{"baseType":"MetricData","baseData":{"ver":2,"metrics":[{"name":"createTestDirTime","kind":"Aggregation","value":926,"count":1}],"properties":{"DeveloperMode":"true"}}}}
+[40m[32minfo[39m[22m[49m: FtpAzureLoadTest.Worker[0]
+      CreateDirectoryIfNotExistsAsync done
+FtpAzureLoadTest.Worker: Information: CreateDirectoryIfNotExistsAsync done
+Application Insights Telemetry: {"name":"AppMetrics","time":"2021-03-10T09:50:05.4276949Z","iKey":"79bf9551-c663-4c9e-867b-4becc1b51d65","tags":{"ai.application.ver":"1.0.0.0","ai.cloud.roleInstance":"d8378a42cb4b","ai.internal.sdkVersion":"dotnetc:2.17.0-146","ai.internal.nodeName":"d8378a42cb4b.localdomain"},"data":{"baseType":"MetricData","baseData":{"ver":2,"metrics":[{"name":"rootListingTime","kind":"Aggregation","value":391,"count":1}],"properties":{"DeveloperMode":"true"}}}}
+Application Insights Telemetry: {"name":"AppMetrics","time":"2021-03-10T09:50:05.4465872Z","iKey":"79bf9551-c663-4c9e-867b-4becc1b51d65","tags":{"ai.application.ver":"1.0.0.0","ai.cloud.roleInstance":"d8378a42cb4b","ai.internal.sdkVersion":"dotnetc:2.17.0-146","ai.internal.nodeName":"d8378a42cb4b.localdomain"},"data":{"baseType":"MetricData","baseData":{"ver":2,"metrics":[{"name":"testdirSize","kind":"Aggregation","value":10,"count":1}],"properties":{"DeveloperMode":"true"}}}}
+FtpAzureLoadTest.Worker: Information: GetListingAsync done
+[40m[32minfo[39m[22m[49m: FtpAzureLoadTest.Worker[0]
+      GetListingAsync done
+pushed file //test_dir3/test_2004.csv to FTP pubtest.azimut-monitoring.com
+Application Insights Telemetry: {"name":"AppMetrics","time":"2021-03-10T09:50:06.0206545Z","iKey":"79bf9551-c663-4c9e-867b-4becc1b51d65","tags":{"ai.application.ver":"1.0.0.0","ai.cloud.roleInstance":"d8378a42cb4b","ai.internal.sdkVersion":"dotnetc:2.17.0-146","ai.internal.nodeName":"d8378a42cb4b.localdomain"},"data":{"baseType":"MetricData","baseData":{"ver":2,"metrics":[{"name":"PushDataTime","kind":"Aggregation","value":538,"count":1}],"properties":{"DeveloperMode":"true"}}}}
+[40m[32minfo[39m[22m[49m: FtpAzureLoadTest.Worker[0]
+      PushDataAsync done for file //test_dir3/test_2004.csv
+FtpAzureLoadTest.Worker: Information: PushDataAsync done for file //test_dir3/test_2004.csv
+reading file //test_dir3/test_2004.csv from FTP pubtest.azimut-monitoring.com done
+[41m[30mfail[39m[22m[49m: FtpAzureLoadTest.Worker[0]
+      file content error for file //test_dir3/test_2004.csv
+FtpAzureLoadTest.Worker: Error: file content error for file //test_dir3/test_2004.csv
+Application Insights Telemetry: {"name":"AppTraces","time":"2021-03-10T09:50:08.1271481Z","iKey":"79bf9551-c663-4c9e-867b-4becc1b51d65","tags":{"ai.application.ver":"1.0.0.0","ai.cloud.roleInstance":"d8378a42cb4b","ai.internal.sdkVersion":"il:2.17.0-146","ai.internal.nodeName":"d8378a42cb4b.localdomain"},"data":{"baseType":"MessageData","baseData":{"ver":2,"message":"file content error for file //test_dir3/test_2004.csv","severityLevel":"Error","properties":{"DeveloperMode":"true","OriginalFormat":"file content error for file //test_dir3/test_2004.csv","_MS.ProcessedByMetricExtractors":"(Name:'Traces', Ver:'1.1')","CategoryName":"FtpAzureLoadTest.Worker"}}}}
+Application Insights Telemetry: {"name":"AppMetrics","time":"2021-03-10T09:50:08.1324102Z","iKey":"79bf9551-c663-4c9e-867b-4becc1b51d65","tags":{"ai.application.ver":"1.0.0.0","ai.cloud.roleInstance":"d8378a42cb4b","ai.internal.sdkVersion":"dotnetc:2.17.0-146","ai.internal.nodeName":"d8378a42cb4b.localdomain"},"data":{"baseType":"MetricData","baseData":{"ver":2,"metrics":[{"name":"GetDataTime","kind":"Aggregation","value":2104,"count":1}],"properties":{"DeveloperMode":"true"}}}}
+FtpAzureLoadTest.Worker: Information: GetDataAsync done
+[40m[32minfo[39m[22m[49m: FtpAzureLoadTest.Worker[0]
+      GetDataAsync done
+Application Insights Telemetry: {"name":"AppEvents","time":"2021-03-10T09:50:08.1395948Z","iKey":"79bf9551-c663-4c9e-867b-4becc1b51d65","tags":{"ai.application.ver":"1.0.0.0","ai.cloud.roleInstance":"d8378a42cb4b","ai.internal.sdkVersion":"dotnetc:2.17.0-146","ai.internal.nodeName":"d8378a42cb4b.localdomain"},"data":{"baseType":"EventData","baseData":{"ver":2,"name":"FtpExplorationRun completed","properties":{"DeveloperMode":"true"}}}}
+End
+[40m[32minfo[39m[22m[49m: FtpAzureLoadTest.Worker[0]
+      Worker running at: 03/10/2021 09:50:09 +00:00
+FtpAzureLoadTest.Worker: Information: Worker running at: 03/10/2021 09:50:09 +00:00
+directory /test_dir3 already exists
+Application Insights Telemetry: {"name":"AppMetrics","time":"2021-03-10T09:50:09.9728582Z","iKey":"79bf9551-c663-4c9e-867b-4becc1b51d65","tags":{"ai.application.ver":"1.0.0.0","ai.cloud.roleInstance":"d8378a42cb4b","ai.internal.sdkVersion":"dotnetc:2.17.0-146","ai.internal.nodeName":"d8378a42cb4b.localdomain"},"data":{"baseType":"MetricData","baseData":{"ver":2,"metrics":[{"name":"createTestDirTime","kind":"Aggregation","value":806,"count":1}],"properties":{"DeveloperMode":"true"}}}}
+[40m[32minfo[39m[22m[49m: FtpAzureLoadTest.Worker[0]
+      CreateDirectoryIfNotExistsAsync done
+FtpAzureLoadTest.Worker: Information: CreateDirectoryIfNotExistsAsync done
+Application Insights Telemetry: {"name":"AppMetrics","time":"2021-03-10T09:50:10.3563154Z","iKey":"79bf9551-c663-4c9e-867b-4becc1b51d65","tags":{"ai.application.ver":"1.0.0.0","ai.cloud.roleInstance":"d8378a42cb4b","ai.internal.sdkVersion":"dotnetc:2.17.0-146","ai.internal.nodeName":"d8378a42cb4b.localdomain"},"data":{"baseType":"MetricData","baseData":{"ver":2,"metrics":[{"name":"rootListingTime","kind":"Aggregation","value":356,"count":1}],"properties":{"DeveloperMode":"true"}}}}
+Application Insights Telemetry: {"name":"AppMetrics","time":"2021-03-10T09:50:10.3593382Z","iKey":"79bf9551-c663-4c9e-867b-4becc1b51d65","tags":{"ai.application.ver":"1.0.0.0","ai.cloud.roleInstance":"d8378a42cb4b","ai.internal.sdkVersion":"dotnetc:2.17.0-146","ai.internal.nodeName":"d8378a42cb4b.localdomain"},"data":{"baseType":"MetricData","baseData":{"ver":2,"metrics":[{"name":"testdirSize","kind":"Aggregation","value":11,"count":1}],"properties":{"DeveloperMode":"true"}}}}
+[40m[32minfo[39m[22m[49m: FtpAzureLoadTest.Worker[0]
+      GetListingAsync done
+FtpAzureLoadTest.Worker: Information: GetListingAsync done
+pushed file //test_dir3/test_4030.csv to FTP pubtest.azimut-monitoring.com
+Application Insights Telemetry: {"name":"AppMetrics","time":"2021-03-10T09:50:10.7141618Z","iKey":"79bf9551-c663-4c9e-867b-4becc1b51d65","tags":{"ai.application.ver":"1.0.0.0","ai.cloud.roleInstance":"d8378a42cb4b","ai.internal.sdkVersion":"dotnetc:2.17.0-146","ai.internal.nodeName":"d8378a42cb4b.localdomain"},"data":{"baseType":"MetricData","baseData":{"ver":2,"metrics":[{"name":"PushDataTime","kind":"Aggregation","value":346,"count":1}],"properties":{"DeveloperMode":"true"}}}}
+[40m[32minfo[39m[22m[49m: FtpAzureLoadTest.Worker[0]
+      PushDataAsync done for file //test_dir3/test_4030.csv
+FtpAzureLoadTest.Worker: Information: PushDataAsync done for file //test_dir3/test_4030.csv
+reading file //test_dir3/test_4030.csv from FTP pubtest.azimut-monitoring.com done
+[41m[30mfail[39m[22m[49m: FtpAzureLoadTest.Worker[0]
+      file content error for file //test_dir3/test_4030.csv
+FtpAzureLoadTest.Worker: Error: file content error for file //test_dir3/test_4030.csv
+Application Insights Telemetry: {"name":"AppTraces","time":"2021-03-10T09:50:13.1988472Z","iKey":"79bf9551-c663-4c9e-867b-4becc1b51d65","tags":{"ai.application.ver":"1.0.0.0","ai.cloud.roleInstance":"d8378a42cb4b","ai.internal.sdkVersion":"il:2.17.0-146","ai.internal.nodeName":"d8378a42cb4b.localdomain"},"data":{"baseType":"MessageData","baseData":{"ver":2,"message":"file content error for file //test_dir3/test_4030.csv","severityLevel":"Error","properties":{"DeveloperMode":"true","OriginalFormat":"file content error for file //test_dir3/test_4030.csv","_MS.ProcessedByMetricExtractors":"(Name:'Traces', Ver:'1.1')","CategoryName":"FtpAzureLoadTest.Worker"}}}}
+Application Insights Telemetry: {"name":"AppMetrics","time":"2021-03-10T09:50:13.2024490Z","iKey":"79bf9551-c663-4c9e-867b-4becc1b51d65","tags":{"ai.application.ver":"1.0.0.0","ai.cloud.roleInstance":"d8378a42cb4b","ai.internal.sdkVersion":"dotnetc:2.17.0-146","ai.internal.nodeName":"d8378a42cb4b.localdomain"},"data":{"baseType":"MetricData","baseData":{"ver":2,"metrics":[{"name":"GetDataTime","kind":"Aggregation","value":2468,"count":1}],"properties":{"DeveloperMode":"true"}}}}
+[40m[32minfo[39m[22m[49m: FtpAzureLoadTest.Worker[0]
+      GetDataAsync done
+FtpAzureLoadTest.Worker: Information: GetDataAsync done
+Application Insights Telemetry: {"name":"AppEvents","time":"2021-03-10T09:50:13.2149472Z","iKey":"79bf9551-c663-4c9e-867b-4becc1b51d65","tags":{"ai.application.ver":"1.0.0.0","ai.cloud.roleInstance":"d8378a42cb4b","ai.internal.sdkVersion":"dotnetc:2.17.0-146","ai.internal.nodeName":"d8378a42cb4b.localdomain"},"data":{"baseType":"EventData","baseData":{"ver":2,"name":"FtpExplorationRun completed","properties":{"DeveloperMode":"true"}}}}
+End
+[40m[32minfo[39m[22m[49m: FtpAzureLoadTest.Worker[0]
+      Worker running at: 03/10/2021 09:50:14 +00:00
+FtpAzureLoadTest.Worker: Information: Worker running at: 03/10/2021 09:50:14 +00:00
+directory /test_dir3 already existsile //test_dir3/test_2783.csv
+FtpAzureLoadTest.Worker: Information: DeleteFileAsync done for file //test_dir3/test_2783.csv
+Application Insights Telemetry: {"name":"AppEvents","time":"2021-03-10T09:49:25.7784966Z","iKey":"79bf9551-c663-4c9e-867b-4becc1b51d65","tags":{"ai.application.ver":"1.0.0.0","ai.cloud.roleInstance":"d8378a42cb4b","ai.internal.sdkVersion":"dotnetc:2.17.0-146","ai.internal.nodeName":"d8378a42cb4b.localdomain"},"data":{"baseType":"EventData","baseData":{"ver":2,"name":"FtpExplorationRun completed","properties":{"DeveloperMode":"true"}}}}
+End
+[40m[32minfo[39m[22m[49m: FtpAzureLoadTest.Worker[0]
+      Worker running at: 03/10/2021 09:49:26 +00:00
+FtpAzureLoadTest.Worker: Information: Worker running at: 03/10/2021 09:49:26 +00:00
+directory /test_dir3 already exists
+Application Insights Telemetry: {"name":"AppMetrics","time":"2021-03-10T09:49:27.5771608Z","iKey":"79bf9551-c663-4c9e-867b-4becc1b51d65","tags":{"ai.application.ver":"1.0.0.0","ai.cloud.roleInstance":"d8378a42cb4b","ai.internal.sdkVersion":"dotnetc:2.17.0-146","ai.internal.nodeName":"d8378a42cb4b.localdomain"},"data":{"baseType":"MetricData","baseData":{"ver":2,"metrics":[{"name":"createTestDirTime","kind":"Aggregation","value":783,"count":1}],"properties":{"DeveloperMode":"true"}}}}
+[40m[32minfo[39m[22m[49m: FtpAzureLoadTest.Worker[0]
+      CreateDirectoryIfNotExistsAsync done
+FtpAzureLoadTest.Worker: Information: CreateDirectoryIfNotExistsAsync done
+Application Insights Telemetry: {"name":"AppMetrics","time":"2021-03-10T09:49:28.2229334Z","iKey":"79bf9551-c663-4c9e-867b-4becc1b51d65","tags":{"ai.application.ver":"1.0.0.0","ai.cloud.roleInstance":"d8378a42cb4b","ai.internal.sdkVersion":"dotnetc:2.17.0-146","ai.internal.nodeName":"d8378a42cb4b.localdomain"},"data":{"baseType":"MetricData","baseData":{"ver":2,"metrics":[{"name":"rootListingTime","kind":"Aggregation","value":634,"count":1}],"properties":{"DeveloperMode":"true"}}}}
+Application Insights Telemetry: {"name":"AppMetrics","time":"2021-03-10T09:49:28.2344244Z","iKey":"79bf9551-c663-4c9e-867b-4becc1b51d65","tags":{"ai.application.ver":"1.0.0.0","ai.cloud.roleInstance":"d8378a42cb4b","ai.internal.sdkVersion":"dotnetc:2.17.0-146","ai.internal.nodeName":"d8378a42cb4b.localdomain"},"data":{"baseType":"MetricData","baseData":{"ver":2,"metrics":[{"name":"testdirSize","kind":"Aggregation","value":6,"count":1}],"properties":{"DeveloperMode":"true"}}}}
+[40m[32minfo[39m[22m[49m: FtpAzureLoadTest.Worker[0]
+      GetListingAsync done
+FtpAzureLoadTest.Worker: Information: GetListingAsync done
+pushed file //test_dir3/test_2782.csv to FTP pubtest.azimut-monitoring.com
+Application Insights Telemetry: {"name":"AppMetrics","time":"2021-03-10T09:49:28.6233168Z","iKey":"79bf9551-c663-4c9e-867b-4becc1b51d65","tags":{"ai.application.ver":"1.0.0.0","ai.cloud.roleInstance":"d8378a42cb4b","ai.internal.sdkVersion":"dotnetc:2.17.0-146","ai.internal.nodeName":"d8378a42cb4b.localdomain"},"data":{"baseType":"MetricData","baseData":{"ver":2,"metrics":[{"name":"PushDataTime","kind":"Aggregation","value":365,"count":1}],"properties":{"DeveloperMode":"true"}}}}
+[40m[32minfo[39m[22m[49m: FtpAzureLoadTest.Worker[0]
+      PushDataAsync done for file //test_dir3/test_2782.csv
+FtpAzureLoadTest.Worker: Information: PushDataAsync done for file //test_dir3/test_2782.csv
+reading file //test_dir3/test_2782.csv from FTP pubtest.azimut-monitoring.com done
+FtpAzureLoadTest.Worker: Error: file content error for file //test_dir3/test_2782.csv
+[41m[30mfail[39m[22m[49m: FtpAzureLoadTest.Worker[0]
+      file content error for file //test_dir3/test_2782.csv
+Application Insights Telemetry: {"name":"AppTraces","time":"2021-03-10T09:49:31.2460057Z","iKey":"79bf9551-c663-4c9e-867b-4becc1b51d65","tags":{"ai.application.ver":"1.0.0.0","ai.cloud.roleInstance":"d8378a42cb4b","ai.internal.sdkVersion":"il:2.17.0-146","ai.internal.nodeName":"d8378a42cb4b.localdomain"},"data":{"baseType":"MessageData","baseData":{"ver":2,"message":"file content error for file //test_dir3/test_2782.csv","severityLevel":"Error","properties":{"DeveloperMode":"true","OriginalFormat":"file content error for file //test_dir3/test_2782.csv","_MS.ProcessedByMetricExtractors":"(Name:'Traces', Ver:'1.1')","CategoryName":"FtpAzureLoadTest.Worker"}}}}
+Application Insights Telemetry: {"name":"AppMetrics","time":"2021-03-10T09:49:31.2575760Z","iKey":"79bf9551-c663-4c9e-867b-4becc1b51d65","tags":{"ai.application.ver":"1.0.0.0","ai.cloud.roleInstance":"d8378a42cb4b","ai.internal.sdkVersion":"dotnetc:2.17.0-146","ai.internal.nodeName":"d8378a42cb4b.localdomain"},"data":{"baseType":"MetricData","baseData":{"ver":2,"metrics":[{"name":"GetDataTime","kind":"Aggregation","value":2626,"count":1}],"properties":{"DeveloperMode":"true"}}}}
+FtpAzureLoadTest.Worker: Information: GetDataAsync done
+[40m[32minfo[39m[22m[49m: FtpAzureLoadTest.Worker[0]
+      GetDataAsync done
+Application Insights Telemetry: {"name":"AppEvents","time":"2021-03-10T09:49:31.2764629Z","iKey":"79bf9551-c663-4c9e-867b-4becc1b51d65","tags":{"ai.application.ver":"1.0.0.0","ai.cloud.roleInstance":"d8378a42cb4b","ai.internal.sdkVersion":"dotnetc:2.17.0-146","ai.internal.nodeName":"d8378a42cb4b.localdomain"},"data":{"baseType":"EventData","baseData":{"ver":2,"name":"FtpExplorationRun completed","properties":{"DeveloperMode":"true"}}}}
+End
+[40m[32minfo[39m[22m[49m: FtpAzureLoadTest.Worker[0]
+      Worker running at: 03/10/2021 09:49:32 +00:00
+FtpAzureLoadTest.Worker: Information: Worker running at: 03/10/2021 09:49:32 +00:00
+directory /test_dir3 already exists
+Application Insights Telemetry: {"name":"AppMetrics","time":"2021-03-10T09:49:33.6775542Z","iKey":"79bf9551-c663-4c9e-867b-4becc1b51d65","tags":{"ai.application.ver":"1.0.0.0","ai.cloud.roleInstance":"d8378a42cb4b","ai.internal.sdkVersion":"dotnetc:2.17.0-146","ai.internal.nodeName":"d8378a42cb4b.localdomain"},"data":{"baseType":"MetricData","baseData":{"ver":2,"metrics":[{"name":"createTestDirTime","kind":"Aggregation","value":1381,"count":1}],"properties":{"DeveloperMode":"true"}}}}
+[40m[32minfo[39m[22m[49m: FtpAzureLoadTest.Worker[0]
+      CreateDirectoryIfNotExistsAsync done
+FtpAzureLoadTest.Worker: Information: CreateDirectoryIfNotExistsAsync done
+Application Insights Telemetry: {"name":"AppMetrics","time":"2021-03-10T09:49:34.0699482Z","iKey":"79bf9551-c663-4c9e-867b-4becc1b51d65","tags":{"ai.application.ver":"1.0.0.0","ai.cloud.roleInstance":"d8378a42cb4b","ai.internal.sdkVersion":"dotnetc:2.17.0-146","ai.internal.nodeName":"d8378a42cb4b.localdomain"},"data":{"baseType":"MetricData","baseData":{"ver":2,"metrics":[{"name":"rootListingTime","kind":"Aggregation","value":365,"count":1}],"properties":{"DeveloperMode":"true"}}}}
+Application Insights Telemetry: {"name":"AppMetrics","time":"2021-03-10T09:49:34.0729893Z","iKey":"79bf9551-c663-4c9e-867b-4becc1b51d65","tags":{"ai.application.ver":"1.0.0.0","ai.cloud.roleInstance":"d8378a42cb4b","ai.internal.sdkVersion":"dotnetc:2.17.0-146","ai.internal.nodeName":"d8378a42cb4b.localdomain"},"data":{"baseType":"MetricData","baseData":{"ver":2,"metrics":[{"name":"testdirSize","kind":"Aggregation","value":7,"count":1}],"properties":{"DeveloperMode":"true"}}}}
+[40m[32minfo[39m[22m[49m: FtpAzureLoadTest.Worker[0]
+      GetListingAsync done
+FtpAzureLoadTest.Worker: Information: GetListingAsync done
+pushed file //test_dir3/test_1026.csv to FTP pubtest.azimut-monitoring.com
+Application Insights Telemetry: {"name":"AppMetrics","time":"2021-03-10T09:49:34.4844010Z","iKey":"79bf9551-c663-4c9e-867b-4becc1b51d65","tags":{"ai.application.ver":"1.0.0.0","ai.cloud.roleInstance":"d8378a42cb4b","ai.internal.sdkVersion":"dotnetc:2.17.0-146","ai.internal.nodeName":"d8378a42cb4b.localdomain"},"data":{"baseType":"MetricData","baseData":{"ver":2,"metrics":[{"name":"PushDataTime","kind":"Aggregation","value":365,"count":1}],"properties":{"DeveloperMode":"true"}}}}
+[40m[32minfo[39m[22m[49m: FtpAzureLoadTest.Worker[0]
+      PushDataAsync done for file //test_dir3/test_1026.csv
+FtpAzureLoadTest.Worker: Information: PushDataAsync done for file //test_dir3/test_1026.csv
+reading file //test_dir3/test_1026.csv from FTP pubtest.azimut-monitoring.com done
+FtpAzureLoadTest.Worker: Error: file content error for file //test_dir3/test_1026.csv
+[41m[30mfail[39m[22m[49m: FtpAzureLoadTest.Worker[0]
+      file content error for file //test_dir3/test_1026.csv
+Application Insights Telemetry: {"name":"AppTraces","time":"2021-03-10T09:49:37.4333325Z","iKey":"79bf9551-c663-4c9e-867b-4becc1b51d65","tags":{"ai.application.ver":"1.0.0.0","ai.cloud.roleInstance":"d8378a42cb4b","ai.internal.sdkVersion":"il:2.17.0-146","ai.internal.nodeName":"d8378a42cb4b.localdomain"},"data":{"baseType":"MessageData","baseData":{"ver":2,"message":"file content error for file //test_dir3/test_1026.csv","severityLevel":"Error","properties":{"DeveloperMode":"true","OriginalFormat":"file content error for file //test_dir3/test_1026.csv","_MS.ProcessedByMetricExtractors":"(Name:'Traces', Ver:'1.1')","CategoryName":"FtpAzureLoadTest.Worker"}}}}
+Application Insights Telemetry: {"name":"AppMetrics","time":"2021-03-10T09:49:37.4388025Z","iKey":"79bf9551-c663-4c9e-867b-4becc1b51d65","tags":{"ai.application.ver":"1.0.0.0","ai.cloud.roleInstance":"d8378a42cb4b","ai.internal.sdkVersion":"dotnetc:2.17.0-146","ai.internal.nodeName":"d8378a42cb4b.localdomain"},"data":{"baseType":"MetricData","baseData":{"ver":2,"metrics":[{"name":"GetDataTime","kind":"Aggregation","value":2925,"count":1}],"properties":{"DeveloperMode":"true"}}}}
+FtpAzureLoadTest.Worker: Information: GetDataAsync done
+[40m[32minfo[39m[22m[49m: FtpAzureLoadTest.Worker[0]
+      GetDataAsync done
+file //test_dir3/test_1026.csv has been deleted from FTP pubtest.azimut-monitoring.com
+Application Insights Telemetry: {"name":"AppMetrics","time":"2021-03-10T09:49:38.1396550Z","iKey":"79bf9551-c663-4c9e-867b-4becc1b51d65","tags":{"ai.application.ver":"1.0.0.0","ai.cloud.roleInstance":"d8378a42cb4b","ai.internal.sdkVersion":"dotnetc:2.17.0-146","ai.internal.nodeName":"d8378a42cb4b.localdomain"},"data":{"baseType":"MetricData","baseData":{"ver":2,"metrics":[{"name":"DeleteFileAsync","kind":"Aggregation","value":679,"count":1}],"properties":{"DeveloperMode":"true"}}}}
+[40m[32minfo[39m[22m[49m: FtpAzureLoadTest.Worker[0]
+      DeleteFileAsync done for file //test_dir3/test_1026.csv
+FtpAzureLoadTest.Worker: Information: DeleteFileAsync done for file //test_dir3/test_1026.csv
+Application Insights Telemetry: {"name":"AppEvents","time":"2021-03-10T09:49:38.1976786Z","iKey":"79bf9551-c663-4c9e-867b-4becc1b51d65","tags":{"ai.application.ver":"1.0.0.0","ai.cloud.roleInstance":"d8378a42cb4b","ai.internal.sdkVersion":"dotnetc:2.17.0-146","ai.internal.nodeName":"d8378a42cb4b.localdomain"},"data":{"baseType":"EventData","baseData":{"ver":2,"name":"FtpExplorationRun completed","properties":{"DeveloperMode":"true"}}}}
+End
+[40m[32minfo[39m[22m[49m: FtpAzureLoadTest.Worker[0]
+      Worker running at: 03/10/2021 09:49:39 +00:00
+FtpAzureLoadTest.Worker: Information: Worker running at: 03/10/2021 09:49:39 +00:00
+directory /test_dir3 already exists
+Application Insights Telemetry: {"name":"AppMetrics","time":"2021-03-10T09:49:40.0379550Z","iKey":"79bf9551-c663-4c9e-867b-4becc1b51d65","tags":{"ai.application.ver":"1.0.0.0","ai.cloud.roleInstance":"d8378a42cb4b","ai.internal.sdkVersion":"dotnetc:2.17.0-146","ai.internal.nodeName":"d8378a42cb4b.localdomain"},"data":{"baseType":"MetricData","baseData":{"ver":2,"metrics":[{"name":"createTestDirTime","kind":"Aggregation","value":814,"count":1}],"properties":{"DeveloperMode":"true"}}}}
+[40m[32minfo[39m[22m[49m: FtpAzureLoadTest.Worker[0]
+      CreateDirectoryIfNotExistsAsync done
+FtpAzureLoadTest.Worker: Information: CreateDirectoryIfNotExistsAsync done
+Application Insights Telemetry: {"name":"AppMetrics","time":"2021-03-10T09:49:40.4089312Z","iKey":"79bf9551-c663-4c9e-867b-4becc1b51d65","tags":{"ai.application.ver":"1.0.0.0","ai.cloud.roleInstance":"d8378a42cb4b","ai.internal.sdkVersion":"dotnetc:2.17.0-146","ai.internal.nodeName":"d8378a42cb4b.localdomain"},"data":{"baseType":"MetricData","baseData":{"ver":2,"metrics":[{"name":"rootListingTime","kind":"Aggregation","value":354,"count":1}],"properties":{"DeveloperMode":"true"}}}}
+Application Insights Telemetry: {"name":"AppMetrics","time":"2021-03-10T09:49:40.4121374Z","iKey":"79bf9551-c663-4c9e-867b-4becc1b51d65","tags":{"ai.application.ver":"1.0.0.0","ai.cloud.roleInstance":"d8378a42cb4b","ai.internal.sdkVersion":"dotnetc:2.17.0-146","ai.internal.nodeName":"d8378a42cb4b.localdomain"},"data":{"baseType":"MetricData","baseData":{"ver":2,"metrics":[{"name":"testdirSize","kind":"Aggregation","value":7,"count":1}],"properties":{"DeveloperMode":"true"}}}}
+[40m[32minfo[39m[22m[49m: FtpAzureLoadTest.Worker[0]
+      GetListingAsync done
+FtpAzureLoadTest.Worker: Information: GetListingAsync done
+pushed file //test_dir3/test_4770.csv to FTP pubtest.azimut-monitoring.com
+Application Insights Telemetry: {"name":"AppMetrics","time":"2021-03-10T09:49:40.7863396Z","iKey":"79bf9551-c663-4c9e-867b-4becc1b51d65","tags":{"ai.application.ver":"1.0.0.0","ai.cloud.roleInstance":"d8378a42cb4b","ai.internal.sdkVersion":"dotnetc:2.17.0-146","ai.internal.nodeName":"d8378a42cb4b.localdomain"},"data":{"baseType":"MetricData","baseData":{"ver":2,"metrics":[{"name":"PushDataTime","kind":"Aggregation","value":360,"count":1}],"properties":{"DeveloperMode":"true"}}}}
+FtpAzureLoadTest.Worker: Information: PushDataAsync done for file //test_dir3/test_4770.csv
+[40m[32minfo[39m[22m[49m: FtpAzureLoadTest.Worker[0]
+      PushDataAsync done for file //test_dir3/test_4770.csv
+reading file //test_dir3/test_4770.csv from FTP pubtest.azimut-monitoring.com done
+[41m[30mfail[39m[22m[49m: FtpAzureLoadTest.Worker[0]
+      file content error for file //test_dir3/test_4770.csv
+FtpAzureLoadTest.Worker: Error: file content error for file //test_dir3/test_4770.csv
+Application Insights Telemetry: {"name":"AppTraces","time":"2021-03-10T09:49:44.8859622Z","iKey":"79bf9551-c663-4c9e-867b-4becc1b51d65","tags":{"ai.application.ver":"1.0.0.0","ai.cloud.roleInstance":"d8378a42cb4b","ai.internal.sdkVersion":"il:2.17.0-146","ai.internal.nodeName":"d8378a42cb4b.localdomain"},"data":{"baseType":"MessageData","baseData":{"ver":2,"message":"file content error for file //test_dir3/test_4770.csv","severityLevel":"Error","properties":{"DeveloperMode":"true","OriginalFormat":"file content error for file //test_dir3/test_4770.csv","_MS.ProcessedByMetricExtractors":"(Name:'Traces', Ver:'1.1')","CategoryName":"FtpAzureLoadTest.Worker"}}}}
+Application Insights Telemetry: {"name":"AppMetrics","time":"2021-03-10T09:49:44.9145617Z","iKey":"79bf9551-c663-4c9e-867b-4becc1b51d65","tags":{"ai.application.ver":"1.0.0.0","ai.cloud.roleInstance":"d8378a42cb4b","ai.internal.sdkVersion":"dotnetc:2.17.0-146","ai.internal.nodeName":"d8378a42cb4b.localdomain"},"data":{"baseType":"MetricData","baseData":{"ver":2,"metrics":[{"name":"GetDataTime","kind":"Aggregation","value":4122,"count":1}],"properties":{"DeveloperMode":"true"}}}}
+FtpAzureLoadTest.Worker: Information: GetDataAsync done
+[40m[32minfo[39m[22m[49m: FtpAzureLoadTest.Worker[0]
+      GetDataAsync done
+Application Insights Telemetry: {"name":"AppEvents","time":"2021-03-10T09:49:44.9495791Z","iKey":"79bf9551-c663-4c9e-867b-4becc1b51d65","tags":{"ai.application.ver":"1.0.0.0","ai.cloud.roleInstance":"d8378a42cb4b","ai.internal.sdkVersion":"dotnetc:2.17.0-146","ai.internal.nodeName":"d8378a42cb4b.localdomain"},"data":{"baseType":"EventData","baseData":{"ver":2,"name":"FtpExplorationRun completed","properties":{"DeveloperMode":"true"}}}}
+End
+[40m[32minfo[39m[22m[49m: FtpAzureLoadTest.Worker[0]
+      Worker running at: 03/10/2021 09:49:45 +00:00
+FtpAzureLoadTest.Worker: Information: Worker running at: 03/10/2021 09:49:45 +00:00
+directory /test_dir3 already exists
+Application Insights Telemetry: {"name":"AppMetrics","time":"2021-03-10T09:49:46.8160670Z","iKey":"79bf9551-c663-4c9e-867b-4becc1b51d65","tags":{"ai.application.ver":"1.0.0.0","ai.cloud.roleInstance":"d8378a42cb4b","ai.internal.sdkVersion":"dotnetc:2.17.0-146","ai.internal.nodeName":"d8378a42cb4b.localdomain"},"data":{"baseType":"MetricData","baseData":{"ver":2,"metrics":[{"name":"createTestDirTime","kind":"Aggregation","value":839,"count":1}],"properties":{"DeveloperMode":"true"}}}}
+[40m[32minfo[39m[22m[49m: FtpAzureLoadTest.Worker[0]
+      CreateDirectoryIfNotExistsAsync done
+FtpAzureLoadTest.Worker: Information: CreateDirectoryIfNotExistsAsync done
+Application Insights Telemetry: {"name":"AppMetrics","time":"2021-03-10T09:49:47.3021538Z","iKey":"79bf9551-c663-4c9e-867b-4becc1b51d65","tags":{"ai.application.ver":"1.0.0.0","ai.cloud.roleInstance":"d8378a42cb4b","ai.internal.sdkVersion":"dotnetc:2.17.0-146","ai.internal.nodeName":"d8378a42cb4b.localdomain"},"data":{"baseType":"MetricData","baseData":{"ver":2,"metrics":[{"name":"rootListingTime","kind":"Aggregation","value":446,"count":1}],"properties":{"DeveloperMode":"true"}}}}
+Application Insights Telemetry: {"name":"AppMetrics","time":"2021-03-10T09:49:47.3052882Z","iKey":"79bf9551-c663-4c9e-867b-4becc1b51d65","tags":{"ai.application.ver":"1.0.0.0","ai.cloud.roleInstance":"d8378a42cb4b","ai.internal.sdkVersion":"dotnetc:2.17.0-146","ai.internal.nodeName":"d8378a42cb4b.localdomain"},"data":{"baseType":"MetricData","baseData":{"ver":2,"metrics":[{"name":"testdirSize","kind":"Aggregation","value":8,"count":1}],"properties":{"DeveloperMode":"true"}}}}
+[40m[32minfo[39m[22m[49m: FtpAzureLoadTest.Worker[0]
+      GetListingAsync done
+FtpAzureLoadTest.Worker: Information: GetListingAsync done
+pushed file //test_dir3/test_2005.csv to FTP pubtest.azimut-monitoring.com
+Application Insights Telemetry: {"name":"AppMetrics","time":"2021-03-10T09:49:47.8614739Z","iKey":"79bf9551-c663-4c9e-867b-4becc1b51d65","tags":{"ai.application.ver":"1.0.0.0","ai.cloud.roleInstance":"d8378a42cb4b","ai.internal.sdkVersion":"dotnetc:2.17.0-146","ai.internal.nodeName":"d8378a42cb4b.localdomain"},"data":{"baseType":"MetricData","baseData":{"ver":2,"metrics":[{"name":"PushDataTime","kind":"Aggregation","value":546,"count":1}],"properties":{"DeveloperMode":"true"}}}}
+[40m[32minfo[39m[22m[49m: FtpAzureLoadTest.Worker[0]
+      PushDataAsync done for file //test_dir3/test_2005.csv
+FtpAzureLoadTest.Worker: Information: PushDataAsync done for file //test_dir3/test_2005.csv
+reading file //test_dir3/test_2005.csv from FTP pubtest.azimut-monitoring.com done
+FtpAzureLoadTest.Worker: Error: file content error for file //test_dir3/test_2005.csv
+[41m[30mfail[39m[22m[49m: FtpAzureLoadTest.Worker[0]
+      file content error for file //test_dir3/test_2005.csv
+Application Insights Telemetry: {"name":"AppTraces","time":"2021-03-10T09:49:50.3013657Z","iKey":"79bf9551-c663-4c9e-867b-4becc1b51d65","tags":{"ai.application.ver":"1.0.0.0","ai.cloud.roleInstance":"d8378a42cb4b","ai.internal.sdkVersion":"il:2.17.0-146","ai.internal.nodeName":"d8378a42cb4b.localdomain"},"data":{"baseType":"MessageData","baseData":{"ver":2,"message":"file content error for file //test_dir3/test_2005.csv","severityLevel":"Error","properties":{"DeveloperMode":"true","OriginalFormat":"file content error for file //test_dir3/test_2005.csv","_MS.ProcessedByMetricExtractors":"(Name:'Traces', Ver:'1.1')","CategoryName":"FtpAzureLoadTest.Worker"}}}}
+Application Insights Telemetry: {"name":"AppMetrics","time":"2021-03-10T09:49:50.3053260Z","iKey":"79bf9551-c663-4c9e-867b-4becc1b51d65","tags":{"ai.application.ver":"1.0.0.0","ai.cloud.roleInstance":"d8378a42cb4b","ai.internal.sdkVersion":"dotnetc:2.17.0-146","ai.internal.nodeName":"d8378a42cb4b.localdomain"},"data":{"baseType":"MetricData","baseData":{"ver":2,"metrics":[{"name":"GetDataTime","kind":"Aggregation","value":2435,"count":1}],"properties":{"DeveloperMode":"true"}}}}
+[40m[32minfo[39m[22m[49m: FtpAzureLoadTest.Worker[0]
+      GetDataAsync done
+FtpAzureLoadTest.Worker: Information: GetDataAsync done
+Application Insights Telemetry: {"name":"AppEvents","time":"2021-03-10T09:49:50.3710887Z","iKey":"79bf9551-c663-4c9e-867b-4becc1b51d65","tags":{"ai.application.ver":"1.0.0.0","ai.cloud.roleInstance":"d8378a42cb4b","ai.internal.sdkVersion":"dotnetc:2.17.0-146","ai.internal.nodeName":"d8378a42cb4b.localdomain"},"data":{"baseType":"EventData","baseData":{"ver":2,"name":"FtpExplorationRun completed","properties":{"DeveloperMode":"true"}}}}
+End
+Le thread 0x26c s'est arrêté avec le code 0 (0x0).
+[40m[32minfo[39m[22m[49m: FtpAzureLoadTest.Worker[0]
+      Worker running at: 03/10/2021 09:49:51 +00:00
+FtpAzureLoadTest.Worker: Information: Worker running at: 03/10/2021 09:49:51 +00:00
+directory /test_dir3 already exists
+Application Insights Telemetry: {"name":"AppMetrics","time":"2021-03-10T09:49:52.1412389Z","iKey":"79bf9551-c663-4c9e-867b-4becc1b51d65","tags":{"ai.application.ver":"1.0.0.0","ai.cloud.roleInstance":"d8378a42cb4b","ai.internal.sdkVersion":"dotnetc:2.17.0-146","ai.internal.nodeName":"d8378a42cb4b.localdomain"},"data":{"baseType":"MetricData","baseData":{"ver":2,"metrics":[{"name":"createTestDirTime","kind":"Aggregation","value":767,"count":1}],"properties":{"DeveloperMode":"true"}}}}
+[40m[32minfo[39m[22m[49m: FtpAzureLoadTest.Worker[0]
+      CreateDirectoryIfNotExistsAsync done
+FtpAzureLoadTest.Worker: Information: CreateDirectoryIfNotExistsAsync done
+Application Insights Telemetry: {"name":"AppMetrics","time":"2021-03-10T09:49:53.0761491Z","iKey":"79bf9551-c663-4c9e-867b-4becc1b51d65","tags":{"ai.application.ver":"1.0.0.0","ai.cloud.roleInstance":"d8378a42cb4b","ai.internal.sdkVersion":"dotnetc:2.17.0-146","ai.internal.nodeName":"d8378a42cb4b.localdomain"},"data":{"baseType":"MetricData","baseData":{"ver":2,"metrics":[{"name":"rootListingTime","kind":"Aggregation","value":906,"count":1}],"properties":{"DeveloperMode":"true"}}}}
+Application Insights Telemetry: {"name":"AppMetrics","time":"2021-03-10T09:49:53.0791653Z","iKey":"79bf9551-c663-4c9e-867b-4becc1b51d65","tags":{"ai.application.ver":"1.0.0.0","ai.cloud.roleInstance":"d8378a42cb4b","ai.internal.sdkVersion":"dotnetc:2.17.0-146","ai.internal.nodeName":"d8378a42cb4b.localdomain"},"data":{"baseType":"MetricData","baseData":{"ver":2,"metrics":[{"name":"testdirSize","kind":"Aggregation","value":9,"count":1}],"properties":{"DeveloperMode":"true"}}}}
+[40m[32minfo[39m[22m[49m: FtpAzureLoadTest.Worker[0]
+      GetListingAsync done
+FtpAzureLoadTest.Worker: Information: GetListingAsync done
+'/usr/share/dotnet/shared/Microsoft.NETCore.App/3.1.13/System.Net.Requests.dll' chargé. Chargement des symboles ignoré. Le module est optimisé et l'option du débogueur 'Uniquement mon code' est activée.
+pushed file //test_dir3/test_2469.csv to FTP pubtest.azimut-monitoring.com
+Application Insights Telemetry: {"name":"AppMetrics","time":"2021-03-10T09:49:53.7100914Z","iKey":"79bf9551-c663-4c9e-867b-4becc1b51d65","tags":{"ai.application.ver":"1.0.0.0","ai.cloud.roleInstance":"d8378a42cb4b","ai.internal.sdkVersion":"dotnetc:2.17.0-146","ai.internal.nodeName":"d8378a42cb4b.localdomain"},"data":{"baseType":"MetricData","baseData":{"ver":2,"metrics":[{"name":"PushDataTime","kind":"Aggregation","value":594,"count":1}],"properties":{"DeveloperMode":"true"}}}}
+[40m[32minfo[39m[22m[49m: FtpAzureLoadTest.Worker[0]
+      PushDataAsync done for file //test_dir3/test_2469.csv
+FtpAzureLoadTest.Worker: Information: PushDataAsync done for file //test_dir3/test_2469.csv
+reading file //test_dir3/test_2469.csv from FTP pubtest.azimut-monitoring.com done
+FtpAzureLoadTest.Worker: Error: file content error for file //test_dir3/test_2469.csv
+[41m[30mfail[39m[22m[49m: FtpAzureLoadTest.Worker[0]
+      file content error for file //test_dir3/test_2469.csv
+Application Insights Telemetry: {"name":"AppTraces","time":"2021-03-10T09:49:56.3298775Z","iKey":"79bf9551-c663-4c9e-867b-4becc1b51d65","tags":{"ai.application.ver":"1.0.0.0","ai.cloud.roleInstance":"d8378a42cb4b","ai.internal.sdkVersion":"il:2.17.0-146","ai.internal.nodeName":"d8378a42cb4b.localdomain"},"data":{"baseType":"MessageData","baseData":{"ver":2,"message":"file content error for file //test_dir3/test_2469.csv","severityLevel":"Error","properties":{"DeveloperMode":"true","OriginalFormat":"file content error for file //test_dir3/test_2469.csv","_MS.ProcessedByMetricExtractors":"(Name:'Traces', Ver:'1.1')","CategoryName":"FtpAzureLoadTest.Worker"}}}}
+Application Insights Telemetry: {"name":"AppMetrics","time":"2021-03-10T09:49:56.3356054Z","iKey":"79bf9551-c663-4c9e-867b-4becc1b51d65","tags":{"ai.application.ver":"1.0.0.0","ai.cloud.roleInstance":"d8378a42cb4b","ai.internal.sdkVersion":"dotnetc:2.17.0-146","ai.internal.nodeName":"d8378a42cb4b.localdomain"},"data":{"baseType":"MetricData","baseData":{"ver":2,"metrics":[{"name":"GetDataTime","kind":"Aggregation","value":2619,"count":1}],"properties":{"DeveloperMode":"true"}}}}
+FtpAzureLoadTest.Worker: Information: GetDataAsync done
+[40m[32minfo[39m[22m[49m: FtpAzureLoadTest.Worker[0]
+      GetDataAsync done
+file //test_dir3/test_2469.csv has been deleted from FTP pubtest.azimut-monitoring.com
+Application Insights Telemetry: {"name":"AppMetrics","time":"2021-03-10T09:49:56.9617136Z","iKey":"79bf9551-c663-4c9e-867b-4becc1b51d65","tags":{"ai.application.ver":"1.0.0.0","ai.cloud.roleInstance":"d8378a42cb4b","ai.internal.sdkVersion":"dotnetc:2.17.0-146","ai.internal.nodeName":"d8378a42cb4b.localdomain"},"data":{"baseType":"MetricData","baseData":{"ver":2,"metrics":[{"name":"DeleteFileAsync","kind":"Aggregation","value":617,"count":1}],"properties":{"DeveloperMode":"true"}}}}
+[40m[32minfo[39m[22m[49m: FtpAzureLoadTest.Worker[0]
+      DeleteFileAsync done for file //test_dir3/test_2469.csv
+FtpAzureLoadTest.Worker: Information: DeleteFileAsync done for file //test_dir3/test_2469.csv
+Application Insights Telemetry: {"name":"AppEvents","time":"2021-03-10T09:49:57.0404964Z","iKey":"79bf9551-c663-4c9e-867b-4becc1b51d65","tags":{"ai.application.ver":"1.0.0.0","ai.cloud.roleInstance":"d8378a42cb4b","ai.internal.sdkVersion":"dotnetc:2.17.0-146","ai.internal.nodeName":"d8378a42cb4b.localdomain"},"data":{"baseType":"EventData","baseData":{"ver":2,"name":"FtpExplorationRun completed","properties":{"DeveloperMode":"true"}}}}
+End
+[40m[32minfo[39m[22m[49m: FtpAzureLoadTest.Worker[0]
+      Worker running at: 03/10/2021 09:49:58 +00:00
+FtpAzureLoadTest.Worker: Information: Worker running at: 03/10/2021 09:49:58 +00:00
+directory /test_dir3 already exists
+Application Insights Telemetry: {"name":"AppMetrics","time":"2021-03-10T09:49:59.2717787Z","iKey":"79bf9551-c663-4c9e-867b-4becc1b51d65","tags":{"ai.application.ver":"1.0.0.0","ai.cloud.roleInstance":"d8378a42cb4b","ai.internal.sdkVersion":"dotnetc:2.17.0-146","ai.internal.nodeName":"d8378a42cb4b.localdomain"},"data":{"baseType":"MetricData","baseData":{"ver":2,"metrics":[{"name":"createTestDirTime","kind":"Aggregation","value":1230,"count":1}],"properties":{"DeveloperMode":"true"}}}}
+[40m[32minfo[39m[22m[49m: FtpAzureLoadTest.Worker[0]
+      CreateDirectoryIfNotExistsAsync done
+FtpAzureLoadTest.Worker: Information: CreateDirectoryIfNotExistsAsync done
+Application Insights Telemetry: {"name":"AppMetrics","time":"2021-03-10T09:49:59.8329790Z","iKey":"79bf9551-c663-4c9e-867b-4becc1b51d65","tags":{"ai.application.ver":"1.0.0.0","ai.cloud.roleInstance":"d8378a42cb4b","ai.internal.sdkVersion":"dotnetc:2.17.0-146","ai.internal.nodeName":"d8378a42cb4b.localdomain"},"data":{"baseType":"MetricData","baseData":{"ver":2,"metrics":[{"name":"rootListingTime","kind":"Aggregation","value":533,"count":1}],"properties":{"DeveloperMode":"true"}}}}
+Application Insights Telemetry: {"name":"AppMetrics","time":"2021-03-10T09:49:59.8388795Z","iKey":"79bf9551-c663-4c9e-867b-4becc1b51d65","tags":{"ai.application.ver":"1.0.0.0","ai.cloud.roleInstance":"d8378a42cb4b","ai.internal.sdkVersion":"dotnetc:2.17.0-146","ai.internal.nodeName":"d8378a42cb4b.localdomain"},"data":{"baseType":"MetricData","baseData":{"ver":2,"metrics":[{"name":"testdirSize","kind":"Aggregation","value":9,"count":1}],"properties":{"DeveloperMode":"true"}}}}
+FtpAzureLoadTest.Worker: Information: GetListingAsync done
+[40m[32minfo[39m[22m[49m: FtpAzureLoadTest.Worker[0]
+      GetListingAsync done
+pushed file //test_dir3/test_1491.csv to FTP pubtest.azimut-monitoring.com
+Application Insights Telemetry: {"name":"AppMetrics","time":"2021-03-10T09:50:00.2718236Z","iKey":"79bf9551-c663-4c9e-867b-4becc1b51d65","tags":{"ai.application.ver":"1.0.0.0","ai.cloud.roleInstance":"d8378a42cb4b","ai.internal.sdkVersion":"dotnetc:2.17.0-146","ai.internal.nodeName":"d8378a42cb4b.localdomain"},"data":{"baseType":"MetricData","baseData":{"ver":2,"metrics":[{"name":"PushDataTime","kind":"Aggregation","value":381,"count":1}],"properties":{"DeveloperMode":"true"}}}}
+FtpAzureLoadTest.Worker: Information: PushDataAsync done for file //test_dir3/test_1491.csv
+[40m[32minfo[39m[22m[49m: FtpAzureLoadTest.Worker[0]
+      PushDataAsync done for file //test_dir3/test_1491.csv
+Application Insights Telemetry: {"name":"AppMetrics","time":"2021-03-10T09:49:14.0000000Z","iKey":"79bf9551-c663-4c9e-867b-4becc1b51d65","tags":{"ai.application.ver":"1.0.0.0","ai.cloud.roleInstance":"d8378a42cb4b","ai.internal.sdkVersion":"m-agg2c:2.17.0-146","ai.internal.nodeName":"d8378a42cb4b.localdomain"},"data":{"baseType":"MetricData","baseData":{"ver":2,"metrics":[{"name":"Traces","kind":"Aggregation","value":7,"count":7,"min":1,"max":1,"stdDev":0}],"properties":{"operation/synthetic":"False","trace/severityLevel":"3","DeveloperMode":"true","cloud/roleName":"Unknown","_MS.IsAutocollected":"True","_MS.AggregationIntervalMs":"47000","_MS.MetricId":"traces/count","cloud/roleInstance":"d8378a42cb4b"}}}}
+reading file //test_dir3/test_1491.csv from FTP pubtest.azimut-monitoring.com done
+FtpAzureLoadTest.Worker: Error: file content error for file //test_dir3/test_1491.csv
+[41m[30mfail[39m[22m[49m: FtpAzureLoadTest.Worker[0]
+      file content error for file //test_dir3/test_1491.csv
+Application Insights Telemetry: {"name":"AppTraces","time":"2021-03-10T09:50:03.0387957Z","iKey":"79bf9551-c663-4c9e-867b-4becc1b51d65","tags":{"ai.application.ver":"1.0.0.0","ai.cloud.roleInstance":"d8378a42cb4b","ai.internal.sdkVersion":"il:2.17.0-146","ai.internal.nodeName":"d8378a42cb4b.localdomain"},"data":{"baseType":"MessageData","baseData":{"ver":2,"message":"file content error for file //test_dir3/test_1491.csv","severityLevel":"Error","properties":{"DeveloperMode":"true","OriginalFormat":"file content error for file //test_dir3/test_1491.csv","_MS.ProcessedByMetricExtractors":"(Name:'Traces', Ver:'1.1')","CategoryName":"FtpAzureLoadTest.Worker"}}}}
+Application Insights Telemetry: {"name":"AppMetrics","time":"2021-03-10T09:50:03.0429022Z","iKey":"79bf9551-c663-4c9e-867b-4becc1b51d65","tags":{"ai.application.ver":"1.0.0.0","ai.cloud.roleInstance":"d8378a42cb4b","ai.internal.sdkVersion":"dotnetc:2.17.0-146","ai.internal.nodeName":"d8378a42cb4b.localdomain"},"data":{"baseType":"MetricData","baseData":{"ver":2,"metrics":[{"name":"GetDataTime","kind":"Aggregation","value":2765,"count":1}],"properties":{"DeveloperMode":"true"}}}}
+[40m[32minfo[39m[22m[49m: FtpAzureLoadTest.Worker[0]
+      GetDataAsync done
+FtpAzureLoadTest.Worker: Information: GetDataAsync done
+Application Insights Telemetry: {"name":"AppEvents","time":"2021-03-10T09:50:03.0746815Z","iKey":"79bf9551-c663-4c9e-867b-4becc1b51d65","tags":{"ai.application.ver":"1.0.0.0","ai.cloud.roleInstance":"d8378a42cb4b","ai.internal.sdkVersion":"dotnetc:2.17.0-146","ai.internal.nodeName":"d8378a42cb4b.localdomain"},"data":{"baseType":"EventData","baseData":{"ver":2,"name":"FtpExplorationRun completed","properties":{"DeveloperMode":"true"}}}}
+End
+[40m[32minfo[39m[22m[49m: FtpAzureLoadTest.Worker[0]
+      Worker running at: 03/10/2021 09:50:04 +00:00
+FtpAzureLoadTest.Worker: Information: Worker running at: 03/10/2021 09:50:04 +00:00
+directory /test_dir3 already exists
+Application Insights Telemetry: {"name":"AppMetrics","time":"2021-03-10T09:50:05.0108877Z","iKey":"79bf9551-c663-4c9e-867b-4becc1b51d65","tags":{"ai.application.ver":"1.0.0.0","ai.cloud.roleInstance":"d8378a42cb4b","ai.internal.sdkVersion":"dotnetc:2.17.0-146","ai.internal.nodeName":"d8378a42cb4b.localdomain"},"data":{"baseType":"MetricData","baseData":{"ver":2,"metrics":[{"name":"createTestDirTime","kind":"Aggregation","value":926,"count":1}],"properties":{"DeveloperMode":"true"}}}}
+[40m[32minfo[39m[22m[49m: FtpAzureLoadTest.Worker[0]
+      CreateDirectoryIfNotExistsAsync done
+FtpAzureLoadTest.Worker: Information: CreateDirectoryIfNotExistsAsync done
+Application Insights Telemetry: {"name":"AppMetrics","time":"2021-03-10T09:50:05.4276949Z","iKey":"79bf9551-c663-4c9e-867b-4becc1b51d65","tags":{"ai.application.ver":"1.0.0.0","ai.cloud.roleInstance":"d8378a42cb4b","ai.internal.sdkVersion":"dotnetc:2.17.0-146","ai.internal.nodeName":"d8378a42cb4b.localdomain"},"data":{"baseType":"MetricData","baseData":{"ver":2,"metrics":[{"name":"rootListingTime","kind":"Aggregation","value":391,"count":1}],"properties":{"DeveloperMode":"true"}}}}
+Application Insights Telemetry: {"name":"AppMetrics","time":"2021-03-10T09:50:05.4465872Z","iKey":"79bf9551-c663-4c9e-867b-4becc1b51d65","tags":{"ai.application.ver":"1.0.0.0","ai.cloud.roleInstance":"d8378a42cb4b","ai.internal.sdkVersion":"dotnetc:2.17.0-146","ai.internal.nodeName":"d8378a42cb4b.localdomain"},"data":{"baseType":"MetricData","baseData":{"ver":2,"metrics":[{"name":"testdirSize","kind":"Aggregation","value":10,"count":1}],"properties":{"DeveloperMode":"true"}}}}
+FtpAzureLoadTest.Worker: Information: GetListingAsync done
+[40m[32minfo[39m[22m[49m: FtpAzureLoadTest.Worker[0]
+      GetListingAsync done
+pushed file //test_dir3/test_2004.csv to FTP pubtest.azimut-monitoring.com
+Application Insights Telemetry: {"name":"AppMetrics","time":"2021-03-10T09:50:06.0206545Z","iKey":"79bf9551-c663-4c9e-867b-4becc1b51d65","tags":{"ai.application.ver":"1.0.0.0","ai.cloud.roleInstance":"d8378a42cb4b","ai.internal.sdkVersion":"dotnetc:2.17.0-146","ai.internal.nodeName":"d8378a42cb4b.localdomain"},"data":{"baseType":"MetricData","baseData":{"ver":2,"metrics":[{"name":"PushDataTime","kind":"Aggregation","value":538,"count":1}],"properties":{"DeveloperMode":"true"}}}}
+[40m[32minfo[39m[22m[49m: FtpAzureLoadTest.Worker[0]
+      PushDataAsync done for file //test_dir3/test_2004.csv
+FtpAzureLoadTest.Worker: Information: PushDataAsync done for file //test_dir3/test_2004.csv
+reading file //test_dir3/test_2004.csv from FTP pubtest.azimut-monitoring.com done
+[41m[30mfail[39m[22m[49m: FtpAzureLoadTest.Worker[0]
+      file content error for file //test_dir3/test_2004.csv
+FtpAzureLoadTest.Worker: Error: file content error for file //test_dir3/test_2004.csv
+Application Insights Telemetry: {"name":"AppTraces","time":"2021-03-10T09:50:08.1271481Z","iKey":"79bf9551-c663-4c9e-867b-4becc1b51d65","tags":{"ai.application.ver":"1.0.0.0","ai.cloud.roleInstance":"d8378a42cb4b","ai.internal.sdkVersion":"il:2.17.0-146","ai.internal.nodeName":"d8378a42cb4b.localdomain"},"data":{"baseType":"MessageData","baseData":{"ver":2,"message":"file content error for file //test_dir3/test_2004.csv","severityLevel":"Error","properties":{"DeveloperMode":"true","OriginalFormat":"file content error for file //test_dir3/test_2004.csv","_MS.ProcessedByMetricExtractors":"(Name:'Traces', Ver:'1.1')","CategoryName":"FtpAzureLoadTest.Worker"}}}}
+Application Insights Telemetry: {"name":"AppMetrics","time":"2021-03-10T09:50:08.1324102Z","iKey":"79bf9551-c663-4c9e-867b-4becc1b51d65","tags":{"ai.application.ver":"1.0.0.0","ai.cloud.roleInstance":"d8378a42cb4b","ai.internal.sdkVersion":"dotnetc:2.17.0-146","ai.internal.nodeName":"d8378a42cb4b.localdomain"},"data":{"baseType":"MetricData","baseData":{"ver":2,"metrics":[{"name":"GetDataTime","kind":"Aggregation","value":2104,"count":1}],"properties":{"DeveloperMode":"true"}}}}
+FtpAzureLoadTest.Worker: Information: GetDataAsync done
+[40m[32minfo[39m[22m[49m: FtpAzureLoadTest.Worker[0]
+      GetDataAsync done
+Application Insights Telemetry: {"name":"AppEvents","time":"2021-03-10T09:50:08.1395948Z","iKey":"79bf9551-c663-4c9e-867b-4becc1b51d65","tags":{"ai.application.ver":"1.0.0.0","ai.cloud.roleInstance":"d8378a42cb4b","ai.internal.sdkVersion":"dotnetc:2.17.0-146","ai.internal.nodeName":"d8378a42cb4b.localdomain"},"data":{"baseType":"EventData","baseData":{"ver":2,"name":"FtpExplorationRun completed","properties":{"DeveloperMode":"true"}}}}
+End
+[40m[32minfo[39m[22m[49m: FtpAzureLoadTest.Worker[0]
+      Worker running at: 03/10/2021 09:50:09 +00:00
+FtpAzureLoadTest.Worker: Information: Worker running at: 03/10/2021 09:50:09 +00:00
+directory /test_dir3 already exists
+Application Insights Telemetry: {"name":"AppMetrics","time":"2021-03-10T09:50:09.9728582Z","iKey":"79bf9551-c663-4c9e-867b-4becc1b51d65","tags":{"ai.application.ver":"1.0.0.0","ai.cloud.roleInstance":"d8378a42cb4b","ai.internal.sdkVersion":"dotnetc:2.17.0-146","ai.internal.nodeName":"d8378a42cb4b.localdomain"},"data":{"baseType":"MetricData","baseData":{"ver":2,"metrics":[{"name":"createTestDirTime","kind":"Aggregation","value":806,"count":1}],"properties":{"DeveloperMode":"true"}}}}
+[40m[32minfo[39m[22m[49m: FtpAzureLoadTest.Worker[0]
+      CreateDirectoryIfNotExistsAsync done
+FtpAzureLoadTest.Worker: Information: CreateDirectoryIfNotExistsAsync done
+Application Insights Telemetry: {"name":"AppMetrics","time":"2021-03-10T09:50:10.3563154Z","iKey":"79bf9551-c663-4c9e-867b-4becc1b51d65","tags":{"ai.application.ver":"1.0.0.0","ai.cloud.roleInstance":"d8378a42cb4b","ai.internal.sdkVersion":"dotnetc:2.17.0-146","ai.internal.nodeName":"d8378a42cb4b.localdomain"},"data":{"baseType":"MetricData","baseData":{"ver":2,"metrics":[{"name":"rootListingTime","kind":"Aggregation","value":356,"count":1}],"properties":{"DeveloperMode":"true"}}}}
+Application Insights Telemetry: {"name":"AppMetrics","time":"2021-03-10T09:50:10.3593382Z","iKey":"79bf9551-c663-4c9e-867b-4becc1b51d65","tags":{"ai.application.ver":"1.0.0.0","ai.cloud.roleInstance":"d8378a42cb4b","ai.internal.sdkVersion":"dotnetc:2.17.0-146","ai.internal.nodeName":"d8378a42cb4b.localdomain"},"data":{"baseType":"MetricData","baseData":{"ver":2,"metrics":[{"name":"testdirSize","kind":"Aggregation","value":11,"count":1}],"properties":{"DeveloperMode":"true"}}}}
+[40m[32minfo[39m[22m[49m: FtpAzureLoadTest.Worker[0]
+      GetListingAsync done
+FtpAzureLoadTest.Worker: Information: GetListingAsync done
+pushed file //test_dir3/test_4030.csv to FTP pubtest.azimut-monitoring.com
+Application Insights Telemetry: {"name":"AppMetrics","time":"2021-03-10T09:50:10.7141618Z","iKey":"79bf9551-c663-4c9e-867b-4becc1b51d65","tags":{"ai.application.ver":"1.0.0.0","ai.cloud.roleInstance":"d8378a42cb4b","ai.internal.sdkVersion":"dotnetc:2.17.0-146","ai.internal.nodeName":"d8378a42cb4b.localdomain"},"data":{"baseType":"MetricData","baseData":{"ver":2,"metrics":[{"name":"PushDataTime","kind":"Aggregation","value":346,"count":1}],"properties":{"DeveloperMode":"true"}}}}
+[40m[32minfo[39m[22m[49m: FtpAzureLoadTest.Worker[0]
+      PushDataAsync done for file //test_dir3/test_4030.csv
+FtpAzureLoadTest.Worker: Information: PushDataAsync done for file //test_dir3/test_4030.csv
+reading file //test_dir3/test_4030.csv from FTP pubtest.azimut-monitoring.com done
+[41m[30mfail[39m[22m[49m: FtpAzureLoadTest.Worker[0]
+      file content error for file //test_dir3/test_4030.csv
+FtpAzureLoadTest.Worker: Error: file content error for file //test_dir3/test_4030.csv
+Application Insights Telemetry: {"name":"AppTraces","time":"2021-03-10T09:50:13.1988472Z","iKey":"79bf9551-c663-4c9e-867b-4becc1b51d65","tags":{"ai.application.ver":"1.0.0.0","ai.cloud.roleInstance":"d8378a42cb4b","ai.internal.sdkVersion":"il:2.17.0-146","ai.internal.nodeName":"d8378a42cb4b.localdomain"},"data":{"baseType":"MessageData","baseData":{"ver":2,"message":"file content error for file //test_dir3/test_4030.csv","severityLevel":"Error","properties":{"DeveloperMode":"true","OriginalFormat":"file content error for file //test_dir3/test_4030.csv","_MS.ProcessedByMetricExtractors":"(Name:'Traces', Ver:'1.1')","CategoryName":"FtpAzureLoadTest.Worker"}}}}
+Application Insights Telemetry: {"name":"AppMetrics","time":"2021-03-10T09:50:13.2024490Z","iKey":"79bf9551-c663-4c9e-867b-4becc1b51d65","tags":{"ai.application.ver":"1.0.0.0","ai.cloud.roleInstance":"d8378a42cb4b","ai.internal.sdkVersion":"dotnetc:2.17.0-146","ai.internal.nodeName":"d8378a42cb4b.localdomain"},"data":{"baseType":"MetricData","baseData":{"ver":2,"metrics":[{"name":"GetDataTime","kind":"Aggregation","value":2468,"count":1}],"properties":{"DeveloperMode":"true"}}}}
+[40m[32minfo[39m[22m[49m: FtpAzureLoadTest.Worker[0]
+      GetDataAsync done
+FtpAzureLoadTest.Worker: Information: GetDataAsync done
+Application Insights Telemetry: {"name":"AppEvents","time":"2021-03-10T09:50:13.2149472Z","iKey":"79bf9551-c663-4c9e-867b-4becc1b51d65","tags":{"ai.application.ver":"1.0.0.0","ai.cloud.roleInstance":"d8378a42cb4b","ai.internal.sdkVersion":"dotnetc:2.17.0-146","ai.internal.nodeName":"d8378a42cb4b.localdomain"},"data":{"baseType":"EventData","baseData":{"ver":2,"name":"FtpExplorationRun completed","properties":{"DeveloperMode":"true"}}}}
+End
+[40m[32minfo[39m[22m[49m: FtpAzureLoadTest.Worker[0]
+      Worker running at: 03/10/2021 09:50:14 +00:00
+FtpAzureLoadTest.Worker: Information: Worker running at: 03/10/2021 09:50:14 +00:00
+directory /test_dir3 already exists
+Le thread 0x224 s'est arrêté avec le code 0 (0x0).
